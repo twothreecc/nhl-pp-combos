@@ -45,8 +45,8 @@ def _get(url):
     raise RuntimeError(f"Giving up after {MAX_RETRIES} attempts: {url}")
 
 
-def team_schedule(abbrev):
-    return get_json(f"{WEB}/club-schedule-season/{abbrev}/{SEASON}")
+def team_schedule(abbrev, season=SEASON):
+    return get_json(f"{WEB}/club-schedule-season/{abbrev}/{season}")
 
 
 def play_by_play(game_id):

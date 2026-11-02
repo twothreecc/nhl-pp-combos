@@ -1,14 +1,16 @@
 """Phase 1: collect finished regular-season games and cache their play-by-play and shifts.
 
 Raw responses go to data/raw/{gameId}_{pbp|shifts}.json. A finished game is never re-fetched.
-Run from the repo root:  python pipeline/fetch.py
+The game list goes to games.csv in the season's output folder (see config.out_dir).
+Run from the repo root:  python pipeline/fetch.py [season]
 """
 import csv
 import json
+import sys
 from collections import Counter
 
 import nhl_api
-from config import DATA_DIR, FINISHED_STATES, RAW_DIR, REGULAR_SEASON, SHIFT_TYPE_CODE, TEAMS
+from config import FINISHED_STATES, RAW_DIR, REGULAR_SEASON, SEASON, SHIFT_TYPE_CODE, out_dir, teams
 from html_shifts import shifts_from_html
 
 
@@ -24,11 +26,11 @@ def save(path, obj):
     tmp.replace(path)
 
 
-def collect_games():
+def collect_games(season):
     """Return {gameId: row} for finished regular-season games, deduped across all teams."""
     games, states = {}, Counter()
-    for abbrev in TEAMS:
-        sched = nhl_api.team_schedule(abbrev)
+    for abbrev in teams(season):
+        sched = nhl_api.team_schedule(abbrev, season)
         for g in sched["games"]:
             if g["gameType"] != REGULAR_SEASON:
                 continue
@@ -80,9 +82,11 @@ def cache_shifts(game_id):
     return "fetched_html"
 
 
-def main():
+def main(season=SEASON):
     RAW_DIR.mkdir(parents=True, exist_ok=True)
-    games = collect_games()
+    out = out_dir(season)
+    out.mkdir(parents=True, exist_ok=True)
+    games = collect_games(season)
     ids = sorted(games)
     print(f"Finished regular-season games: {len(ids)}")
 
@@ -93,7 +97,7 @@ def main():
         if i % 25 == 0 or i == len(ids):
             print(f"  {i}/{len(ids)}  pbp={dict(pbp_status)}  shifts={dict(shift_status)}")
 
-    with open(DATA_DIR / "games.csv", "w", newline="") as f:
+    with open(out / "games.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["game_id", "date", "away", "home", "state"])
         w.writeheader()
         w.writerows(games[g] for g in ids)
@@ -135,4 +139,4 @@ def summarize(ids):
 
 
 if __name__ == "__main__":
-    main()
+    main(*sys.argv[1:])

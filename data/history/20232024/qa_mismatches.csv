@@ -1,0 +1,343 @@
+game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_ice,shift_source
+2023020001,NSH,2,16:15,EV,5v5,5,5,Luke Schenn; Ryan O'Reilly; Filip Forsberg; Jeremy Lauzon; Juuso Parssinen,Ryan McDonagh,api
+2023020002,CHI,3,18:33,EN,5v6,5,5,Corey Perry; Nick Foligno; Seth Jones; Alex Vlasic; Wyatt Kaiser,Jason Dickinson,api
+2023020004,CAR,3,11:05,SH,4v5,4,4,Jaccob Slavin; Tony DeAngelo; Martin Necas; Jesperi Kotkaniemi,Seth Jarvis,api
+2023020007,WPG,1,14:48,EV,5v5,5,5,Dylan DeMelo; Mark Scheifele; Josh Morrissey; Kyle Connor; Gabriel Vilardi,Dylan Samberg; Neal Pionk,api
+2023020009,VAN,1,08:06,EV,5v5,5,5,Ian Cole; Tyler Myers; Conor Garland; Elias Pettersson; Andrei Kuzmenko,Noah Juulsen,api
+2023020016,VGK,1,15:25,EV,5v5,5,5,Brayden McNabb; William Karlsson; Michael Amadio; Brayden Pachal; Pavel Dorofeyev,Nicolas Hague,api
+2023020020,WPG,2,08:20,EV,5v5,5,5,Brenden Dillon; Vladislav Namestnikov; Nate Schmidt; Morgan Barron; Rasmus Kupari,Mason Appleton,api
+2023020026,TOR,1,19:37,EV,5v5,5,5,John Tavares; John Klingberg; Jake McCabe; Tyler Bertuzzi; William Nylander,Max Domi,api
+2023020029,VAN,1,17:51,EV,5v5,5,5,Ian Cole; Brock Boeser; Filip Hronek; Elias Pettersson; Nils Hoglander,Tyler Myers,api
+2023020036,FLA,1,13:12,EV,5v5,5,5,Carter Verhaeghe; Gustav Forsling; Matthew Tkachuk; Eetu Luostarinen; Uvis Balinskis,Josh Mahura,api
+2023020038,CHI,3,19:54,EN,4v6,4,9,Corey Perry; Nick Foligno; Connor Murphy; Jason Dickinson; Seth Jones; Boris Katchouk; Taylor Raddysh; Alex Vlasic; Wyatt Kaiser,,api
+2023020040,BUF,4,01:46,EV,3v3,3,3,Jeff Skinner; Rasmus Dahlin; Dylan Cozens,Jordan Greenway,api
+2023020041,MIN,1,09:20,SH,4v5,4,4,Jon Merrill; Jonas Brodin; Joel Eriksson Ek; Brandon Duhaime,Jake Middleton,api
+2023020050,PIT,3,03:37,EV,5v5,5,5,Sidney Crosby; Kris Letang; Erik Karlsson; Bryan Rust; Jake Guentzel,Ryan Graves,api
+2023020054,PHI,1,15:50,EV,5v5,5,5,Nick Seeler; Scott Laughton; Joel Farabee; Bobby Brink; Emil Andrae,Travis Sanheim,api
+2023020056,MIN,1,06:21,EV,5v5,5,5,Patrick Maroon; Jon Merrill; Brandon Duhaime; Connor Dewar; Brock Faber,Dakota Mermis,api
+2023020057,ARI,2,07:44,EV,5v5,5,5,Jason Zucker; Mathew Dumba; Travis Dermott; Michael Carcone; Logan Cooley,Sean Durzi,api
+2023020059,DAL,3,06:47,EV,5v5,5,5,Ryan Suter; Matt Duchene; Craig Smith; Sam Steel; Miro Heiskanen,Tyler Seguin,api
+2023020064,NJD,4,02:19,EV,3v3,3,3,Jesper Bratt; Jack Hughes; Luke Hughes,John Marino; Timo Meier,api
+2023020068,VAN,3,15:03,EV,5v5,5,5,Phillip Di Giuseppe; Carson Soucy; Mark Friedman; Elias Pettersson; Andrei Kuzmenko,J.T. Miller,api
+2023020071,VGK,2,07:30,EV,5v5,5,5,Jonathan Marchessault; Ivan Barbashev; Jack Eichel; Nicolas Hague; Kaedan Korczak,Shea Theodore,api
+2023020071,VGK,3,13:47,EV,5v5,5,5,Brayden McNabb; Mark Stone; Shea Theodore; Michael Amadio; Jack Eichel,Chandler Stephenson,api
+2023020084,CBJ,3,09:13,EV,5v5,5,5,Jack Roslovic; Ivan Provorov; Alexandre Texier; David Jiricek; Adam Fantilli,Jake Bean,api
+2023020090,COL,1,12:52,EV,5v5,5,5,Artturi Lehkonen; Nathan MacKinnon; Valeri Nichushkin; Devon Toews; Cale Makar,Mikko Rantanen,api
+2023020098,PHI,1,13:07,EV,5v5,5,5,Noah Cates; Sean Walker; Joel Farabee; Egor Zamula; Bobby Brink,Travis Sanheim,api
+2023020098,PHI,1,17:19,EV,5v5,5,5,Cam Atkinson; Sean Couturier; Owen Tippett; Sean Walker; Egor Zamula,Cam York,api
+2023020101,CAR,4,04:50,EV,3v3,3,3,Tony DeAngelo; Martin Necas; Seth Jarvis,Sebastian Aho,api
+2023020104,PHI,3,11:02,EV,5v5,5,5,Noah Cates; Sean Walker; Joel Farabee; Egor Zamula; Bobby Brink,Travis Sanheim,api
+2023020108,DAL,2,11:17,EV,5v5,5,5,Matt Duchene; Mason Marchment; Miro Heiskanen; Ty Dellandrea; Nils Lundkvist,Ryan Suter,api
+2023020110,NYR,2,12:03,EV,5v5,5,5,Vincent Trocheck; Jimmy Vesey; Erik Gustafsson; Braden Schneider; Will Cuylle,Adam Fox,api
+2023020110,NYR,2,18:09,EV,5v5,5,5,Jacob Trouba; Artemi Panarin; Filip Chytil; K'Andre Miller; Alexis Lafrenière,Braden Schneider,api
+2023020111,CHI,1,14:39,EV,5v5,5,5,Nick Foligno; Seth Jones; Philipp Kurashev; Kevin Korchinski; Connor Bedard,Alex Vlasic,api
+2023020115,ARI,1,00:37,EV,5v5,5,5,Nick Bjugstad; Mathew Dumba; Alexander Kerfoot; Troy Stecher; Matias Maccelli,J.J. Moser,api
+2023020127,MIN,1,14:53,EV,5v5,5,5,Patrick Maroon; Jonas Brodin; Joel Eriksson Ek; Brandon Duhaime; Calen Addison,Brock Faber,api
+2023020135,WPG,3,05:08,EV,5v5,5,5,Dylan DeMelo; Vladislav Namestnikov; Josh Morrissey; Nikolaj Ehlers; Cole Perfetti,Mark Scheifele,api
+2023020136,DAL,3,12:39,EV,5v5,5,5,Evgenii Dadonov; Jani Hakanpää; Esa Lindell; Jason Robertson; Wyatt Johnston,Jamie Benn,api
+2023020137,ARI,2,15:26,EV,5v5,5,5,Alexander Kerfoot; Liam O'Brien; Joshua Brown; Troy Stecher; Jack McBain,Matias Maccelli,api
+2023020141,PHI,1,00:55,EV,5v5,5,5,Sean Couturier; Sean Walker; Joel Farabee; Egor Zamula; Bobby Brink,Travis Sanheim,api
+2023020142,DAL,1,19:06,SH,4v5,4,4,Ryan Suter; Jamie Benn; Roope Hintz; Miro Heiskanen,Esa Lindell,api
+2023020144,ARI,1,14:51,EV,5v5,5,5,Travis Boyd; Michael Carcone; Sean Durzi; J.J. Moser; Logan Cooley,Liam O'Brien,api
+2023020152,DAL,2,03:25,EV,5v5,5,5,Joe Pavelski; Jani Hakanpää; Roope Hintz; Sam Steel; Thomas Harley,Miro Heiskanen,api
+2023020156,VAN,2,12:35,EV,5v5,5,5,Tyler Myers; J.T. Miller; Carson Soucy; Sam Lafferty; Nils Hoglander,Quinn Hughes,api
+2023020161,DET,3,06:50,EV,5v5,5,5,David Perron; Ben Chiarot; Justin Holl; Dylan Larkin; Alex DeBrincat,Lucas Raymond,api
+2023020168,CHI,1,12:39,EV,5v5,5,5,Taylor Hall; Connor Murphy; Jason Dickinson; Seth Jones; Kevin Korchinski,Tyler Johnson,api
+2023020168,CHI,2,05:29,EV,5v5,5,5,Ryan Donato; Nikita Zaitsev; Philipp Kurashev; Wyatt Kaiser; Connor Bedard,Jarred Tinordi,api
+2023020171,PIT,2,03:21,EV,5v5,5,5,Sidney Crosby; Erik Karlsson; Bryan Rust; Jake Guentzel; Marcus Pettersson,Pierre-Olivier Joseph,api
+2023020173,VGK,3,09:13,EV,5v5,5,5,Brayden McNabb; William Karlsson; Shea Theodore; Michael Amadio; Paul Cotter,Pavel Dorofeyev,api
+2023020176,FLA,1,02:19,EV,5v5,5,5,Oliver Ekman-Larsson; Gustav Forsling; Steven Lorentz; Ryan Lomberg; William Lockwood,Josh Mahura,api
+2023020179,VAN,1,13:22,EV,5v5,5,5,Carson Soucy; Dakota Joshua; Conor Garland; Filip Hronek; Pius Suter,Ian Cole,api
+2023020181,TBL,1,13:50,EV,5v5,5,5,Victor Hedman; Darren Raddysh; Anthony Cirelli; Michael Eyssimont; Tanner Jeannot,Erik Cernak,api
+2023020183,NYR,1,01:40,EV,5v5,5,5,Vincent Trocheck; Artemi Panarin; Zac Jones; Braden Schneider; Alexis Lafrenière,Erik Gustafsson,api
+2023020185,SEA,1,00:40,EV,5v5,5,5,Adam Larsson; Yanni Gourde; Oliver Bjorkstrand; Vince Dunn; Eeli Tolvanen,Jamie Oleksiak,api
+2023020185,ARI,1,06:07,EV,5v5,5,5,Nick Bjugstad; Lawson Crouse; Sean Durzi; Matias Maccelli; J.J. Moser,Travis Dermott,api
+2023020186,CGY,3,06:24,EV,5v5,5,5,Nazem Kadri; Blake Coleman; MacKenzie Weegar; Rasmus Andersson; Connor Zary,Nick DeSimone,api
+2023020194,DAL,2,16:34,EV,5v5,5,5,Matt Duchene; Tyler Seguin; Jani Hakanpää; Mason Marchment; Thomas Harley,Nils Lundkvist,api
+2023020201,SEA,1,18:39,EV,5v5,5,5,Jaden Schwartz; Jamie Oleksiak; Alexander Wennberg; Will Borgen; Tye Kartye,Vince Dunn,api
+2023020201,SEA,2,04:29,EV,5v5,5,5,Jamie Oleksiak; Yanni Gourde; Oliver Bjorkstrand; Will Borgen; Eeli Tolvanen,Adam Larsson,api
+2023020218,ARI,2,19:07,EV,5v5,5,5,Jason Zucker; Joshua Brown; Michael Carcone; Sean Durzi; Logan Cooley,J.J. Moser,api
+2023020223,MIN,1,19:12,EV,5v5,5,5,Jared Spurgeon; Jake Middleton; Brandon Duhaime; Vinni Lettieri; Marco Rossi,Jonas Brodin,api
+2023020240,COL,3,13:13,EV,5v5,5,5,Jack Johnson; Andrew Cogliano; Fredrik Olofsson; Caleb Jones; Joel Kiviranta,Samuel Girard,api
+2023020257,EDM,2,15:55,EV,5v5,5,5,Cody Ceci; Darnell Nurse; Warren Foegele; Derek Ryan; James Hamblin,Mattias Ekholm,api
+2023020262,WPG,1,18:02,EV,5v5,5,5,Vladislav Namestnikov; Nate Schmidt; Nikolaj Ehlers; Dylan Samberg; Cole Perfetti,Josh Morrissey,api
+2023020266,STL,3,16:06,EV,5v5,5,5,Robert Bortuzzo; Colton Parayko; Oskar Sundqvist; Sammy Blais; Jake Neighbours,Nick Leddy,api
+2023020267,TOR,4,03:09,EV,3v3,3,5,TJ Brodie; John Tavares; William Nylander; Mitch Marner; Auston Matthews,Morgan Rielly,api
+2023020268,PHI,1,05:11,EV,5v5,5,5,Louie Belpedio; Ryan Poehling; Joel Farabee; Egor Zamula; Bobby Brink,Cam York,api
+2023020268,PHI,2,06:41,SH,4v5,4,4,Nick Seeler; Garnet Hathaway; Travis Sanheim; Ryan Poehling,Sean Walker,api
+2023020270,BUF,3,10:36,EV,5v5,5,5,Erik Johnson; Jeff Skinner; Alex Tuch; Casey Mittelstadt; Mattias Samuelsson,Rasmus Dahlin,api
+2023020276,LAK,3,16:15,EV,5v5,5,5,Drew Doughty; Phillip Danault; Vladislav Gavrikov; Arthur Kaliyev; Alex Laferriere,Matt Roy,api
+2023020279,CAR,1,09:52,EV,5v5,5,5,Brent Burns; Stefan Noesen; Jaccob Slavin; Michael Bunting; Jack Drury,Dmitry Orlov,api
+2023020287,ARI,2,06:56,EV,5v5,5,5,Mathew Dumba; Alexander Kerfoot; Lawson Crouse; Michael Carcone; Michael Kesselring,Travis Boyd,api
+2023020291,VAN,2,09:04,EV,4v4,4,4,Ian Cole; Tyler Myers; J.T. Miller; Elias Pettersson,Quinn Hughes; Filip Hronek,api
+2023020304,WPG,3,16:11,EN,4v6,4,5,Adam Lowry; Nikolaj Ehlers; Mason Appleton; Dylan Samberg; Neal Pionk,,api
+2023020320,EDM,1,09:29,EV,5v5,5,5,Mattias Ekholm; Zach Hyman; Ryan Nugent-Hopkins; Brett Kulak; Connor McDavid,Darnell Nurse,api
+2023020320,EDM,2,05:01,EV,5v5,5,5,Brett Kulak; Mattias Janmark; Adam Erne; Darnell Nurse; James Hamblin,Vincent Desharnais,api
+2023020325,CGY,3,02:31,EV,5v5,5,5,Nazem Kadri; Chris Tanev; Noah Hanifin; A.J. Greer; Dillon Dube,Connor Zary,api
+2023020326,SJS,1,10:23,EV,5v5,5,5,Mike Hoffman; Kyle Burroughs; Ryan Carpenter; Fabian Zetterlund; Nikita Okhotiuk,Mikael Granlund,api
+2023020333,SEA,1,19:23,SH,4v5,4,4,Brian Dumoulin; Alexander Wennberg; Will Borgen; Eeli Tolvanen,Adam Larsson,api
+2023020334,ARI,2,05:42,EV,5v5,5,5,Travis Boyd; Mathew Dumba; Liam O'Brien; Michael Kesselring; Milos Kelemen,Joshua Brown,api
+2023020341,NYI,2,18:03,EV,5v5,5,5,Scott Mayfield; Bo Horvat; Ryan Pulock; Pierre Engvall; Mathew Barzal,Noah Dobson,api
+2023020342,DET,1,08:42,EV,5v5,5,5,Olli Maatta; Andrew Copp; Robby Fabbri; Jonatan Berggren; Moritz Seider,Jake Walman,api
+2023020343,MTL,3,09:30,EV,5v5,5,5,Sean Monahan; Nick Suzuki; Johnathan Kovacevic; Cole Caufield; Jayden Struble,Jake Evans,api
+2023020346,SEA,3,13:24,EV,5v5,5,5,Jordan Eberle; Adam Larsson; Alexander Wennberg; Jared McCann; Vince Dunn,Justin Schultz,api
+2023020348,STL,3,04:38,EV,5v5,5,5,Nick Leddy; Colton Parayko; Pavel Buchnevich; Robert Thomas; Jake Neighbours,Justin Faulk,api
+2023020351,CGY,1,08:02,EV,5v5,5,5,Chris Tanev; Elias Lindholm; Andrew Mangiapane; Noah Hanifin; Yegor Sharangovich,Dennis Gilbert,api
+2023020360,CAR,1,16:36,EV,5v5,5,5,Brent Burns; Stefan Noesen; Jaccob Slavin; Martin Necas; Jack Drury,Jalen Chatfield,api
+2023020360,BUF,3,04:08,EV,5v5,5,5,Jeff Skinner; Connor Clifton; Alex Tuch; Casey Mittelstadt; Owen Power,Henri Jokiharju,api
+2023020363,PHI,3,07:01,SH,4v5,4,4,Marc Staal; Scott Laughton; Rasmus Ristolainen; Travis Konecny,Nick Seeler,api
+2023020367,VAN,2,19:32,EV,5v5,5,6,Ian Cole; Nikita Zadorov; Sam Lafferty; Filip Hronek; Elias Pettersson; Ilya Mikheyev,,api
+2023020374,PHI,2,09:46,EV,5v5,5,5,Sean Couturier; Travis Sanheim; Travis Konecny; Cam York; Tyson Foerster,Rasmus Ristolainen,api
+2023020379,STL,4,00:38,EV,3v3,3,3,Torey Krug; Pavel Buchnevich; Robert Thomas,Colton Parayko,api
+2023020383,NYI,1,09:28,EV,5v5,5,5,Jean-Gabriel Pageau; Mike Reilly; Scott Mayfield; Julien Gauthier; Simon Holmstrom,Bo Horvat,api
+2023020387,NJD,1,03:40,EV,5v5,5,5,Ondrej Palat; John Marino; Jesper Bratt; Nico Hischier; Kevin Bahl,Jonas Siegenthaler,api
+2023020390,STL,1,17:11,EV,5v5,5,5,Brayden Schenn; Nick Leddy; Kevin Hayes; Colton Parayko; Jordan Kyrou,Justin Faulk,api
+2023020391,EDM,1,00:28,EV,5v5,5,5,Mattias Ekholm; Ryan Nugent-Hopkins; Warren Foegele; Ryan McLeod; Evan Bouchard,Mattias Janmark,api
+2023020391,EDM,1,05:46,EV,5v5,5,5,Zach Hyman; Brett Kulak; Mattias Janmark; Vincent Desharnais; Ryan McLeod,Evan Bouchard,api
+2023020393,SJS,2,14:46,SH,4v5,4,4,Mikael Granlund; Mario Ferraro; Fabian Zetterlund; Nikita Okhotiuk,Jan Rutta,api
+2023020394,LAK,1,17:46,EV,5v5,5,5,Phillip Danault; Vladislav Gavrikov; Trevor Moore; Jordan Spence; Quinton Byfield,Adrian Kempe; Anze Kopitar,api
+2023020396,WSH,1,07:11,EV,5v5,5,5,Anthony Mantha; Trevor van Riemsdyk; Rasmus Sandin; Connor McMichael; Aliaksei Protas,Nick Jensen,api
+2023020396,DAL,1,15:38,EV,5v5,5,5,Tyler Seguin; Radek Faksa; Sam Steel; Nils Lundkvist; Thomas Harley,Miro Heiskanen,api
+2023020397,NYI,3,11:31,EV,5v5,5,5,Anders Lee; Bo Horvat; Ryan Pulock; Mathew Barzal; Samuel Bolduc,Julien Gauthier,api
+2023020397,NYI,3,11:51,EV,5v5,5,5,Anders Lee; Mike Reilly; Scott Mayfield; Bo Horvat; Mathew Barzal,Samuel Bolduc,api
+2023020402,COL,2,02:30,EV,5v5,5,5,Jack Johnson; Nathan MacKinnon; Jonathan Drouin; Logan O'Connor; Sam Malinski,Devon Toews,api
+2023020404,VAN,1,18:05,EV,5v5,5,5,J.T. Miller; Phillip Di Giuseppe; Nikita Zadorov; Filip Hronek; Nils Hoglander,Brock Boeser; Tyler Myers,api
+2023020413,TOR,3,16:49,PP,5v4,5,5,Calle Jarnkrok; Tyler Bertuzzi; William Nylander; Auston Matthews; Conor Timmins,John Tavares,api
+2023020417,COL,1,18:59,EV,5v5,5,5,Nathan MacKinnon; Jonathan Drouin; Cale Makar; Logan O'Connor; Bowen Byram,Josh Manson; Devon Toews,api
+2023020418,SEA,2,09:52,EV,5v5,5,5,Adam Larsson; Jamie Oleksiak; Yanni Gourde; Oliver Bjorkstrand; Eeli Tolvanen,Will Borgen,api
+2023020418,TBL,4,03:12,EV,3v3,3,3,Nikita Kucherov; Mikhail Sergachev; Brandon Hagel,Darren Raddysh,api
+2023020420,CBJ,1,07:06,EV,5v5,5,5,Zach Werenski; Justin Danforth; Kirill Marchenko; Egor Chinakhov; Nick Blankenburg,Erik Gudbranson,api
+2023020425,WPG,3,01:58,EV,5v5,5,5,Nino Niederreiter; Vladislav Namestnikov; Mason Appleton; Logan Stanley; Dylan Samberg,Brenden Dillon,api
+2023020429,NYI,1,09:20,EV,5v5,5,5,Robert Bortuzzo; Kyle Palmieri; Brock Nelson; Pierre Engvall; Samuel Bolduc,Noah Dobson,api
+2023020432,TOR,1,03:52,EA,6v5,6,6,Jake McCabe; Tyler Bertuzzi; William Nylander; Mitch Marner; Auston Matthews; Maxime Lajoie,Noah Gregor,api
+2023020432,TOR,3,17:11,EV,5v5,5,5,TJ Brodie; Morgan Rielly; Tyler Bertuzzi; William Nylander; Auston Matthews,Jake McCabe,api
+2023020434,PIT,3,18:37,EN,5v6,5,5,Evgeni Malkin; Sidney Crosby; Kris Letang; Jake Guentzel; Ryan Graves,Marcus Pettersson,api
+2023020437,CHI,1,03:21,EV,5v5,5,5,Connor Murphy; Ryan Donato; Philipp Kurashev; Alex Vlasic; Connor Bedard,Louis Crevier,api
+2023020445,COL,1,05:25,EV,5v5,5,5,Jack Johnson; Nathan MacKinnon; Jonathan Drouin; Mikko Rantanen; Sam Malinski,Cale Makar,api
+2023020449,TOR,3,03:49,EV,5v5,5,5,John Tavares; Tyler Bertuzzi; Mitch Marner; Conor Timmins; Simon Benoit,Bobby McMann,api
+2023020452,TBL,3,12:47,EV,5v5,5,5,Calvin de Haan; Nikita Kucherov; Brayden Point; Darren Raddysh; Brandon Hagel,Mikhail Sergachev,api
+2023020466,TOR,2,14:04,PP,5v4,5,5,Jake McCabe; Tyler Bertuzzi; William Lagesson; Noah Gregor; David Kampf,Conor Timmins,api
+2023020466,TOR,3,14:19,EV,5v5,5,5,John Tavares; Morgan Rielly; Tyler Bertuzzi; William Nylander; William Lagesson,Jake McCabe,api
+2023020471,CGY,3,11:42,EV,5v5,5,5,Nazem Kadri; MacKenzie Weegar; Noah Hanifin; Martin Pospisil; Connor Zary,Jordan Oesterle,api
+2023020476,ANA,3,09:57,EV,4v4,4,4,Alex Killorn; Troy Terry; Ilya Lyubushkin; Pavel Mintyukov,Cam Fowler,api
+2023020483,CGY,1,08:45,EV,5v5,5,5,Nazem Kadri; Chris Tanev; Noah Hanifin; Martin Pospisil; Connor Zary,Dennis Gilbert,api
+2023020485,CBJ,1,14:40,EV,5v5,5,5,Johnny Gaudreau; Zach Werenski; Justin Danforth; Nick Blankenburg; Adam Fantilli,Ivan Provorov,api
+2023020490,EDM,1,01:23,EV,5v5,5,5,Ryan Nugent-Hopkins; Cody Ceci; Darnell Nurse; Leon Draisaitl; Warren Foegele,Mattias Ekholm,api
+2023020498,BUF,2,08:22,EV,5v5,5,5,Alex Tuch; Victor Olofsson; Tage Thompson; Rasmus Dahlin; Owen Power,Jeff Skinner,api
+2023020502,PHI,1,01:31,EV,5v5,5,5,Marc Staal; Rasmus Ristolainen; Morgan Frost; Joel Farabee; Bobby Brink,Owen Tippett,api
+2023020505,DAL,4,04:50,EV,3v3,3,3,Joe Pavelski; Matt Duchene; Thomas Harley,Wyatt Johnston,api
+2023020508,CGY,1,02:24,EV,5v5,5,5,Nazem Kadri; Dennis Gilbert; Nick DeSimone; Martin Pospisil; Connor Zary,Elias Lindholm,api
+2023020510,PHI,1,09:00,EV,5v5,5,5,Travis Sanheim; Ryan Poehling; Joel Farabee; Cam York; Bobby Brink,Egor Zamula,api
+2023020510,PHI,3,14:53,EV,5v5,5,5,Cam Atkinson; Owen Tippett; Morgan Frost; Sean Walker; Egor Zamula,Rasmus Ristolainen; Travis Konecny,api
+2023020517,TOR,2,02:58,EV,4v4,4,4,John Tavares; Morgan Rielly; William Nylander; William Lagesson,TJ Brodie,api
+2023020523,ANA,3,14:01,EV,5v5,5,5,Alex Killorn; Cam Fowler; Frank Vatrano; Trevor Zegras; Pavel Mintyukov,Troy Terry,api
+2023020524,CHI,1,03:49,EV,5v5,5,5,Jarred Tinordi; Anthony Beauvillier; Philipp Kurashev; Louis Crevier; Connor Bedard,Isaak Phillips,api
+2023020524,CHI,3,05:16,SH,4v5,4,4,Nick Foligno; Jason Dickinson; Nikita Zaitsev; Isaak Phillips,Jarred Tinordi,api
+2023020527,SJS,2,11:08,EV,5v5,5,5,Tomas Hertl; Mario Ferraro; Fabian Zetterlund; Henry Thrun; William Eklund,Mikael Granlund,api
+2023020528,NJD,3,18:35,EA,6v5,6,6,Tyler Toffoli; Timo Meier; Jesper Bratt; Nico Hischier; Jack Hughes; Luke Hughes,Dawson Mercer,api
+2023020529,WSH,2,04:12,EV,5v5,5,5,Alex Ovechkin; Nick Jensen; Anthony Mantha; Dylan Strome; Rasmus Sandin,Aliaksei Protas,api
+2023020533,PIT,2,17:13,EV,5v5,5,5,Lars Eller; Erik Karlsson; Ryan Graves; Valtteri Puustinen; Radim Zohorna,Kris Letang,api
+2023020537,COL,2,07:56,EV,5v5,5,5,Josh Manson; Nathan MacKinnon; Devon Toews; Cale Makar; Logan O'Connor,Bowen Byram,api
+2023020538,CHI,4,02:15,EV,3v3,3,3,Nick Foligno; Alex Vlasic; Connor Bedard,Anthony Beauvillier,api
+2023020540,ANA,2,17:45,EV,5v5,5,5,Max Jones; Ilya Lyubushkin; Brett Leason; Mason McTavish; Pavel Mintyukov,Cam Fowler,api
+2023020541,LAK,3,15:42,EV,5v5,5,5,Anze Kopitar; Adrian Kempe; Vladislav Gavrikov; Matt Roy; Quinton Byfield,Drew Doughty; Mikey Anderson,api
+2023020544,VGK,2,02:27,EV,5v5,5,5,Alec Martinez; Michael Amadio; Jack Eichel; Nicolas Hague; Pavel Dorofeyev,Brayden McNabb,api
+2023020544,VGK,2,14:42,EV,5v5,5,5,Mark Stone; William Karlsson; Nicolas Hague; Zach Whitecloud; Paul Cotter,Alex Pietrangelo,api
+2023020546,CBJ,4,02:56,EV,3v3,3,4,Johnny Gaudreau; Damon Severson; Justin Danforth; Adam Fantilli,,api
+2023020554,PHI,1,16:21,SH,4v5,4,4,Nick Seeler; Scott Laughton; Travis Konecny; Cam York,Travis Sanheim,api
+2023020557,BOS,2,15:39,PP,5v4,5,5,Brad Marchand; Hampus Lindholm; David Pastrnak; Jake DeBrusk; Morgan Geekie,Charlie McAvoy,api
+2023020565,BOS,2,04:25,EV,5v5,5,5,Danton Heinen; Charlie McAvoy; Trent Frederic; Mason Lohrei; Georgii Merkulov,Hampus Lindholm,api
+2023020568,TBL,2,17:36,EV,5v5,5,5,Victor Hedman; Austin Watson; Tyler Motte; Darren Raddysh; Tanner Jeannot,Nick Perbix,api
+2023020570,CGY,2,18:21,EV,5v5,5,5,Mikael Backlund; Blake Coleman; Andrew Mangiapane; Noah Hanifin; Rasmus Andersson,Dennis Gilbert,api
+2023020572,DAL,2,03:43,EV,5v5,5,5,Craig Smith; Sam Steel; Jason Robertson; Nils Lundkvist; Thomas Harley,Miro Heiskanen,api
+2023020573,SEA,2,02:19,EV,5v5,5,5,Jamie Oleksiak; Andre Burakovsky; Will Borgen; Kailer Yamamoto; Tye Kartye,Eeli Tolvanen,api
+2023020575,CAR,3,15:49,EV,5v5,5,5,Brett Pesce; Brendan Lemieux; Michael Bunting; Jalen Chatfield; Jack Drury,Brady Skjei,api
+2023020578,MIN,2,09:28,EV,5v5,5,5,Patrick Maroon; Zach Bogosian; Nic Petan; Dakota Mermis; Frederick Gaudreau,Marco Rossi,api
+2023020583,EDM,1,15:55,EV,5v5,5,5,Zach Hyman; Ryan Nugent-Hopkins; Brett Kulak; Connor McDavid; Evan Bouchard,Vincent Desharnais,api
+2023020587,WSH,2,11:25,EV,5v5,5,5,Alex Ovechkin; Nick Jensen; Evgeny Kuznetsov; Anthony Mantha; Trevor van Riemsdyk,Martin Fehérváry,api
+2023020592,CBJ,3,10:20,EV,5v5,5,5,Jack Roslovic; Ivan Provorov; Jake Bean; Emil Bemstrom; Kent Johnson,Erik Gudbranson,api
+2023020608,STL,1,11:04,EV,5v5,5,5,Nick Leddy; Colton Parayko; Oskar Sundqvist; Nathan Walker; Jakub Vrana,Torey Krug,api
+2023020611,VAN,2,04:37,EV,5v5,5,5,Tyler Myers; J.T. Miller; Carson Soucy; Brock Boeser; Elias Pettersson,Ian Cole,api
+2023020613,TOR,3,09:34,EV,5v5,5,5,Mark Giordano; John Tavares; Tyler Bertuzzi; William Nylander; Simon Benoit,Jake McCabe,api
+2023020614,DAL,3,10:21,EV,5v5,5,5,Evgenii Dadonov; Jani Hakanpää; Joel Hanley; Roope Hintz; Jason Robertson,Thomas Harley,api
+2023020623,DAL,3,01:28,EV,5v5,5,5,Ryan Suter; Matt Duchene; Tyler Seguin; Mason Marchment; Nils Lundkvist,Esa Lindell,api
+2023020626,TBL,3,15:39,EV,5v5,5,5,Calvin de Haan; Tyler Motte; Erik Cernak; Brandon Hagel; Michael Eyssimont,Emil Lilleberg; Nick Perbix,api
+2023020629,ANA,3,03:16,EV,5v5,5,5,Radko Gudas; Troy Terry; Urho Vaakanainen; Ilya Lyubushkin; Mason McTavish,Jackson LaCombe,api
+2023020629,NSH,3,09:45,SH,4v5,4,4,Luke Schenn; Michael McCarron; Jeremy Lauzon; Alexandre Carrier,Gustav Nyquist,api
+2023020636,DAL,3,08:05,EV,5v5,5,5,Evgenii Dadonov; Joel Hanley; Roope Hintz; Jason Robertson; Thomas Harley,Esa Lindell,api
+2023020638,BUF,1,17:28,EV,5v5,5,5,Connor Clifton; Alex Tuch; Tage Thompson; Casey Mittelstadt; Ryan Johnson,Rasmus Dahlin,api
+2023020640,EDM,4,01:20,EV,3v3,3,4,Zach Hyman; Ryan Nugent-Hopkins; Darnell Nurse; Ryan McLeod,,api
+2023020644,NJD,1,07:42,EV,5v5,5,5,Brendan Smith; Erik Haula; Nico Hischier; Dawson Mercer; Simon Nemec,Colin Miller,api
+2023020647,STL,3,07:01,EV,5v5,5,5,Colton Parayko; Pavel Buchnevich; Jordan Kyrou; Robert Thomas; Scott Perunovich,Nick Leddy,api
+2023020651,NSH,2,13:51,EV,4v4,4,4,Ryan McDonagh; Tommy Novak; Jeremy Lauzon; Denis Gurianov,Roman Josi,api
+2023020653,WSH,3,06:36,EV,5v5,5,5,Nick Jensen; Nic Dowd; Evgeny Kuznetsov; Anthony Mantha; Martin Fehérváry,John Carlson,api
+2023020658,SEA,3,06:17,EV,5v5,5,5,Jordan Eberle; Jaden Schwartz; Jamie Oleksiak; Jared McCann; Will Borgen,Brian Dumoulin,api
+2023020658,SEA,3,08:28,EV,5v5,5,5,Jordan Eberle; Tomas Tatar; Brian Dumoulin; Jamie Oleksiak; Jared McCann,Alexander Wennberg; Justin Schultz,api
+2023020658,SEA,3,18:55,EN,5v6,5,5,Adam Larsson; Jamie Oleksiak; Yanni Gourde; Alexander Wennberg; Eeli Tolvanen,Oliver Bjorkstrand,api
+2023020667,BOS,2,06:26,EV,5v5,5,5,Charlie McAvoy; Morgan Geekie; Jesper Boqvist; Jakub Lauko; Mason Lohrei,James van Riemsdyk,api
+2023020669,NYR,1,00:50,EV,5v5,5,5,Vincent Trocheck; Artemi Panarin; Adam Fox; Ryan Lindgren; Alexis Lafrenière,Jacob Trouba,api
+2023020678,COL,3,09:37,EV,4v4,4,4,Nathan MacKinnon; Devon Toews; Mikko Rantanen; Sam Malinski,Cale Makar,api
+2023020682,OTT,2,07:21,EV,5v5,5,5,Claude Giroux; Thomas Chabot; Jakob Chychrun; Brady Tkachuk; Ridly Greig,Jake Sanderson,api
+2023020682,COL,3,04:04,EV,5v5,5,5,Josh Manson; Miles Wood; Samuel Girard; Ross Colton; Logan O'Connor,Devon Toews,api
+2023020693,OTT,1,08:40,EV,5v5,5,5,Vladimir Tarasenko; Erik Brannstrom; Brady Tkachuk; Jacob Bernard-Docker; Ridly Greig,Artem Zub,api
+2023020697,TOR,2,13:39,EV,5v5,5,5,Mark Giordano; Auston Matthews; Timothy Liljegren; David Kampf; Matthew Knies,TJ Brodie,api
+2023020702,CAR,2,16:25,EV,5v5,5,5,Brent Burns; Jaccob Slavin; Michael Bunting; Martin Necas; Jesperi Kotkaniemi,Dmitry Orlov,api
+2023020705,CHI,3,05:10,EV,5v5,5,5,Jaycob Megna; Jason Dickinson; Joey Anderson; Rem Pitlick; Kevin Korchinski,Seth Jones,api
+2023020707,PHI,2,12:23,EV,5v5,5,5,Nick Seeler; Sean Couturier; Rasmus Ristolainen; Travis Konecny; Owen Tippett,Ryan Poehling,api
+2023020707,COL,2,17:05,EV,5v5,5,5,Andrew Cogliano; Josh Manson; Nathan MacKinnon; Mikko Rantanen; Samuel Girard,Joel Kiviranta,api
+2023020710,BOS,2,10:46,EV,5v5,5,5,Matt Grzelcyk; Danton Heinen; Charlie McAvoy; Jesper Boqvist; Matthew Poitras,Hampus Lindholm,api
+2023020711,DAL,2,16:31,EV,5v5,5,5,Evgenii Dadonov; Matt Duchene; Tyler Seguin; Jani Hakanpää; Esa Lindell,Thomas Harley,api
+2023020716,VGK,3,09:40,EV,5v5,5,5,Brayden McNabb; Ivan Barbashev; Brett Howden; Kaedan Korczak; Brendan Brisson,Alex Pietrangelo,api
+2023020725,NJD,2,01:37,EV,5v5,5,5,Tyler Toffoli; Michael McLeod; Santeri Hatakka; Dawson Mercer; Simon Nemec,Kevin Bahl,api
+2023020727,ARI,1,02:23,EV,5v5,5,5,Jason Zucker; Sean Durzi; J.J. Moser; Dylan Guenther; Logan Cooley,Joshua Brown,api
+2023020727,ARI,3,04:10,EN,5v5,5,5,Clayton Keller; Sean Durzi; Michael Kesselring; Dylan Guenther; Logan Cooley,Lawson Crouse,api
+2023020730,DAL,2,04:35,EV,5v5,5,5,Ryan Suter; Joel Hanley; Roope Hintz; Jason Robertson; Wyatt Johnston,Thomas Harley,api
+2023020734,WSH,2,10:00,EV,5v5,5,5,John Carlson; Evgeny Kuznetsov; Tom Wilson; Anthony Mantha; Rasmus Sandin,Martin Fehérváry,api
+2023020739,FLA,2,18:17,EV,5v5,5,5,Sam Reinhart; Brandon Montour; Niko Mikkola; Jonah Gadjovich; Anton Lundell,Eetu Luostarinen,api
+2023020740,TOR,4,04:13,EV,3v3,3,3,Morgan Rielly; William Nylander; Auston Matthews,Nick Robertson,api
+2023020742,COL,1,19:23,SH,4v5,4,4,Miles Wood; Artturi Lehkonen; Devon Toews; Cale Makar,Andrew Cogliano,api
+2023020745,BUF,2,10:30,EV,5v5,5,5,Connor Clifton; Casey Mittelstadt; Rasmus Dahlin; Jack Quinn; JJ Peterka,Ryan Johnson,api
+2023020747,DET,2,10:08,SH,4v5,4,4,Justin Holl; Andrew Copp; Jake Walman; Michael Rasmussen,Jeff Petry,api
+2023020751,DAL,3,10:31,EV,5v5,5,5,Roope Hintz; Jason Robertson; Miro Heiskanen; Thomas Harley; Wyatt Johnston,Evgenii Dadonov,api
+2023020753,CBJ,2,06:33,SH,4v5,4,4,Sean Kuraly; Zach Werenski; Jake Bean; Alexandre Texier,Erik Gudbranson,api
+2023020759,BOS,1,14:09,EV,5v5,5,5,Hampus Lindholm; David Pastrnak; Pavel Zacha; Brandon Carlo; Jesper Boqvist,Charlie McAvoy,api
+2023020759,PHI,2,15:23,EV,5v5,5,5,Nick Seeler; Sean Couturier; Rasmus Ristolainen; Olle Lycksell; Tyson Foerster,Travis Sanheim,api
+2023020759,BOS,3,14:45,EV,5v5,5,5,Brad Marchand; Kevin Shattenkirk; Charlie Coyle; Parker Wotherspoon; Trent Frederic,James van Riemsdyk,api
+2023020770,ANA,3,11:40,EV,5v5,5,5,Cam Fowler; Frank Vatrano; Troy Terry; Olen Zellweger; Leo Carlsson,Urho Vaakanainen; Adam Henrique,api
+2023020775,NSH,1,08:26,EV,5v5,5,5,Roman Josi; Michael McCarron; Denis Gurianov; Dante Fabbro; Cole Smith,Philip Tomasino,api
+2023020779,LAK,2,05:36,EV,5v5,5,5,Trevor Lewis; Vladislav Gavrikov; Matt Roy; Trevor Moore; Alex Turcotte,Jordan Spence,api
+2023020780,ANA,4,04:07,EV,3v3,3,4,Frank Vatrano; Troy Terry; Olen Zellweger; Leo Carlsson,Jackson LaCombe,api
+2023020781,COL,1,18:12,EV,5v5,5,5,Nathan MacKinnon; Jonathan Drouin; Devon Toews; Mikko Rantanen; Cale Makar,Josh Manson,api
+2023020799,CAR,1,01:52,EV,5v5,5,5,Tony DeAngelo; Michael Bunting; Jalen Chatfield; Martin Necas; Jack Drury,Brady Skjei; Jordan Staal,api
+2023020805,DET,1,00:45,EV,5v5,5,5,David Perron; Dylan Larkin; Jake Walman; Alex DeBrincat; Lucas Raymond,Jeff Petry,api
+2023020805,VAN,2,11:10,EV,5v5,5,5,Ian Cole; Tyler Myers; J.T. Miller; Filip Hronek; Elias Pettersson,Ilya Mikheyev,api
+2023020808,WSH,3,03:24,EV,5v5,5,5,Alex Ovechkin; Nick Jensen; Anthony Mantha; Dylan Strome; Rasmus Sandin,T.J. Oshie,api
+2023020813,PHI,1,18:14,SH,4v5,4,4,Garnet Hathaway; Ryan Poehling; Sean Walker; Cam York,Nick Seeler,api
+2023020813,SEA,3,00:36,EV,5v5,5,5,Jaden Schwartz; Adam Larsson; Alexander Wennberg; Jared McCann; Will Borgen,Vince Dunn,api
+2023020815,NSH,4,01:36,EV,3v3,3,3,Ryan McDonagh; Filip Forsberg; Tommy Novak,Gustav Nyquist,api
+2023020817,STL,2,17:49,EV,5v5,5,5,Marco Scandella; Brayden Schenn; Nathan Walker; Alexey Toropchenko; Jake Neighbours,Torey Krug,api
+2023020817,STL,3,15:33,EV,5v5,5,5,Nick Leddy; Colton Parayko; Pavel Buchnevich; Jordan Kyrou; Robert Thomas,Torey Krug,api
+2023020818,VAN,1,11:09,EV,5v5,5,5,Ian Cole; Tyler Myers; Teddy Blueger; Dakota Joshua; Conor Garland,Noah Juulsen,api
+2023020822,MIN,3,07:29,EV,5v5,5,5,Jon Merrill; Dakota Mermis; Joel Eriksson Ek; Kirill Kaprizov; Matt Boldy,Brock Faber; Ryan Hartman,api
+2023020833,DET,3,15:10,EV,5v5,5,5,Jeff Petry; David Perron; Patrick Kane; Ben Chiarot; J.T. Compher,Christian Fischer,api
+2023020840,NYR,3,04:23,EV,5v5,5,5,Vincent Trocheck; Artemi Panarin; Adam Fox; Ryan Lindgren; Alexis Lafrenière,Braden Schneider,api
+2023020843,TOR,4,00:54,EV,3v3,3,3,Max Domi; William Nylander; Timothy Liljegren,Mitch Marner,api
+2023020846,SJS,3,05:15,EV,5v5,5,5,Mikael Granlund; Kyle Burroughs; Fabian Zetterlund; Filip Zadina; Calen Addison,Justin Bailey; Marc-Edouard Vlasic,api
+2023020854,BUF,4,01:29,EV,3v3,3,3,Alex Tuch; Henri Jokiharju; JJ Peterka,Tage Thompson,api
+2023020856,FLA,1,17:44,EV,5v5,5,5,Dmitry Kulikov; Gustav Forsling; Kevin Stenlund; Ryan Lomberg; Eetu Luostarinen,Josh Mahura,api
+2023020859,NJD,1,00:32,EV,5v5,5,5,Brendan Smith; Ondrej Palat; Colin Miller; Jesper Bratt; Nico Hischier,John Marino,api
+2023020863,NYI,1,07:18,EV,4v4,4,4,Brock Nelson; Bo Horvat; Mathew Barzal; Noah Dobson,Adam Pelech,api
+2023020873,VGK,1,02:28,EV,5v5,5,5,Alex Pietrangelo; Michael Amadio; Brett Howden; Nicolas Hague; Paul Cotter,Zach Whitecloud,api
+2023020876,OTT,3,08:46,EV,5v5,5,5,Vladimir Tarasenko; Erik Brannstrom; Brady Tkachuk; Jacob Bernard-Docker; Tim Stützle,Claude Giroux; Thomas Chabot,api
+2023020878,NYI,4,00:57,EV,3v3,3,3,Kyle Palmieri; Brock Nelson; Adam Pelech,Bo Horvat; Mathew Barzal,api
+2023020880,WPG,2,01:54,EV,5v5,5,5,Mark Scheifele; Kyle Connor; Gabriel Vilardi; Dylan Samberg; Neal Pionk,Dylan DeMelo,api
+2023020901,WPG,1,14:47,EV,5v5,5,5,Brenden Dillon; Sean Monahan; Nikolaj Ehlers; Alex Iafallo; Neal Pionk,Josh Morrissey; Dylan DeMelo,api
+2023020909,STL,2,12:28,EV,5v5,5,5,Nick Leddy; Kevin Hayes; Brandon Saad; Colton Parayko; Zachary Bolduc,Nathan Walker,api
+2023020912,CGY,1,09:11,EV,5v5,5,5,Nazem Kadri; MacKenzie Weegar; Rasmus Andersson; Martin Pospisil; Connor Zary,Brayden Pachal,api
+2023020912,CGY,1,15:53,EV,5v5,5,5,Mikael Backlund; Chris Tanev; Dryden Hunt; Andrew Mangiapane; Noah Hanifin,Jonathan Huberdeau,api
+2023020913,MIN,2,06:58,EV,5v5,5,5,Marcus Johansson; Mats Zuccarello; Jon Merrill; Ryan Hartman; Dakota Mermis,Connor Dewar,api
+2023020914,NSH,3,03:40,EV,5v5,5,5,Roman Josi; Michael McCarron; Yakov Trenin; Dante Fabbro; Kiefer Sherwood,Alexandre Carrier,api
+2023020923,WSH,2,10:55,EV,5v5,5,5,Joel Edmundson; Anthony Mantha; Ethan Bear; Beck Malenstyn; Hendrix Lapierre,Aliaksei Protas,api
+2023020929,MTL,3,05:14,EV,5v5,5,5,David Savard; Tanner Pearson; Colin White; Jesse Ylonen; Arber Xhekaj,Jake Evans; Jordan Harris,api
+2023020930,PHI,1,02:22,EV,5v5,5,5,Marc Staal; Scott Laughton; Owen Tippett; Egor Zamula; Bobby Brink,Morgan Frost,api
+2023020930,PHI,3,00:54,EV,5v5,5,5,Nick Seeler; Scott Laughton; Sean Walker; Joel Farabee; Tyson Foerster,Morgan Frost,api
+2023020940,EDM,4,04:34,EV,3v3,3,3,Zach Hyman; Connor McDavid; Evan Bouchard,Mattias Ekholm; Ryan Nugent-Hopkins,api
+2023020941,VGK,2,01:48,EV,5v5,5,5,Keegan Kolesar; Nicolas Roy; Nicolas Hague; Zach Whitecloud; Paul Cotter,Shea Theodore,api
+2023020941,VGK,3,05:01,SH,4v5,4,4,Alec Martinez; Alex Pietrangelo; Chandler Stephenson; Nicolas Roy,Zach Whitecloud,api
+2023020954,WSH,3,15:38,EV,5v5,5,5,Max Pacioretty; John Carlson; Sonny Milano; Dylan Strome; Alexander Alexeyev,Joel Edmundson,api
+2023020959,NSH,1,15:18,EV,5v5,5,5,Roman Josi; Colton Sissons; Yakov Trenin; Dante Fabbro; Cody Glass,Ryan McDonagh,api
+2023020960,BUF,3,17:12,SH,4v5,4,4,Jordan Greenway; Henri Jokiharju; Jacob Bryson; Dylan Cozens,Owen Power,api
+2023020965,CHI,3,06:18,EV,5v5,5,5,Seth Jones; Ryan Donato; Philipp Kurashev; Kevin Korchinski; Connor Bedard,Alex Vlasic,api
+2023020974,EDM,2,18:47,EV,5v5,5,5,Corey Perry; Cody Ceci; Brett Kulak; Warren Foegele; Ryan McLeod,Evander Kane,api
+2023020975,CBJ,3,11:20,EV,5v5,5,5,Damon Severson; Ivan Provorov; Kirill Marchenko; Dmitri Voronkov; Egor Chinakhov,Jake Bean,api
+2023020976,FLA,3,06:11,EV,5v5,5,5,Dmitry Kulikov; Aaron Ekblad; Sam Bennett; Ryan Lomberg; Jonah Gadjovich,Gustav Forsling,api
+2023020976,FLA,3,19:01,EN,5v6,5,5,Aaron Ekblad; Gustav Forsling; Evan Rodrigues; Eetu Luostarinen; Anton Lundell,Oliver Ekman-Larsson,api
+2023020977,PHI,1,18:52,EV,5v5,5,5,Nick Seeler; Scott Laughton; Garnet Hathaway; Ryan Poehling; Sean Walker,Travis Sanheim,api
+2023020978,TOR,3,03:52,EV,5v5,5,5,John Tavares; Morgan Rielly; Mitch Marner; Simon Benoit; Bobby McMann,Ilya Lyubushkin,api
+2023020979,COL,1,17:22,EV,5v5,5,5,Zach Parise; Jonathan Drouin; Devon Toews; Ross Colton; Bowen Byram,Samuel Girard,api
+2023020983,PIT,1,18:57,EV,5v5,5,5,Evgeni Malkin; Kris Letang; Ryan Graves; Jesse Puljujarvi; Valtteri Puustinen,Reilly Smith,api
+2023020984,NYI,2,12:32,EV,5v5,5,5,Kyle Palmieri; Anders Lee; Jean-Gabriel Pageau; Noah Dobson; Alexander Romanov,Adam Pelech,api
+2023020984,NYI,3,00:55,EV,5v5,5,5,Brock Nelson; Bo Horvat; Ryan Pulock; Mathew Barzal; Alexander Romanov,Adam Pelech,api
+2023020989,SJS,1,12:04,EV,5v5,5,5,Mikael Granlund; Kyle Burroughs; Anthony Duclair; Fabian Zetterlund; Henry Thrun,Jan Rutta,api
+2023021000,NSH,3,01:49,EV,5v5,5,5,Ryan McDonagh; Luke Schenn; Gustav Nyquist; Filip Forsberg; Colton Sissons,Ryan O'Reilly,api
+2023021000,NSH,3,06:43,EV,5v5,5,5,Ryan O'Reilly; Filip Forsberg; Jeremy Lauzon; Alexandre Carrier; Luke Evangelista,Gustav Nyquist,api
+2023021016,TBL,1,01:49,EV,5v5,5,5,Victor Hedman; Nikita Kucherov; Mathew Dumba; Anthony Cirelli; Brandon Hagel,Darren Raddysh,api
+2023021020,VGK,1,09:08,EV,5v5,5,5,Chandler Stephenson; Anthony Mantha; Nicolas Hague; Zach Whitecloud; Pavel Dorofeyev,Shea Theodore,api
+2023021024,CAR,2,19:26,EV,5v5,5,5,Dmitry Orlov; Jordan Martinook; Jalen Chatfield; Jesperi Kotkaniemi; Seth Jarvis,Jordan Staal,api
+2023021026,NYI,1,07:28,EV,5v5,5,5,Kyle Palmieri; Brock Nelson; Bo Horvat; Ryan Pulock; Alexander Romanov,Sebastian Aho; Mike Reilly,api
+2023021029,WPG,3,10:00,EV,5v5,5,5,Tyler Toffoli; Dylan DeMelo; Mark Scheifele; Josh Morrissey; Kyle Connor,Nikolaj Ehlers,api
+2023021031,DET,3,17:32,EV,5v5,5,5,Patrick Kane; Shayne Gostisbehere; Andrew Copp; Jake Walman; Alex DeBrincat,Olli Maatta,api
+2023021040,VGK,4,03:01,EV,3v3,3,3,William Karlsson; Shea Theodore; Jack Eichel,Alex Pietrangelo,api
+2023021053,NJD,1,17:14,EV,5v5,5,5,Chris Tierney; Kurtis MacDermid; Curtis Lazar; Luke Hughes; Simon Nemec,Nick DeSimone,api
+2023021055,CGY,3,14:45,EV,5v5,5,5,Mikael Backlund; MacKenzie Weegar; Dryden Hunt; Daniil Miromanov; Matt Coronato,Yegor Sharangovich,api
+2023021057,WPG,3,04:59,EV,5v5,5,4,Brenden Dillon; Dylan DeMelo; Sean Monahan; Nikolaj Ehlers,,api
+2023021063,FLA,2,08:23,SH,4v5,4,4,Oliver Ekman-Larsson; Sam Bennett; Brandon Montour; Matthew Tkachuk,Josh Mahura,api
+2023021063,TBL,3,18:28,EN,5v6,5,5,Victor Hedman; Nikita Kucherov; Mathew Dumba; Brayden Point; Brandon Hagel,Steven Stamkos,api
+2023021064,PHI,1,04:18,EV,5v5,5,5,Marc Staal; Garnet Hathaway; Ryan Poehling; Noah Cates; Ronnie Attard,Egor Zamula,api
+2023021064,BOS,1,15:51,EV,5v5,5,5,Brad Marchand; Hampus Lindholm; Brandon Carlo; Jake DeBrusk; Morgan Geekie,Parker Wotherspoon,api
+2023021064,BOS,3,01:08,EV,4v4,4,4,Brad Marchand; Charlie Coyle; Hampus Lindholm; Andrew Peeke,David Pastrnak,api
+2023021067,TOR,2,04:47,EV,5v5,5,5,John Tavares; Morgan Rielly; Jake McCabe; Nick Robertson; Matthew Knies,TJ Brodie,api
+2023021067,TOR,2,06:27,EV,5v5,5,5,Jake McCabe; Max Domi; William Nylander; Timothy Liljegren; Bobby McMann,Morgan Rielly,api
+2023021070,COL,2,10:39,EV,5v5,5,5,Artturi Lehkonen; Jonathan Drouin; Casey Mittelstadt; Cale Makar; Sean Walker,Jack Johnson,api
+2023021073,NYR,3,02:36,EV,5v5,5,5,Erik Gustafsson; Alexander Wennberg; Kaapo Kakko; Braden Schneider; Will Cuylle,Zac Jones,api
+2023021089,COL,1,06:36,EV,5v5,5,5,Jack Johnson; Nathan MacKinnon; Valeri Nichushkin; Mikko Rantanen; Sean Walker,Cale Makar,api
+2023021097,LAK,1,16:26,EV,5v5,5,5,Phillip Danault; Viktor Arvidsson; Vladislav Gavrikov; Matt Roy; Trevor Moore,Drew Doughty; Mikey Anderson,api
+2023021100,NYI,3,11:20,EV,5v5,5,5,Kyle Palmieri; Brock Nelson; Adam Pelech; Ryan Pulock; Mathew Barzal,Anders Lee,api
+2023021107,VGK,1,08:14,EV,5v5,5,5,Jonathan Marchessault; Ivan Barbashev; Noah Hanifin; Jack Eichel; Nicolas Hague,Brayden McNabb,api
+2023021114,BOS,3,16:12,EV,5v5,5,5,James van Riemsdyk; Matt Grzelcyk; Danton Heinen; Charlie McAvoy; Morgan Geekie,Jake DeBrusk,api
+2023021128,OTT,2,04:48,EV,5v5,5,5,Thomas Chabot; Mathieu Joseph; Jakob Chychrun; Drake Batherson; Tim Stützle,Erik Brannstrom,api
+2023021129,FLA,3,04:43,EV,5v5,5,5,Carter Verhaeghe; Sam Reinhart; Brandon Montour; Josh Mahura; Anton Lundell,Sam Bennett,api
+2023021133,MTL,1,17:33,EV,5v5,5,5,Joel Armia; Mike Matheson; Nick Suzuki; Cole Caufield; Kaiden Guhle,Juraj Slafkovský; Jordan Harris,api
+2023021138,PIT,2,02:41,EV,5v5,5,5,Lars Eller; Reilly Smith; Ryan Graves; Jesse Puljujarvi; Pierre-Olivier Joseph,Valtteri Puustinen,api
+2023021139,TOR,2,03:14,EV,5v5,5,5,John Tavares; William Nylander; Conor Timmins; Simon Benoit; Bobby McMann,Matthew Knies,api
+2023021139,NJD,3,18:51,EN,5v6,5,5,Erik Haula; Curtis Lazar; John Marino; Kevin Bahl; Jack Hughes,Brendan Smith,api
+2023021147,DAL,1,12:06,SH,4v5,4,4,Ryan Suter; Chris Tanev; Logan Stankoven; Wyatt Johnston,Jamie Benn,api
+2023021147,DAL,1,16:28,EV,5v5,5,5,Matt Duchene; Mason Marchment; Miro Heiskanen; Ty Dellandrea; Thomas Harley,Sam Steel,api
+2023021151,NYI,2,08:43,EV,5v5,5,5,Anders Lee; Adam Pelech; Hudson Fasching; Mathew Barzal; Noah Dobson,Casey Cizikas,api
+2023021154,PIT,3,00:35,EV,5v5,5,5,Sidney Crosby; Kris Letang; Erik Karlsson; Bryan Rust; Drew O'Connor,Pierre-Olivier Joseph,api
+2023021155,TOR,3,01:06,EV,5v5,5,5,Mark Giordano; John Tavares; William Nylander; Conor Timmins; Bobby McMann,Simon Benoit,api
+2023021156,SJS,2,09:26,EV,5v5,5,5,Mikael Granlund; Fabian Zetterlund; Calen Addison; Henry Thrun; William Eklund,Jan Rutta; Marc-Edouard Vlasic,api
+2023021161,ARI,2,08:11,EV,5v5,5,5,Nick Schmaltz; Lawson Crouse; Juuso Välimäki; Michael Kesselring; Logan Cooley,Clayton Keller,api
+2023021163,VAN,2,07:39,EV,5v5,5,5,J.T. Miller; Dakota Joshua; Conor Garland; Filip Hronek; Quinn Hughes,Teddy Blueger,api
+2023021166,MIN,2,16:44,PP,5v4,5,5,Mats Zuccarello; Joel Eriksson Ek; Kirill Kaprizov; Declan Chisholm; Matt Boldy,Brock Faber,api
+2023021167,EDM,3,07:06,EV,5v5,5,5,Mattias Ekholm; Zach Hyman; Ryan Nugent-Hopkins; Connor McDavid; Troy Stecher,Evan Bouchard,api
+2023021168,ARI,2,06:27,EV,5v5,5,5,Liam O'Brien; Travis Dermott; Sean Durzi; Jack McBain; Matias Maccelli,Josh Doan,api
+2023021170,TOR,1,04:58,EV,5v5,5,5,John Tavares; Jake McCabe; William Nylander; Simon Benoit; Bobby McMann,Conor Timmins,api
+2023021176,WSH,2,01:20,EV,5v5,5,5,Nic Dowd; Michael Sgarbossa; Trevor van Riemsdyk; Beck Malenstyn; Vincent Iorio,Nick Jensen,api
+2023021181,CBJ,2,09:35,EV,5v5,5,5,Erik Gudbranson; Jake Bean; Alexandre Texier; Kirill Marchenko; Cole Sillinger,Johnny Gaudreau,api
+2023021187,LAK,1,12:30,EV,5v5,5,5,Viktor Arvidsson; Vladislav Gavrikov; Matt Roy; Pierre-Luc Dubois; Trevor Moore,Drew Doughty,api
+2023021190,FLA,3,18:44,EV,5v5,5,5,Kyle Okposo; Oliver Ekman-Larsson; Vladimir Tarasenko; Sam Bennett; Gustav Forsling,Anton Lundell; Dmitry Kulikov,api
+2023021197,TBL,3,14:19,EV,5v5,5,5,Mathew Dumba; Nick Paul; Michael Eyssimont; Mitchell Chaffee; Emil Lilleberg,Darren Raddysh; Nikita Kucherov,api
+2023021204,TBL,1,16:26,EV,5v5,5,5,Calvin de Haan; Nick Paul; Erik Cernak; Michael Eyssimont; Mitchell Chaffee,Mathew Dumba; Tyler Motte,api
+2023021206,PIT,2,09:08,EV,5v5,5,5,Evgeni Malkin; Marcus Pettersson; Michael Bunting; Ryan Shea; Valtteri Puustinen,Erik Karlsson,api
+2023021208,STL,3,06:21,EV,5v5,5,5,Nick Leddy; Brandon Saad; Torey Krug; Robert Thomas; Jake Neighbours,Justin Faulk,api
+2023021212,CAR,2,14:30,EV,5v5,5,5,Jake Guentzel; Brett Pesce; Sebastian Aho; Jalen Chatfield; Seth Jarvis,Jaccob Slavin; Jesper Fast,api
+2023021214,COL,1,15:59,EV,5v5,5,5,Josh Manson; Artturi Lehkonen; Valeri Nichushkin; Samuel Girard; Ross Colton,Cale Makar,api
+2023021214,EDM,3,11:59,EV,5v5,5,5,Corey Perry; Evander Kane; Cody Ceci; Darnell Nurse; Ryan McLeod,Brett Kulak,api
+2023021216,ARI,3,14:47,EV,5v5,5,5,Alexander Kerfoot; Michael Carcone; Juuso Välimäki; J.J. Moser; Dylan Guenther,Travis Dermott,api
+2023021218,FLA,1,00:37,EV,5v5,5,5,Nick Cousins; Sam Bennett; Brandon Montour; Niko Mikkola; Matthew Tkachuk,Vladimir Tarasenko; Gustav Forsling,api
+2023021220,CHI,2,05:53,EV,5v5,5,5,Andreas Athanasiou; Seth Jones; Ryan Donato; Alex Vlasic; Lukas Reichel,Wyatt Kaiser,api
+2023021224,NJD,1,03:50,EV,5v5,5,5,Erik Haula; Jonas Siegenthaler; Jesper Bratt; Jack Hughes; Simon Nemec,Brendan Smith,api
+2023021236,DAL,2,11:25,PP,5v4,5,5,Joe Pavelski; Jamie Benn; Roope Hintz; Jason Robertson; Miro Heiskanen,Thomas Harley,api
+2023021238,VAN,2,13:10,EV,5v5,5,5,Brock Boeser; Filip Hronek; Elias Pettersson; Quinn Hughes; Nils Hoglander,Tyler Myers,api
+2023021242,PHI,3,04:54,EV,5v5,5,5,Garnet Hathaway; Travis Sanheim; Owen Tippett; Ryan Poehling; Cam York,Erik Johnson,api
+2023021243,NJD,1,14:25,EV,5v5,5,5,Brendan Smith; Jonas Siegenthaler; Nico Hischier; Shane Bowers; Simon Nemec,Dawson Mercer,api
+2023021245,CBJ,1,19:17,EV,5v5,5,5,Erik Gudbranson; Ivan Provorov; Alexandre Texier; Kirill Marchenko; Cole Sillinger,Damon Severson,api
+2023021247,WPG,4,01:52,EV,3v3,3,3,Mark Scheifele; Josh Morrissey; Kyle Connor,Neal Pionk,api
+2023021248,COL,1,08:38,EV,5v5,5,5,Jack Johnson; Artturi Lehkonen; Nathan MacKinnon; Jonathan Drouin; Devon Toews,Cale Makar,api
+2023021252,STL,1,02:46,EV,5v5,5,5,Brandon Saad; Colton Parayko; Jordan Kyrou; Scott Perunovich; Nikita Alexandrov,Pavel Buchnevich,api
+2023021258,DET,2,19:24,EV,5v5,5,5,Jeff Petry; Robby Fabbri; Daniel Sprong; Joseph Veleno; Simon Edvinsson,Moritz Seider,api
+2023021266,NSH,2,09:39,PP,5v4,5,5,Jason Zucker; Colton Sissons; Anthony Beauvillier; Alexandre Carrier; Cody Glass,Roman Josi,api
+2023021268,CGY,1,11:53,EV,4v4,4,4,Nazem Kadri; MacKenzie Weegar; Martin Pospisil; Daniil Miromanov,Oliver Kylington,api
+2023021269,VGK,3,13:55,EV,5v5,5,5,Ben Hutton; Keegan Kolesar; Nicolas Roy; Zach Whitecloud; Paul Cotter,Pavel Dorofeyev,api
+2023021276,MTL,3,15:49,EV,5v5,5,5,Brendan Gallagher; Joel Armia; Johnathan Kovacevic; Jordan Harris; Alex Newhook,David Savard,api
+2023021278,CBJ,3,06:02,EV,5v5,5,5,Damon Severson; Zach Werenski; Justin Danforth; Trey Fix-Wolansky; Mikael Pyyhtia,Erik Gudbranson,api
+2023021286,ARI,1,02:36,EV,5v5,5,5,Alexander Kerfoot; Nick Schmaltz; Clayton Keller; Sean Durzi; J.J. Moser,Michael Kesselring,api
+2023021286,CGY,3,01:14,EV,5v5,5,5,Nazem Kadri; Oliver Kylington; Martin Pospisil; Nikita Okhotiuk; Andrei Kuzmenko,Rasmus Andersson,api
+2023021287,MTL,1,06:15,EV,5v5,5,5,Josh Anderson; Christian Dvorak; Johnathan Kovacevic; Rafael Harvey-Pinard; Justin Barron,Jake Evans,api
+2023021287,DET,4,04:35,EV,3v3,3,3,Dylan Larkin; Moritz Seider; Lucas Raymond,Shayne Gostisbehere,api
+2023021288,NYI,1,12:22,EV,5v5,5,5,Robert Bortuzzo; Matt Martin; Jean-Gabriel Pageau; Mike Reilly; Pierre Engvall,Anders Lee,api
+2023021293,EDM,1,00:53,EV,5v5,5,5,Adam Henrique; Mattias Ekholm; Zach Hyman; Connor McDavid; Evan Bouchard,Darnell Nurse,api
+2023021296,CAR,1,18:16,EV,5v5,5,5,Teuvo Teravainen; Tony DeAngelo; Jalen Chatfield; Martin Necas; Jesperi Kotkaniemi,Brent Burns,api
+2023021300,WPG,2,02:30,EV,5v5,5,5,Brenden Dillon; Tyler Toffoli; Dylan DeMelo; Sean Monahan; Nikolaj Ehlers,Neal Pionk,api
+2023021302,VAN,1,12:00,SH,4v5,4,4,Tyler Myers; Teddy Blueger; Carson Soucy; Sam Lafferty,Elias Lindholm,api

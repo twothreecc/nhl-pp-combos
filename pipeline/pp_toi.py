@@ -11,14 +11,16 @@ Time runs on an absolute game clock (seconds since opening faceoff) so PPs that 
 intermission stay continuous. Second s covers the interval (s-1, s]; a skater is on the ice for
 it when start < s <= end, matching the on-ice-at-goal rule.
 
-Writes data/pp_toi_units.csv: one row per (game, team, strength, skater set) with PP seconds.
-Run from the repo root:  python pipeline/pp_toi.py
+Writes pp_toi_units.csv to the season's output folder: one row per (game, team, strength,
+skater set) with PP seconds.
+Run from the repo root:  python pipeline/pp_toi.py [season]
 """
 import csv
 import json
+import sys
 from collections import Counter, defaultdict
 
-from config import DATA_DIR, PERIOD_SECONDS, RAW_DIR, SHIFT_TYPE_CODE
+from config import PERIOD_SECONDS, RAW_DIR, SEASON, SHIFT_TYPE_CODE, out_dir
 from parse import pp_strength, time_to_seconds
 
 PP_PENALTY_TYPES = {"MIN", "BEN", "MAJ"}
@@ -116,8 +118,9 @@ def game_unit_seconds(pbp, shifts, stats):
     return units
 
 
-def main():
-    with open(DATA_DIR / "games.csv") as f:
+def main(season=SEASON):
+    out = out_dir(season)
+    with open(out / "games.csv") as f:
         games = list(csv.DictReader(f))
 
     stats, rows = Counter(), []
@@ -131,7 +134,7 @@ def main():
                          "player_ids": ";".join(map(str, ids)), "seconds": secs})
         stats["games"] += 1
 
-    with open(DATA_DIR / "pp_toi_units.csv", "w", newline="") as f:
+    with open(out / "pp_toi_units.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["game_id", "date", "team", "strength", "player_ids", "seconds"])
         w.writeheader()
         w.writerows(rows)
@@ -144,4 +147,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(*sys.argv[1:])
