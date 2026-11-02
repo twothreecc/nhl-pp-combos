@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NHL PP Combos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root {
+  --bg: #f4f6f8; --panel: #ffffff; --ink: #121821; --muted: #5d6877; --line: #dde2e8; --soft: #eef1f5;
+  --accent: #0b6bcb; --accent-ink: #ffffff; --accent-soft: #e2eefb;
+  --fwd: #0b6bcb; --def: #d9480f; --edge: #8a97a8; --good: #1a7f4b;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1117; --panel: #151b23; --ink: #e6ebf1; --muted: #8d99a8; --line: #27303b; --soft: #1c242e;
+    --accent: #4da3ff; --accent-ink: #08111c; --accent-soft: #16273b;
+    --fwd: #4da3ff; --def: #ff8a4c; --edge: #5b6878; --good: #4cc38a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1117; --panel: #151b23; --ink: #e6ebf1; --muted: #8d99a8; --line: #27303b; --soft: #1c242e;
+  --accent: #4da3ff; --accent-ink: #08111c; --accent-soft: #16273b;
+  --fwd: #4da3ff; --def: #ff8a4c; --edge: #5b6878; --good: #4cc38a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.45 "IBM Plex Sans", system-ui, sans-serif; overflow-x: hidden; }
+.num, td.n, th.n { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+a { color: var(--accent); }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+
+header { padding: 22px 0 14px; display: flex; flex-wrap: wrap; align-items: end; gap: 8px 24px; justify-content: space-between; }
+h1 { font-size: 22px; letter-spacing: -0.01em; margin: 0; }
+h1 span { color: var(--muted); font-weight: 500; }
+.stamp { color: var(--muted); font-size: 13px; }
+.stamp b { color: var(--ink); font-weight: 600; }
+
+.filters { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: end; }
+.f { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.f label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+select, input { font: inherit; color: var(--ink); background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; min-width: 0; }
+input[type=number] { width: 72px; }
+input[type=date] { width: 140px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.seg button { font: inherit; border: 0; background: var(--soft); color: var(--muted); padding: 6px 10px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button.on { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.reset { font: inherit; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 6px 4px; }
+
+nav.tabs { display: flex; gap: 4px; margin: 16px 0 0; border-bottom: 1px solid var(--line); overflow-x: auto; }
+nav.tabs button { font: inherit; font-weight: 600; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 12px; cursor: pointer; white-space: nowrap; }
+nav.tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
+.sub { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 10px; }
+.sub button { font: inherit; font-size: 13px; background: var(--panel); border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.sub button.on { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); font-weight: 600; }
+.note { color: var(--muted); font-size: 12.5px; margin: 4px 0 10px; }
+
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; position: sticky; top: 0; background: var(--panel); cursor: pointer; user-select: none; white-space: nowrap; }
+th.sorted { color: var(--ink); }
+th.sorted::after { content: " ▾"; }
+th.sorted.asc::after { content: " ▴"; }
+th.nosort { cursor: default; }
+tbody tr:hover { background: var(--soft); }
+tbody tr:last-child td { border-bottom: 0; }
+td.rank { color: var(--muted); width: 32px; }
+.team { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; background: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; cursor: pointer; }
+.p { cursor: pointer; white-space: nowrap; }
+.p:hover { color: var(--accent); text-decoration: underline; }
+.pos { font-size: 10px; font-weight: 600; color: var(--muted); margin-left: 3px; }
+.players .p + .p::before { content: " · "; color: var(--muted); text-decoration: none; display: inline-block; margin: 0 2px; }
+.players { white-space: normal; }
+.bar { display: inline-block; height: 6px; border-radius: 3px; background: var(--accent); vertical-align: middle; margin-left: 6px; opacity: .55; }
+.empty { padding: 28px; text-align: center; color: var(--muted); }
+.more { display: block; margin: 0 auto; font: inherit; background: none; border: 0; color: var(--accent); padding: 10px; cursor: pointer; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 14px 0; }
+.kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.kpi .l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+.kpi .v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; margin-top: 2px; }
+.kpi .s { font-size: 12px; color: var(--muted); }
+h2 { font-size: 15px; margin: 22px 0 8px; }
+h2 small { color: var(--muted); font-weight: 400; font-size: 12.5px; margin-left: 6px; }
+.grid2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 860px) { .grid2 { grid-template-columns: minmax(0, 1fr); } }
+
+#graph, .graph { position: relative; height: 620px; overflow: hidden; }
+.graph svg { width: 100%; height: 100%; display: block; }
+.graph .legend { position: absolute; left: 12px; top: 10px; font-size: 12px; color: var(--muted); display: flex; gap: 12px; pointer-events: none; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px; padding: 6px 8px; border-radius: 6px; max-width: 260px; opacity: 0; transition: opacity .1s; z-index: 2; }
+@media (max-width: 600px) { #graph, .graph { height: 460px; } }
+
+.search { position: relative; max-width: 420px; }
+.search input { width: 100%; padding: 9px 12px; font-size: 15px; }
+.sugg { position: absolute; z-index: 5; left: 0; right: 0; top: 100%; margin-top: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; max-height: 320px; overflow-y: auto; display: none; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+.sugg div { padding: 7px 12px; cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+.sugg div:hover, .sugg div.hi { background: var(--soft); }
+.card { display: flex; gap: 16px; align-items: center; padding: 14px; margin-top: 14px; }
+.card img { width: 84px; height: 84px; border-radius: 50%; background: var(--soft); object-fit: cover; }
+.card .nm { font-size: 20px; font-weight: 700; }
+.card .meta { color: var(--muted); }
+footer { color: var(--muted); font-size: 12px; padding: 28px 0 40px; }
+.loading { padding: 60px 0; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>NHL Power-Play Combinations <span id="season"></span></h1>
+    <div class="stamp" id="stamp">Loading…</div>
+  </header>
+
+  <div class="filters" id="filters">
+    <div class="f"><label for="fTeam">Team</label><select id="fTeam"><option value="">All teams</option></select></div>
+    <div class="f"><label>Strength</label><div class="seg" id="fStrength"></div></div>
+    <div class="f"><label for="fFrom">From</label><input type="date" id="fFrom"></div>
+    <div class="f"><label for="fTo">To</label><input type="date" id="fTo"></div>
+    <div class="f"><label for="fPos">Position</label>
+      <select id="fPos"><option value="">Any</option><option value="F">Forwards</option><option value="D">Defence</option><option value="C">C</option><option value="L">LW</option><option value="R">RW</option></select></div>
+    <div class="f"><label for="fMin">Min PP min together</label><input type="number" id="fMin" min="0" step="5" value="20"></div>
+    <button class="reset" id="reset">Reset</button>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="boards" class="on">Leaderboards</button>
+    <button data-tab="network">Network</button>
+    <button data-tab="team">Team</button>
+    <button data-tab="player">Player</button>
+  </nav>
+
+  <main id="view"><div class="loading">Loading data…</div></main>
+
+  <footer>
+    PP goals: scoring team had more skaters and both goalies were in net (empty-net and extra-attacker goals excluded).
+    On-ice: skaters on for the scoring team when the goal went in. PP TOI is computed per second from shift charts and situation codes.
+    Players traded mid-season are counted separately for each team. Data: NHL play-by-play and shift charts.
+  </footer>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+"use strict";
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const fmtMin = s => (s / 60).toFixed(1);
+const fmtRate = (g, s) => s > 0 ? (g * 3600 / s).toFixed(2) : "–";
+const rate = (g, s) => s > 0 ? g * 3600 / s : -1;
+const STRENGTHS = [["", "All"], ["5v4", "5v4"], ["5v3", "5v3"], ["4v3", "4v3"]];
+const DEFAULT_MIN = 20;
+
+let D;            // raw data
+let P = {};       // id -> {name, pos, head}
+const S = { team: "", strength: "", from: "", to: "", pos: "", min: DEFAULT_MIN,
+            tab: "boards", board: "op", sort: {}, graphMode: "sheet", player: null, limit: 50 };
+let A;            // current aggregates
+
+// ---------- data ----------
+fetch("data.json").then(r => r.json()).then(init).catch(e => {
+  $("#view").innerHTML = `<div class="empty">Couldn't load data.json (${esc(e.message)})</div>`;
+});
+
+function init(data) {
+  D = data;
+  for (const [id, [name, pos, head]] of Object.entries(D.players)) P[id] = { name, pos, head };
+  D.goals = D.goals.map(r => ({ gameId: r[0], date: r[1], team: r[2], opp: r[3], period: r[4], time: r[5],
+    strength: r[6], scorer: r[7], a1: r[8], a2: r[9], onIce: r[10] }));
+  D.toi = D.toi.map(r => ({ date: r[0], team: r[1], strength: r[2], onIce: r[3], secs: r[4] }));
+  const dates = D.goals.map(g => g.date).concat(D.toi.map(t => t.date)).sort();
+  D.minDate = dates[0]; D.maxDate = dates[dates.length - 1];
+
+  $("#season").textContent = D.meta.season.slice(0, 4) + "–" + D.meta.season.slice(6);
+  $("#stamp").innerHTML = `Data through <b>${esc(longDate(D.meta.through))}</b> · <b>${D.meta.games}</b> games processed`;
+  const teams = [...new Set(D.toi.map(t => t.team).concat(D.goals.map(g => g.team)))].sort();
+  $("#fTeam").insertAdjacentHTML("beforeend", teams.map(t => `<option>${t}</option>`).join(""));
+  $("#fStrength").innerHTML = STRENGTHS.map(([v, l]) => `<button data-v="${v}">${l}</button>`).join("");
+  for (const id of ["fFrom", "fTo"]) { $("#" + id).min = D.minDate; $("#" + id).max = D.maxDate; }
+  bind();
+  syncControls();
+  update();
+}
+
+function longDate(d) {
+  if (!d) return "–";
+  return new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+}
+
+function bind() {
+  $("#fTeam").onchange = e => { S.team = e.target.value; S.limit = 50; update(); };
+  $("#fStrength").onclick = e => { const b = e.target.closest("button"); if (!b) return; S.strength = b.dataset.v; update(); };
+  $("#fFrom").onchange = e => { S.from = e.target.value; update(); };
+  $("#fTo").onchange = e => { S.to = e.target.value; update(); };
+  $("#fPos").onchange = e => { S.pos = e.target.value; update(); };
+  $("#fMin").oninput = e => { S.min = Math.max(0, +e.target.value || 0); update(); };
+  $("#reset").onclick = () => { Object.assign(S, { team: "", strength: "", from: "", to: "", pos: "", min: DEFAULT_MIN, limit: 50 }); update(); };
+  $("#tabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; S.tab = b.dataset.tab; S.limit = 50; render(); };
+  // delegated: player names and team chips anywhere
+  $("#view").addEventListener("click", e => {
+    const p = e.target.closest("[data-pid]");
+    if (p) { openPlayer(p.dataset.team, +p.dataset.pid); return; }
+    const t = e.target.closest("[data-team-pick]");
+    if (t) { S.team = t.dataset.teamPick; S.tab = "team"; update(); }
+  });
+}
+
+function syncControls() {
+  $("#fTeam").value = S.team;
+  for (const b of $("#fStrength").children) b.classList.toggle("on", b.dataset.v === S.strength);
+  $("#fFrom").value = S.from; $("#fTo").value = S.to; $("#fPos").value = S.pos; $("#fMin").value = S.min;
+  for (const b of $("#tabs").children) b.classList.toggle("on", b.dataset.tab === S.tab);
+}
+
+function update() { syncControls(); A = aggregate(); render(); }
+
+// ---------- aggregation ----------
+const inFilter = r => (!S.team || r.team === S.team) && (!S.strength || r.strength === S.strength)
+  && (!S.from || r.date >= S.from) && (!S.to || r.date <= S.to);
+const posOk = id => {
+  const p = P[id]?.pos;
+  if (!S.pos) return true;
+  if (S.pos === "F") return p === "C" || p === "L" || p === "R";
+  return p === S.pos;
+};
+const anyPos = ids => !S.pos || ids.some(posOk);
+const pairs = ids => { const o = []; for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) o.push([ids[i], ids[j]]); return o; };
+const trios = ids => { const o = []; for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) for (let k = j + 1; k < ids.length; k++) o.push([ids[i], ids[j], ids[k]]); return o; };
+const key = (team, ids) => team + "|" + ids.join(";");
+const bump = (m, k, init, f) => { let v = m.get(k); if (!v) m.set(k, v = init()); f(v); };
+
+function aggregate() {
+  const G = D.goals.filter(inFilter), T = D.toi.filter(inFilter);
+  const toiPair = new Map(), toiTrio = new Map(), toiUnit = new Map(), toiPlayer = new Map(), toiTeam = new Map();
+  for (const t of T) {
+    const ids = t.onIce.slice().sort((a, b) => a - b);
+    toiTeam.set(t.team, (toiTeam.get(t.team) || 0) + t.secs);
+    if (!ids.length) continue;
+    const add = (m, k) => m.set(k, (m.get(k) || 0) + t.secs);
+    add(toiUnit, key(t.team, ids));
+    for (const id of ids) add(toiPlayer, key(t.team, [id]));
+    for (const p of pairs(ids)) add(toiPair, key(t.team, p));
+    if (ids.length <= 6) for (const p of trios(ids)) add(toiTrio, key(t.team, p));
+  }
+  const sp = new Map(), tr = new Map(), su = new Map(), op = new Map(), ou = new Map(), pts = new Map(), teamGoals = new Map();
+  for (const g of G) {
+    teamGoals.set(g.team, (teamGoals.get(g.team) || 0) + 1);
+    const sheet = [g.scorer, g.a1, g.a2].filter(x => x);
+    const sorted = sheet.slice().sort((a, b) => a - b);
+    for (const p of pairs(sorted)) bump(sp, key(g.team, p), () => ({ team: g.team, ids: p, goals: 0 }), v => v.goals++);
+    if (sorted.length === 3) bump(tr, key(g.team, sorted), () => ({ team: g.team, ids: sorted, goals: 0 }), v => v.goals++);
+    [["a1", g.a1], ["a2", g.a2]].forEach(([role, a]) => {
+      if (a) bump(su, g.team + "|" + a + ">" + g.scorer, () => ({ team: g.team, ids: [a, g.scorer], a1: 0, a2: 0, goals: 0 }), v => { v[role]++; v.goals++; });
+    });
+    sheet.forEach((id, i) => bump(pts, key(g.team, [id]), () => ({ team: g.team, id, g: 0, a: 0, pts: 0, onIce: 0 }), v => { i ? v.a++ : v.g++; v.pts++; }));
+    const ice = g.onIce.slice().sort((a, b) => a - b);
+    for (const id of ice) bump(pts, key(g.team, [id]), () => ({ team: g.team, id, g: 0, a: 0, pts: 0, onIce: 0 }), v => v.onIce++);
+    for (const p of pairs(ice)) bump(op, key(g.team, p), () => ({ team: g.team, ids: p, goals: 0 }), v => v.goals++);
+    if (ice.length) bump(ou, key(g.team, ice), () => ({ team: g.team, ids: ice, goals: 0 }), v => v.goals++);
+  }
+  // on-ice combos that shared PP time but haven't scored still belong on the board
+  for (const [k, secs] of toiPair) if (!op.has(k) && secs >= 60) { const [team, s] = k.split("|"); op.set(k, { team, ids: s.split(";").map(Number), goals: 0 }); }
+  for (const [k, secs] of toiUnit) if (!ou.has(k) && secs >= 60) { const [team, s] = k.split("|"); ou.set(k, { team, ids: s.split(";").map(Number), goals: 0 }); }
+  const withToi = (m, toiMap, kf) => [...m.values()].map(r => { r.secs = toiMap.get(kf(r)) || 0; r.rate = rate(r.goals, r.secs); return r; });
+  const sortedKey = r => key(r.team, r.ids.slice().sort((a, b) => a - b));
+  for (const [k, secs] of toiPlayer) {
+    const [team, id] = k.split("|");
+    bump(pts, k, () => ({ team, id: +id, g: 0, a: 0, pts: 0, onIce: 0 }), v => {});
+  }
+  const players = [...pts.values()].map(r => { r.secs = toiPlayer.get(key(r.team, [r.id])) || 0; r.rate = rate(r.onIce, r.secs); return r; });
+  return {
+    G, T, toiTeam, teamGoals, toiPair,
+    sp: withToi(sp, toiPair, sortedKey),
+    tr: withToi(tr, toiTrio, sortedKey),
+    su: withToi(su, toiPair, sortedKey),
+    op: withToi(op, toiPair, sortedKey),
+    ou: withToi(ou, toiUnit, sortedKey),
+    players,
+  };
+}
+
+// ---------- rendering helpers ----------
+function pname(team, id, short) {
+  const p = P[id]; if (!p) return `<span class="p">#${id}</span>`;
+  const nm = short ? p.name.split(" ").slice(1).join(" ") || p.name : p.name;
+  return `<span class="p" data-pid="${id}" data-team="${team}">${esc(nm)}<span class="pos">${p.pos}</span></span>`;
+}
+const teamChip = t => `<span class="team" data-team-pick="${t}" title="Open team view">${t}</span>`;
+
+function table(id, cols, rows, opts = {}) {
+  const st = S.sort[id] || { key: opts.sortKey || "goals", asc: false };
+  const col = cols.find(c => c.key === st.key) || cols[0];
+  const val = col.sortVal || (r => r[col.key]);
+  rows = rows.slice().sort((a, b) => {
+    const x = val(a), y = val(b);
+    const c = typeof x === "string" ? x.localeCompare(y) : x - y;
+    return (st.asc ? c : -c) || (b.goals - a.goals) || (b.secs - a.secs);
+  });
+  const total = rows.length, limit = opts.all ? total : S.limit;
+  const max = Math.max(1, ...rows.map(r => r.goals || 0));
+  const head = `<tr>${opts.rank !== false ? '<th class="nosort"></th>' : ""}${cols.map(c =>
+    `<th class="${c.num ? "n " : ""}${c.key === st.key ? "sorted" + (st.asc ? " asc" : "") : ""}${c.nosort ? " nosort" : ""}" data-k="${c.key}">${c.label}</th>`).join("")}</tr>`;
+  const body = rows.slice(0, limit).map((r, i) => `<tr>${opts.rank !== false ? `<td class="rank n">${i + 1}</td>` : ""}${cols.map(c =>
+    `<td class="${c.num ? "n" : ""} ${c.cls || ""}">${c.fmt ? c.fmt(r, max) : esc(r[c.key])}</td>`).join("")}</tr>`).join("");
+  const html = `<div class="panel tablewrap"><table data-table="${id}"><thead>${head}</thead><tbody>${body}</tbody></table>
+    ${total ? "" : `<div class="empty">${opts.empty || "Nothing matches these filters."}</div>`}</div>
+    ${total > limit ? `<button class="more" data-more>Show more (${total - limit} more)</button>` : ""}`;
+  return html;
+}
+
+function wireTables(root) {
+  root.querySelectorAll("table[data-table] th[data-k]").forEach(th => th.onclick = () => {
+    if (th.classList.contains("nosort")) return;
+    const id = th.closest("table").dataset.table, k = th.dataset.k;
+    const cur = S.sort[id];
+    S.sort[id] = { key: k, asc: cur && cur.key === k ? !cur.asc : false };
+    render();
+  });
+  root.querySelectorAll("[data-more]").forEach(b => b.onclick = () => { S.limit += 100; render(); });
+}
+
+const goalsCol = { key: "goals", label: "Goals", num: true, fmt: (r, max) => `${r.goals}<span class="bar" style="width:${Math.round(36 * r.goals / max)}px"></span>` };
+const toiCol = { key: "secs", label: "PP min", num: true, fmt: r => fmtMin(r.secs) };
+const rateCol = { key: "rate", label: "Goals/60", num: true, fmt: r => fmtRate(r.goals, r.secs) };
+const teamCol = { key: "team", label: "Team", fmt: r => teamChip(r.team) };
+const playersCol = (label = "Players") => ({ key: "ids", label, cls: "players", sortVal: r => P[r.ids[0]]?.name || "", fmt: r => r.ids.map(id => pname(r.team, id)).join("") });
+const p1 = { key: "p1", label: "Player", sortVal: r => P[r.ids[0]]?.name || "", fmt: r => pname(r.team, r.ids[0]) };
+const p2 = { key: "p2", label: "Player", sortVal: r => P[r.ids[1]]?.name || "", fmt: r => pname(r.team, r.ids[1]) };
+const minFilter = rows => rows.filter(r => r.secs >= S.min * 60 && anyPos(r.ids));
+
+const BOARDS = {
+  sp: { label: "Scoresheet pairs", note: "Two players who both appear on the scoresheet (goal or assist) of the same PP goal. PP min = time on the ice together on the PP.",
+        rows: () => minFilter(A.sp), cols: () => [teamCol, p1, p2, goalsCol, toiCol, rateCol] },
+  tr: { label: "Scoresheet trios", note: "Scorer and both assisters on the same PP goal, in any order.",
+        rows: () => minFilter(A.tr), cols: () => [teamCol, playersCol(), goalsCol, toiCol, rateCol] },
+  su: { label: "Setup connections", note: "Who sets up whom: assist → goal. A1 = primary assist, A2 = secondary.",
+        rows: () => minFilter(A.su), cols: () => [teamCol,
+          { key: "p1", label: "Passer", sortVal: r => P[r.ids[0]]?.name || "", fmt: r => pname(r.team, r.ids[0]) },
+          { key: "p2", label: "→ Scorer", sortVal: r => P[r.ids[1]]?.name || "", fmt: r => pname(r.team, r.ids[1]) },
+          { key: "a1", label: "A1", num: true }, { key: "a2", label: "A2", num: true },
+          { ...goalsCol, label: "Total" }, toiCol, { ...rateCol, label: "Per 60" }] },
+  op: { label: "On-ice pairs", note: "Two skaters on the ice for the scoring team when a PP goal went in, whether or not they got a point.",
+        rows: () => minFilter(A.op), cols: () => [teamCol, p1, p2, { ...goalsCol, label: "GF" }, toiCol, { ...rateCol, label: "GF/60" }] },
+  ou: { label: "On-ice units", note: "The full set of skaters on the ice. Line changes split a unit's time, so units reach the minimum more slowly than pairs; lower it to see more.",
+        rows: () => minFilter(A.ou), cols: () => [teamCol, playersCol("Unit"), { ...goalsCol, label: "GF" }, toiCol, { ...rateCol, label: "GF/60" }] },
+};
+
+// ---------- views ----------
+function render() {
+  syncControls();
+  const v = $("#view");
+  if (S.tab === "boards") v.innerHTML = viewBoards();
+  else if (S.tab === "network") v.innerHTML = viewNetwork();
+  else if (S.tab === "team") v.innerHTML = viewTeam();
+  else v.innerHTML = viewPlayer();
+  wireTables(v);
+  v.querySelectorAll("[data-board]").forEach(b => b.onclick = () => { S.board = b.dataset.board; S.limit = 50; render(); });
+  v.querySelectorAll("[data-gmode]").forEach(b => b.onclick = () => { S.graphMode = b.dataset.gmode; render(); });
+  v.querySelectorAll(".graph").forEach(el => drawGraph(el, el.dataset.team || ""));
+  if (S.tab === "player") wireSearch();
+}
+
+function viewBoards() {
+  const b = BOARDS[S.board];
+  return `<div class="sub">${Object.entries(BOARDS).map(([k, x]) => `<button data-board="${k}" class="${k === S.board ? "on" : ""}">${x.label}</button>`).join("")}</div>
+    <div class="note">${b.note}${S.min ? ` Showing combos with at least ${S.min} PP minutes together.` : ""}</div>
+    ${table(S.board, b.cols(), b.rows(), { empty: S.min ? `Nothing with ${S.min}+ PP minutes together. Lower the minimum to see smaller samples.` : undefined })}`;
+}
+
+function graphControls() {
+  return `<div class="sub">
+    <button data-gmode="sheet" class="${S.graphMode === "sheet" ? "on" : ""}">Scoresheet</button>
+    <button data-gmode="ice" class="${S.graphMode === "ice" ? "on" : ""}">On-ice</button></div>`;
+}
+
+function viewNetwork() {
+  return `${graphControls()}
+    <div class="note">Players sized by PP points; lines weighted by ${S.graphMode === "sheet" ? "PP goals both were on the scoresheet for" : "PP goals both were on the ice for"}.
+    ${S.team ? "" : "League-wide view shows the strongest 140 links; pick a team for its full graph."} Drag to rearrange, scroll to zoom, click a player to open them.</div>
+    <div class="panel graph" data-team="${S.team}"></div>`;
+}
+
+function teamSummaryRows() {
+  const teams = new Set([...A.toiTeam.keys(), ...A.teamGoals.keys()]);
+  return [...teams].map(team => {
+    const goals = A.teamGoals.get(team) || 0, secs = A.toiTeam.get(team) || 0;
+    const top = A.sp.filter(r => r.team === team).sort((a, b) => b.goals - a.goals || b.secs - a.secs)[0];
+    const lead = A.players.filter(r => r.team === team).sort((a, b) => b.pts - a.pts || b.secs - a.secs)[0];
+    return { team, goals, secs, rate: rate(goals, secs), top, lead };
+  });
+}
+
+function viewTeam() {
+  if (!S.team) {
+    return `<div class="note">Pick a team from the filter, or click one below. Team totals use the strength and date filters.</div>
+      ${table("teams", [teamCol, { ...goalsCol, label: "PP goals" }, toiCol, { ...rateCol, label: "GF/60" },
+        { key: "lead", label: "Top PP scorer", sortVal: r => r.lead ? r.lead.pts : 0, fmt: r => r.lead ? `${pname(r.team, r.lead.id)} <span class="num">${r.lead.pts}</span>` : "–" },
+        { key: "top", label: "Top scoresheet pair", nosort: true, fmt: r => r.top ? `${pname(r.team, r.top.ids[0], true)} + ${pname(r.team, r.top.ids[1], true)} <span class="num">${r.top.goals}</span>` : "–" }],
+        teamSummaryRows(), { all: true })}`;
+  }
+  const t = S.team, goals = A.G.filter(g => g.team === t), secs = A.toiTeam.get(t) || 0;
+  const roster = A.players.filter(r => r.team === t);
+  const units = A.ou.filter(r => r.team === t && r.ids.length >= 4).sort((a, b) => b.secs - a.secs).slice(0, 5);
+  const pp1 = units[0];
+  const playerCols = [
+    { key: "id", label: "Player", sortVal: r => P[r.id]?.name || "", fmt: r => pname(t, r.id) },
+    { key: "g", label: "G", num: true }, { key: "a", label: "A", num: true }, { key: "pts", label: "Pts", num: true },
+    { key: "onIce", label: "On-ice GF", num: true }, toiCol, { key: "rate", label: "GF/60", num: true, fmt: r => fmtRate(r.onIce, r.secs) }];
+  const logCols = [
+    { key: "date", label: "Date", fmt: r => `<span class="mono">${r.date.slice(5)}</span>` },
+    { key: "opp", label: "Opp", fmt: r => teamChip(r.opp) },
+    { key: "time", label: "Time", sortVal: r => r.period * 10000 + +r.time.replace(":", ""), fmt: r => `<span class="mono">${r.period > 3 ? "OT" : "P" + r.period} ${r.time}</span>` },
+    { key: "strength", label: "Str" },
+    { key: "scorer", label: "Scorer", sortVal: r => P[r.scorer]?.name || "", fmt: r => pname(t, r.scorer) },
+    { key: "a", label: "Assists", nosort: true, cls: "players", fmt: r => [r.a1, r.a2].filter(x => x).map(id => pname(t, id)).join("") || "<span class='pos'>unassisted</span>" },
+    { key: "ice", label: "On ice", nosort: true, cls: "players", fmt: r => r.onIce.map(id => pname(t, id, true)).join("") }];
+  return `<div class="kpis">
+      <div class="kpi"><div class="l">PP goals</div><div class="v">${goals.length}</div><div class="s">${esc(t)} · filtered</div></div>
+      <div class="kpi"><div class="l">PP minutes</div><div class="v">${fmtMin(secs)}</div><div class="s">with the advantage</div></div>
+      <div class="kpi"><div class="l">PP goals / 60</div><div class="v">${fmtRate(goals.length, secs)}</div><div class="s">team rate</div></div>
+      <div class="kpi"><div class="l">Top unit</div><div class="v">${pp1 ? fmtMin(pp1.secs) : "–"}<span class="s"> min</span></div><div class="s">${pp1 ? `${pp1.goals} GF · ${fmtRate(pp1.goals, pp1.secs)} GF/60` : "no unit yet"}</div></div>
+    </div>
+    <h2>Most-used units<small>by PP time together, 4+ skaters</small></h2>
+    ${table("tunits", [playersCol("Unit"), { ...goalsCol, label: "GF" }, toiCol, { ...rateCol, label: "GF/60" }], units, { all: true, sortKey: "secs", empty: "No units with a minute together yet." })}
+    <div class="grid2">
+      <div><h2>Graph</h2>${graphControls()}<div class="panel graph" data-team="${t}" style="height:480px"></div></div>
+      <div><h2>Players<small>PP scoring and time</small></h2>${table("troster", playerCols, roster, { all: true, sortKey: "pts" })}</div>
+    </div>
+    <h2>PP goal log<small>${goals.length} goals</small></h2>
+    ${table("tlog", logCols, goals.map(g => ({ ...g, goals: 1, secs: 0 })), { all: true, sortKey: "date", rank: false })}`;
+}
+
+function openPlayer(team, id) { S.player = { team, id }; S.tab = "player"; render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+function viewPlayer() {
+  const search = `<div class="search"><input id="psearch" placeholder="Search a player…" autocomplete="off"><div class="sugg" id="sugg"></div></div>`;
+  if (!S.player) return `${search}<div class="note" style="margin-top:12px">Type a name to see who they combine with most on the power play. You can also click any name on the other tabs.</div>`;
+  const { team, id } = S.player, p = P[id] || { name: "#" + id, pos: "", head: "" };
+  const me = A.players.find(r => r.team === team && r.id === id) || { g: 0, a: 0, pts: 0, onIce: 0, secs: 0 };
+  const partners = new Map();
+  const get = other => { let r = partners.get(other); if (!r) partners.set(other, r = { team, id: other, sheet: 0, ice: 0, to: 0, from: 0, secs: A.toiPair.get(key(team, [id, other].sort((a, b) => a - b))) || 0 }); return r; };
+  for (const r of A.sp) if (r.team === team && r.ids.includes(id)) get(r.ids.find(x => x !== id)).sheet += r.goals;
+  for (const r of A.op) if (r.team === team && r.ids.includes(id)) get(r.ids.find(x => x !== id)).ice += r.goals;
+  for (const r of A.su) if (r.team === team) { if (r.ids[0] === id) get(r.ids[1]).to += r.goals; if (r.ids[1] === id) get(r.ids[0]).from += r.goals; }
+  for (const [k, secs] of A.toiPair) {
+    if (secs < 60) continue;
+    const [t, s] = k.split("|"); if (t !== team) continue;
+    const ids = s.split(";").map(Number); if (ids.includes(id)) get(ids.find(x => x !== id));
+  }
+  const rows = [...partners.values()].filter(r => posOk(r.id)).map(r => ({ ...r, goals: r.ice, rate: rate(r.ice, r.secs) }));
+  const cols = [
+    { key: "id", label: "Teammate", sortVal: r => P[r.id]?.name || "", fmt: r => pname(team, r.id) },
+    { key: "sheet", label: "Scoresheet G", num: true },
+    { key: "goals", label: "On-ice GF", num: true, fmt: (r, max) => `${r.ice}<span class="bar" style="width:${Math.round(36 * r.ice / max)}px"></span>` },
+    toiCol, { ...rateCol, label: "GF/60" },
+    { key: "to", label: "Assists to", num: true }, { key: "from", label: "Assists from", num: true }];
+  return `${search}
+    <div class="panel card">
+      ${p.head ? `<img src="${esc(p.head)}" alt="">` : ""}
+      <div><div class="nm">${esc(p.name)}</div><div class="meta">${teamChip(team)} · ${p.pos === "D" ? "Defence" : p.pos === "G" ? "Goalie" : "Forward (" + p.pos + ")"}</div></div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="l">PP points</div><div class="v">${me.pts}</div><div class="s">${me.g} G · ${me.a} A</div></div>
+      <div class="kpi"><div class="l">PP minutes</div><div class="v">${fmtMin(me.secs)}</div><div class="s">on the ice with the advantage</div></div>
+      <div class="kpi"><div class="l">On-ice PP GF</div><div class="v">${me.onIce}</div><div class="s">${fmtRate(me.onIce, me.secs)} per 60</div></div>
+      <div class="kpi"><div class="l">PP points / 60</div><div class="v">${fmtRate(me.pts, me.secs)}</div><div class="s">individual rate</div></div>
+    </div>
+    <h2>Most frequent partners<small>on ${esc(team)}, current filters</small></h2>
+    ${table("partners", cols, rows, { all: true, empty: "No PP partners under these filters." })}`;
+}
+
+function wireSearch() {
+  const inp = $("#psearch"), box = $("#sugg");
+  const all = [];
+  const seen = new Set();
+  for (const r of D.toi) for (const id of r.onIce) { const k = r.team + "|" + id; if (!seen.has(k)) { seen.add(k); all.push({ team: r.team, id }); } }
+  for (const g of D.goals) for (const id of [g.scorer, g.a1, g.a2]) { const k = g.team + "|" + id; if (id && !seen.has(k) && P[id]) { seen.add(k); all.push({ team: g.team, id }); } }
+  let hits = [], hi = 0;
+  const show = () => {
+    const q = inp.value.trim().toLowerCase();
+    if (q.length < 2) { box.style.display = "none"; return; }
+    hits = all.filter(x => P[x.id] && P[x.id].name.toLowerCase().includes(q)).slice(0, 12);
+    hi = 0;
+    box.innerHTML = hits.map((x, i) => `<div data-i="${i}" class="${i === hi ? "hi" : ""}"><span>${esc(P[x.id].name)}</span><span class="pos">${x.team} · ${P[x.id].pos}</span></div>`).join("") || `<div class="pos">No match</div>`;
+    box.style.display = "block";
+  };
+  inp.oninput = show;
+  inp.onkeydown = e => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { hi = (hi + (e.key === "ArrowDown" ? 1 : hits.length - 1)) % Math.max(hits.length, 1); [...box.children].forEach((c, i) => c.classList.toggle("hi", i === hi)); e.preventDefault(); }
+    if (e.key === "Enter" && hits[hi]) openPlayer(hits[hi].team, hits[hi].id);
+    if (e.key === "Escape") box.style.display = "none";
+  };
+  box.onclick = e => { const d = e.target.closest("[data-i]"); if (d) openPlayer(hits[+d.dataset.i].team, hits[+d.dataset.i].id); };
+  if (!S.player) inp.focus();
+}
+
+// ---------- network graph ----------
+function drawGraph(el, team) {
+  const src = S.graphMode === "sheet" ? A.sp : A.op;
+  let edges = src.filter(r => r.goals > 0 && (!team || r.team === team) && anyPos(r.ids));
+  edges.sort((a, b) => b.goals - a.goals);
+  if (!team) edges = edges.slice(0, 140);
+  if (!edges.length) { el.innerHTML = `<div class="empty">No combinations under these filters.</div>`; return; }
+  const ptsBy = new Map(A.players.map(r => [r.team + "|" + r.id, r]));
+  const nodes = new Map();
+  for (const e of edges) for (const id of e.ids) {
+    const k = e.team + "|" + id;
+    if (!nodes.has(k)) { const pr = ptsBy.get(k); nodes.set(k, { id: k, pid: id, team: e.team, pts: pr ? pr.pts : 0, pos: P[id]?.pos }); }
+  }
+  const links = edges.map(e => ({ source: e.team + "|" + e.ids[0], target: e.team + "|" + e.ids[1], w: e.goals }));
+  const W = el.clientWidth, H = el.clientHeight;
+  const css = getComputedStyle(document.documentElement);
+  const col = n => n.pos === "D" ? css.getPropertyValue("--def") : css.getPropertyValue("--fwd");
+  const maxW = d3.max(links, l => l.w), maxP = d3.max([...nodes.values()], n => n.pts) || 1;
+  const r = d3.scaleSqrt().domain([0, maxP]).range([4, team ? 22 : 16]);
+  const wid = d3.scaleLinear().domain([1, maxW]).range([1, team ? 9 : 6]);
+
+  el.innerHTML = `<div class="legend"><span><span class="dot" style="background:var(--fwd)"></span>Forward</span><span><span class="dot" style="background:var(--def)"></span>Defence</span></div>`;
+  const svg = d3.select(el).append("svg").attr("viewBox", [0, 0, W, H]);
+  const g = svg.append("g");
+  svg.call(d3.zoom().scaleExtent([0.3, 4]).on("zoom", ev => g.attr("transform", ev.transform)));
+  const nodeArr = [...nodes.values()];
+  const sim = d3.forceSimulation(nodeArr)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(l => team ? 150 - 60 * l.w / maxW : 60).strength(l => 0.3 + 0.7 * l.w / maxW))
+    .force("charge", d3.forceManyBody().strength(team ? -420 : -60).distanceMax(team ? Infinity : 260))
+    .force("center", d3.forceCenter(W / 2, H / 2))
+    // league view is many disconnected team clusters; pull them in harder so they stay in frame
+    .force("x", d3.forceX(W / 2).strength(team ? 0.04 : 0.05)).force("y", d3.forceY(H / 2).strength(team ? 0.06 : 0.08))
+    .force("collide", d3.forceCollide(d => r(d.pts) + (team ? 16 : 3)));
+  const link = g.append("g").attr("stroke", css.getPropertyValue("--edge")).attr("stroke-linecap", "round")
+    .selectAll("line").data(links).join("line").attr("stroke-width", l => wid(l.w)).attr("stroke-opacity", 0.55);
+  const node = g.append("g").selectAll("g").data(nodeArr).join("g").style("cursor", "pointer")
+    .call(d3.drag().on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
+      .on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  node.append("circle").attr("r", d => r(d.pts)).attr("fill", col).attr("stroke", css.getPropertyValue("--panel")).attr("stroke-width", 1.5);
+  const labelMin = team ? 0 : maxP * 0.45;
+  node.filter(d => d.pts >= labelMin).append("text")
+    .text(d => (P[d.pid]?.name.split(" ").slice(1).join(" ") || "") + (team ? "" : " " + d.team))
+    .attr("x", d => r(d.pts) + 3).attr("y", 4).attr("font-size", team ? 12 : 10).attr("fill", css.getPropertyValue("--ink"))
+    .attr("paint-order", "stroke").attr("stroke", css.getPropertyValue("--panel")).attr("stroke-width", 3);
+  const tip = $("#tip");
+  node.on("mouseenter", (ev, d) => {
+    const mine = links.filter(l => l.source === d || l.target === d).sort((a, b) => b.w - a.w).slice(0, 5);
+    tip.innerHTML = `<b>${esc(P[d.pid]?.name)}</b> · ${d.team}<br>${d.pts} PP pts<br>` +
+      mine.map(l => { const o = l.source === d ? l.target : l.source; return `${esc(P[o.pid]?.name)}: ${l.w}`; }).join("<br>");
+    tip.style.opacity = 1;
+    link.attr("stroke-opacity", l => l.source === d || l.target === d ? 0.95 : 0.12);
+  }).on("mousemove", ev => { tip.style.left = Math.min(ev.pageX + 12, window.innerWidth - 270) + "px"; tip.style.top = ev.pageY + 12 + "px"; })
+    .on("mouseleave", () => { tip.style.opacity = 0; link.attr("stroke-opacity", 0.55); })
+    .on("click", (ev, d) => { tip.style.opacity = 0; openPlayer(d.team, d.pid); });
+  sim.on("tick", () => {
+    link.attr("x1", l => l.source.x).attr("y1", l => l.source.y).attr("x2", l => l.target.x).attr("y2", l => l.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+}
+</script>
+</body>
+</html>
