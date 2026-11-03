@@ -96,10 +96,11 @@ def top_pairs(res, db, k=12, min_p=0.3):
     for i, j in combinations(np.flatnonzero((p >= min_p) & (np.array(res.spec.players) > 0)), 2):
         if res.spec.team_of[i] != res.spec.team_of[j]:
             continue
-        joint = (pts[:, i] & pts[:, j]).mean()
+        joint, indep = (pts[:, i] & pts[:, j]).mean(), p[i] * p[j]
+        calibrated = indep * (1 + CORR_KEEP * (joint / indep - 1))
         rows.append({"pair": f"{db.name(res.spec.players[i])} + {db.name(res.spec.players[j])}",
-                     "joint": joint, "if independent": p[i] * p[j], "lift": joint / (p[i] * p[j]),
-                     "fair": american(joint)})
+                     "joint": joint, "if independent": indep, "lift": joint / indep,
+                     "calibrated": calibrated, "fair": american(calibrated)})
     return pd.DataFrame(rows).sort_values("lift", ascending=False).head(k)
 
 
@@ -145,9 +146,10 @@ def main(argv=None):
     if not args.leg:
         fmt = {c: "{:.1%}".format for c in ("point", "goal", "assist", "2+ pts")}
         print("\n" + prop_table(res, db).to_string(index=False, formatters=fmt))
-        print("\nMost correlated teammate point pairs:")
+        print(f"\nMost correlated teammate point pairs (fair odds are calibrated, keeping {CORR_KEEP:.0%} of the lift):")
         print(top_pairs(res, db).to_string(index=False, formatters={
-            "joint": "{:.1%}".format, "if independent": "{:.1%}".format, "lift": "{:.2f}".format}))
+            "joint": "{:.1%}".format, "if independent": "{:.1%}".format, "lift": "{:.2f}".format,
+            "calibrated": "{:.1%}".format}))
         return
 
     legs = [parse_leg(t, res, db) for t in args.leg]
