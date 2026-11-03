@@ -13,6 +13,7 @@ FLA,8477495,Seth Jones,8477933,Sam Reinhart,8479314,Matthew Tkachuk,3
 FLA,8477495,Seth Jones,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,3
 EDM,8476454,Ryan Nugent-Hopkins,8477934,Leon Draisaitl,8478402,Connor McDavid,3
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,8480012,Elias Pettersson,2
+COL,8475172,Nazem Kadri,8477492,Nathan MacKinnon,8480069,Cale Makar,2
 COL,8475754,Brock Nelson,8477476,Artturi Lehkonen,8478038,Devon Toews,2
 EDM,8477934,Leon Draisaitl,8478402,Connor McDavid,8481617,Vasily Podkolzin,2
 WPG,8478398,Kyle Connor,8480014,Gabriel Vilardi,8482149,Cole Perfetti,2
@@ -28,6 +29,7 @@ ANA,8475798,Mikael Granlund,8483445,Cutter Gauthier,8484153,Leo Carlsson,2
 UTA,8479343,Clayton Keller,8479410,Mikhail Sergachev,8483431,Logan Cooley,2
 NYI,8475170,Brayden Schenn,8477500,Bo Horvat,8481711,Matias Maccelli,2
 ANA,8481605,Jackson LaCombe,8484153,Leo Carlsson,8484762,Beckett Sennecke,2
+BOS,8477956,David Pastrnak,8478401,Pavel Zacha,8479987,Morgan Geekie,2
 CAR,8476906,Shayne Gostisbehere,8480830,Andrei Svechnikov,8482809,Jackson Blake,2
 DET,8478042,Viktor Arvidsson,8481542,Moritz Seider,8482078,Lucas Raymond,2
 TOR,8477939,William Nylander,8479318,Auston Matthews,8486067,Gavin McKenna,2
@@ -55,7 +57,6 @@ VGK,8477447,Shea Theodore,8478109,Victor Olofsson,8478403,Jack Eichel,1
 PIT,8471215,Evgeni Malkin,8478438,Tommy Novak,8482148,Hendrix Lapierre,1
 PIT,8474578,Erik Karlsson,8476483,Rickard Rakell,8482475,Egor Chinakhov,1
 COL,8475172,Nazem Kadri,8475754,Brock Nelson,8475768,Jaden Schwartz,1
-COL,8475172,Nazem Kadri,8477492,Nathan MacKinnon,8480069,Cale Makar,1
 TOR,8476853,Morgan Rielly,8478458,Jack Roslovic,8484158,Easton Cowan,1
 NYR,8476459,Mika Zibanejad,8479323,Adam Fox,8481604,Pavel Dorofeyev,1
 CBJ,8475745,Charlie Coyle,8478460,Zach Werenski,8482720,Matthew Knies,1
@@ -101,7 +102,6 @@ ANA,8475798,Mikael Granlund,8484153,Leo Carlsson,8484762,Beckett Sennecke,1
 EDM,8477953,Kasperi Kapanen,8478402,Connor McDavid,8480803,Evan Bouchard,1
 BOS,8477956,David Pastrnak,8479987,Morgan Geekie,8483017,Frederic Brunet,1
 BOS,8476854,Hampus Lindholm,8477956,David Pastrnak,8479987,Morgan Geekie,1
-BOS,8477956,David Pastrnak,8478401,Pavel Zacha,8479987,Morgan Geekie,1
 DAL,8478420,Mikko Rantanen,8478449,Roope Hintz,8482740,Wyatt Johnston,1
 NSH,8474564,Steven Stamkos,8476887,Filip Forsberg,8484241,Matthew Wood,1
 PHI,8478439,Travis Konecny,8481533,Trevor Zegras,8484387,Matvei Michkov,1
@@ -227,3 +227,5 @@ MIN,8481553,Bobby Brink,8483525,Danila Yurov,8483766,David Spacek,1
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,8479410,Mikhail Sergachev,1
 ANA,8481538,Judd Caulfield,8481754,Nikita Nesterenko,8483482,Tristan Luneau,1
 ANA,8481538,Judd Caulfield,8483482,Tristan Luneau,8485400,Roger McQueen,1
+VGK,8475913,Mark Stone,8476881,Tomas Hertl,8478483,Mitch Marner,1
+DET,8475753,Justin Faulk,8477429,Andrew Copp,8484794,Michael Brandsegg-Nygård,1

@@ -3817,6 +3817,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481068.png"
  },
+ "8481077": {
+  "name": "John Leonard",
+  "position": "L",
+  "teams": [
+   "DET"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481077.png"
+ },
  "8481122": {
   "name": "Simon Benoit",
   "position": "D",
@@ -5108,6 +5116,14 @@
    "WPG"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482765.png"
+ },
+ "8482766": {
+  "name": "William Stromgren",
+  "position": "L",
+  "teams": [
+   "CGY"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482766.png"
  },
  "8482768": {
   "name": "Fedor Svechkov",
