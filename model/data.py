@@ -33,7 +33,7 @@ def _concat(name, **kw):
 
 
 class Db:
-    """Every season's team_games, player_games, units and goals, with a few derived columns."""
+    """Every season's team_games, player_games, units, goals, shots and goalie games, with a few derived columns."""
 
     def __init__(self):
         self.players = {}
@@ -72,6 +72,9 @@ class Db:
         script = home.merge(sides.add_prefix("h_"), left_on=["game_id", "team"], right_index=True, how="left")
         script = script.merge(sides.add_prefix("a_"), left_on=["game_id", "opponent"], right_index=True, how="left")
         self.scripts = script.fillna(0)
+
+        self.shots = _concat("shots.csv")
+        self.goalie_games = _concat("goalie_games.csv")
 
     def name(self, pid):
         return self.players.get(pid, {}).get("name", str(pid))

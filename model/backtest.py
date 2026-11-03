@@ -8,11 +8,14 @@ rates and the correlation structure rather than lineup guessing. Reports:
   - team goals per game.
 Writes the per-player and per-pair predictions to the scratch folder given by --out.
 
-    python model/backtest.py [--season 20252026] [--sims 4000] [--every 1] [--out DIR]
+    python model/backtest.py [--season 20252026] [--sims 4000] [--every 1] [--out DIR] [--no-goalies]
+
+Starting goalies are the ones who actually started; --no-goalies leaves them out, to compare.
 """
 import argparse
 import time
 from itertools import combinations
+from math import lgamma
 from pathlib import Path
 
 import numpy as np
@@ -20,6 +23,7 @@ import pandas as pd
 
 from data import Db
 from rates import Ratings, decay
+import sim
 from sim import build_spec, simulate
 
 EPS = 1e-6
@@ -46,6 +50,10 @@ def baseline_ppg(db, as_of, pids_pos):
     return out
 
 
+def poisson_ll(k, lam):
+    return np.mean([ki * np.log(li) - li - lgamma(ki + 1) for ki, li in zip(k, lam)])
+
+
 def calibration(p, y, bins):
     df = pd.DataFrame({"p": p, "y": y})
     df["bin"] = pd.cut(df.p, bins)
@@ -58,10 +66,14 @@ def main():
     ap.add_argument("--sims", type=int, default=4000)
     ap.add_argument("--every", type=int, default=1, help="price every k-th game, for a quicker run")
     ap.add_argument("--out", default=".")
+    ap.add_argument("--no-goalies", action="store_true")
+    ap.add_argument("--lineup-power", type=float, help="override sim.LINEUP_POWER, for tuning")
     args = ap.parse_args()
 
+    if args.lineup_power is not None:
+        sim.LINEUP_POWER = args.lineup_power
     db = Db()
-    players, pairs, teams = run(db, args.season, args.sims, args.every)
+    players, pairs, teams = run(db, args.season, args.sims, args.every, goalies=not args.no_goalies)
     out = Path(args.out)
     players.to_csv(out / f"backtest_players_{args.season}.csv", index=False)
     pairs.to_csv(out / f"backtest_pairs_{args.season}.csv", index=False)
@@ -69,10 +81,12 @@ def main():
     report(players, pairs, teams, db, args.season)
 
 
-def run(db, season, sims, every=1, quiet=False):
+def run(db, season, sims, every=1, quiet=False, goalies=True):
     tg = db.team_games
     games = tg[(tg.season == season) & (tg.home == 1)].sort_values(["date", "game_id"]).iloc[::every]
     pg = db.player_games.set_index("game_id")
+    gg = db.goalie_games
+    starters = gg[gg.started == 1].set_index(["game_id", "team"]).goalie_id
     players, pairs, teams = [], [], []
     ratings, t0 = None, time.time()
     for k, g in enumerate(games.itertuples(), 1):
@@ -81,7 +95,8 @@ def run(db, season, sims, every=1, quiet=False):
         dressed = pg.loc[[g.game_id]]
         lineups = {side: list(zip(d.player_id, d.pos)) for side, d in
                    (("home", dressed[dressed.team == g.team]), ("away", dressed[dressed.team == g.opponent]))}
-        spec = build_spec(ratings, g.team, g.opponent, lineups)
+        starting = {"home": starters.get((g.game_id, g.team)), "away": starters.get((g.game_id, g.opponent))}
+        spec = build_spec(ratings, g.team, g.opponent, lineups, goalies=starting if goalies else None)
         res = simulate(spec, sims, seed=g.game_id % 100000)
         base = baseline_ppg(db, g.date, lineups["home"] + lineups["away"])
         actual = dressed.set_index("player_id")
@@ -136,6 +151,8 @@ def report(players, pairs, teams, db, season):
     print("\nLift by bucket (observed lift = actual both-point games / independent expectation):")
     print(lift[["n", "predicted lift", "observed lift"]].round(3).to_string())
 
+    team_ll = (poisson_ll(teams.home_goals, teams.xg_home) + poisson_ll(teams.away_goals, teams.xg_away)) / 2
+    print(f"\nTeam goals, Poisson log likelihood per team-game (higher is better): {team_ll:.4f}")
     hg = teams.home_goals + teams.away_goals
     print(f"\nGoals per game: predicted {(teams.xg_home + teams.xg_away).mean():.2f}  actual {hg.mean():.2f}   "
           f"home {teams.xg_home.mean():.2f} vs {teams.home_goals.mean():.2f}, "

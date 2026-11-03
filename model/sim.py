@@ -16,12 +16,23 @@ move with its goal total, and the leading team gets the empty-net goals.
 from dataclasses import dataclass, field
 
 import numpy as np
+import pandas as pd
 
 from rates import SIM_STATES
 
 PAD = -1
 REL_POWER = 2.0   # how hard a group's on-ice scoring rate tilts which group is on for a goal
 SIDES = ("home", "away")
+# Share of a state's group-seconds that goes to projected lines (the rest stays with the recent
+# groups recast onto tonight's lineup). Not fitted yet: there's no archive of projected lines to fit it on.
+LINES_WEIGHT = 0.5
+# How ice time splits across each team's lines, top first: the full-size groups' split, 2025-26
+SLOT_SIZE = {"ev_F": 3, "ev_D": 2, "pp_PP": 5, "sh_F": 2, "sh_D": 2}
+# How hard tonight's lineup quality (its skaters' points rates weighted by projected ice time, against
+# the team's last 10 games) moves the team's expected goals: 0 ignores it, 1 is proportional
+LINEUP_POWER = 1.0
+SLOT_SHARE = {"ev_F": [0.330, 0.273, 0.225, 0.171], "ev_D": [0.402, 0.336, 0.261], "pp_PP": [0.724, 0.276],
+              "sh_F": [0.62, 0.38], "sh_D": [0.656, 0.344]}
 
 
 @dataclass
@@ -57,9 +68,39 @@ class GameSpec:
         return GameSpec(**{**self.__dict__, "lam": lam})
 
 
-def build_spec(ratings, home, away, lineups, replacement=0.85):
-    """lineups: {'home': [(player_id, 'F'|'D'), ...], 'away': [...]}: tonight's dressed skaters."""
+def with_lines(units, lines, lineup, placeholder):
+    """Blend projected lines (lineups.Lineup.lines) into the recent on-ice groups, LINES_WEIGHT of each state's seconds.
+
+    A projected line with someone missing (ruled out, or a name that didn't match) gets a
+    replacement-level player in the empty spot, so his linemates don't inherit his share.
+    """
+    out = []
+    for key, groups in lines.items():
+        state, group = key.split("_")
+        fill = placeholder["D"] if group == "D" else placeholder["F"]
+        groups = [[p for p in g if p in lineup] for g in groups[:len(SLOT_SHARE[key])]]
+        groups = [tuple(sorted(g + [fill] * (SLOT_SIZE[key] - len(g)))) for g in groups if g]
+        if not groups:
+            continue
+        mask = (units.state == state) & (units.group == group)
+        total = units.seconds[mask].sum()
+        if total <= 0:
+            continue
+        share = np.array(SLOT_SHARE[key][:len(groups)])
+        units = units.assign(seconds=np.where(mask, units.seconds * (1 - LINES_WEIGHT), units.seconds))
+        out += [(state, group, g, total * LINES_WEIGHT * w) for g, w in zip(groups, share / share.sum())]
+    if not out:
+        return units
+    added = pd.DataFrame(out, columns=["state", "group", "members", "seconds"])
+    return pd.concat([units, added]).groupby(["state", "group", "members"], as_index=False).seconds.sum()
+
+
+def build_spec(ratings, home, away, lineups, replacement=0.85, goalies=None, lines=None):
+    """lineups: {'home': [(player_id, 'F'|'D'), ...], 'away': [...]}: tonight's dressed skaters.
+    goalies: {'home': player_id, 'away': player_id}: tonight's starters, if known.
+    lines: {'home': Lineup.lines, 'away': ...}: projected lines, if known."""
     players, team_of, rows, notes = [], [], [], []
+    quality = {}
     samplers = {}
     index = {}
     for t, side in enumerate(SIDES):
@@ -80,6 +121,10 @@ def build_spec(ratings, home, away, lineups, replacement=0.85):
             rows.append(ratings.player(ph, pos, replacement))
 
         units, swaps = ratings.recent_units(team, lineup, placeholder)
+        if lines and lines.get(side):
+            units = with_lines(units, lines[side], lineup, placeholder)
+        quality[side] = {st: (ratings.lineup_quality(units, st) / ratings.recent_quality(team, st)) ** LINEUP_POWER
+                         for st in SIM_STATES}
         lost = [p for p, to in swaps.items() if any(q < 0 for q in to)]
         if lost:
             notes.append(f"{team}: replacement-level fill-in for " + ", ".join(ratings.db.name(p) for p in lost))
@@ -117,7 +162,10 @@ def build_spec(ratings, home, away, lineups, replacement=0.85):
         shares[("g", state)] = np.append(g, 0.0)
         shares[("a1", state)] = np.append(a1 / np.clip(1 - g, 0.05, None), 0.0)
         shares[("a2", state)] = np.append(a2 / np.clip(1 - g - a1, 0.05, None), 0.0)
-    xg = ratings.expected_goals(home, away)
+    goalies = goalies or {}
+    xg = ratings.expected_goals(home, away, goalies.get("home"), goalies.get("away"))
+    # tonight's lineup against the ones behind the team ratings: a missing star lowers the team's goals
+    xg = {side: {st: lam * quality[side][st] for st, lam in xg[side].items()} for side in SIDES}
     return GameSpec(home, away, players, np.array(team_of), shares, samplers, xg,
                     ratings.p_a1, ratings.p_a2, ratings.other_dist, ratings.p_ot_goal, notes)
 

@@ -1,13 +1,14 @@
 """Price player props and same-game parlays for one game.
 
     python model/price.py AWAY HOME [--date YYYY-MM-DD] [--leg "McDavid point" ...] [--book +450]
-        [--home-xg 3.4 --away-xg 2.9]
+        [--home-xg 3.4 --away-xg 2.9] [--lineups dailyfaceoff|last]
 
 Legs: "<player> goal|assist|point", "<player> 2+ points" (also goals / assists), "<TEAM> win",
 "over 6.5" / "under 6.5" (game total, where a shootout adds one goal, as books settle it).
 Player names match on any part of the name, e.g. "McDavid" or "Connor McD".
 
-Lineups are each team's skaters from its most recent game until projected lineups are added.
+Lineups, lines and starting goalies come from Daily Faceoff, with model/overrides.txt for late
+news (see lineups.py); --lineups last uses each team's most recent game instead.
 --home-xg / --away-xg scale the simulation to the market's implied team totals (no shootout goal).
 Without --leg, prints every skater's prop prices and the most correlated teammate pairs.
 
@@ -25,19 +26,11 @@ import numpy as np
 import pandas as pd
 
 from data import Db
+from lineups import project
 from rates import Ratings
 from sim import build_spec, match_market, simulate
 
 CORR_KEEP = 0.8  # share of the simulated lift over independence that held up out of sample
-
-
-def last_lineup(db, team, before):
-    pg = db.player_games
-    games = pg[(pg.team == team) & (pg.date < before)]
-    if games.empty:
-        sys.exit(f"No games for {team} before {before.date()}")
-    last = games[games.game_id == games.game_id.max()]
-    return list(zip(last.player_id, last.pos))
 
 
 def american(p):
@@ -120,19 +113,32 @@ def main(argv=None):
     ap.add_argument("--home-xg", type=float)
     ap.add_argument("--away-xg", type=float)
     ap.add_argument("--sims", type=int, default=40000)
+    ap.add_argument("--lineups", choices=["dailyfaceoff", "last"], default="dailyfaceoff")
     args = ap.parse_args(argv)
 
     db = Db()
     as_of = pd.Timestamp(args.date)
     home, away = args.home.upper(), args.away.upper()
     ratings = Ratings(db, as_of)
-    spec = build_spec(ratings, home, away, {"home": last_lineup(db, home, as_of), "away": last_lineup(db, away, as_of)})
+    try:
+        lu = {"home": project(db, home, as_of.date(), args.lineups), "away": project(db, away, as_of.date(), args.lineups)}
+    except ValueError as e:
+        sys.exit(str(e))
+    spec = build_spec(ratings, home, away, {s: lu[s].skaters for s in lu}, goalies={s: lu[s].goalie for s in lu},
+                      lines={s: lu[s].lines for s in lu})
     if args.home_xg and args.away_xg:
         spec = match_market(spec, args.home_xg, args.away_xg)
     res = simulate(spec, args.sims)
 
     print(f"{away} @ {home}, {as_of.date()}   expected goals {away} {res.away_goals.mean():.2f}  "
           f"{home} {res.home_goals.mean():.2f}   {home} win {res.home_win.mean():.1%}")
+    for side in ("away", "home"):
+        x = lu[side]
+        print(f"  {x.team}: {x.source}{f', updated {x.updated[:16]}' if x.updated else ''}; goalie "
+              f"{db.name(x.goalie) if x.goalie else 'unknown'} ({x.goalie_status}, factor "
+              f"{ratings.goalie_factor(x.goalie):.3f})")
+        for note in x.notes:
+            print(f"    {note}")
     for note in spec.notes:
         print(f"  lineup: {note}")
 

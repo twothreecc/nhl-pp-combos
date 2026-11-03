@@ -1,6 +1,6 @@
 """Build data/history/{season}/ for the finished seasons in config.HISTORY_SEASONS.
 
-Runs fetch -> parse -> pp_toi -> player_games -> units for each one. Raw responses are cached in data/raw,
+Runs fetch -> parse -> pp_toi -> player_games -> units -> goalies for each one. Raw responses are cached in data/raw,
 so a re-run only fetches what's missing. These seasons don't change, so this is run by hand,
 not nightly.
 Run from the repo root:  python pipeline/backfill.py [season ...]
@@ -9,6 +9,7 @@ import sys
 import time
 
 import fetch
+import goalies
 import parse
 import player_games
 import pp_toi
@@ -19,7 +20,7 @@ from config import HISTORY_SEASONS
 def main(seasons):
     for season in seasons:
         for name, step in (("fetch", fetch), ("parse", parse), ("pp_toi", pp_toi), ("player_games", player_games),
-                           ("units", units)):
+                           ("units", units), ("goalies", goalies)):
             t = time.time()
             print(f"\n== {season} {name} ==", flush=True)
             step.main(season)
