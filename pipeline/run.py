@@ -1,4 +1,4 @@
-"""Run the nightly pipeline for the current season: fetch -> parse -> PP TOI -> player games ->
+"""Run the nightly pipeline for the current season: fetch -> parse -> PP TOI -> player games -> units ->
 aggregate -> site/data.json.
 
 Run from the repo root:  python pipeline/run.py
@@ -11,10 +11,11 @@ import fetch
 import parse
 import player_games
 import pp_toi
+import units
 
 
 def main():
-    for name, step in (("fetch", fetch), ("parse", parse), ("pp_toi", pp_toi), ("player_games", player_games),
+    for name, step in (("fetch", fetch), ("parse", parse), ("pp_toi", pp_toi), ("player_games", player_games), ("units", units),
                        ("aggregate", aggregate), ("build_data", build_data)):
         t = time.time()
         print(f"\n== {name} ==")
