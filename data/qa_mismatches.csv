@@ -57,3 +57,6 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020224,TOR,1,01:23,EV,5v5,5,5,Oliver Ekman-Larsson; Colton Sissons; William Nylander; Dakota Joshua; Troy Stecher,Nick Paul; Jake McCabe,api
 2026020229,UTA,1,14:24,EV,5v5,5,5,Vincent Trocheck; Lawson Crouse; Andrew Peeke; Jack McBain; Dmitri Simashev,Logan Cooley,api
 2026020235,CGY,3,09:14,EV,5v5,5,5,Morgan Frost; Yan Kuznetsov; William Stromgren; Simon Nemec; Adam Klapka,Jonathan Castagna,api
+2026020243,DAL,2,03:18,EV,5v5,5,5,Esa Lindell; Roope Hintz; Jason Robertson; Thomas Harley; Arttu Hyry,Tyler Myers,api
+2026020243,DAL,2,14:50,EV,5v5,5,5,Tyler Myers; Mikko Rantanen; Thomas Harley; Joel Kiviranta; Wyatt Johnston,Jamie Benn,api
+2026020243,WSH,2,16:58,EV,5v5,5,5,Boone Jenner; Matt Roy; Jakob Chychrun; Justin Sourdif; Ryan Leonard,Martin Fehérváry,api

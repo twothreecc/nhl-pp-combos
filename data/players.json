@@ -2879,6 +2879,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png"
  },
+ "8479638": {
+  "name": "Justin Brazeau",
+  "position": "R",
+  "teams": [
+   "PIT"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
+ },
  "8479639": {
   "name": "Dylan Coghlan",
   "position": "D",
@@ -5649,9 +5657,10 @@
   "name": "Shane Wright",
   "position": "C",
   "teams": [
-   "SEA"
+   "SEA",
+   "NSH"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8483524.png"
  },
  "8483525": {
   "name": "Danila Yurov",
@@ -6028,6 +6037,14 @@
    "CHI"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484197.png"
+ },
+ "8484201": {
+  "name": "Nico Myatovic",
+  "position": "L",
+  "teams": [
+   "ANA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484201.png"
  },
  "8484203": {
   "name": "Bradly Nadeau",
