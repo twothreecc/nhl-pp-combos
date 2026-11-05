@@ -1999,6 +1999,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478057.png"
  },
+ "8478104": {
+  "name": "Sammy Blais",
+  "position": "L",
+  "teams": [
+   "OTT"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478104.png"
+ },
  "8478109": {
   "name": "Victor Olofsson",
   "position": "L",
@@ -5742,6 +5750,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483609.png"
  },
+ "8483675": {
+  "name": "Kenny Connors",
+  "position": "C",
+  "teams": [
+   "LAK"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8483675.png"
+ },
  "8483676": {
   "name": "Stephen Halliday",
   "position": "C",
@@ -6122,9 +6138,10 @@
   "name": "Matthew Wood",
   "position": "R",
   "teams": [
-   "NSH"
+   "NSH",
+   "SEA"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8484241.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8484241.png"
  },
  "8484242": {
   "name": "Brayden Yager",
@@ -6229,6 +6246,14 @@
    "OTT"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484409.png"
+ },
+ "8484421": {
+  "name": "Eric Pohlkamp",
+  "position": "D",
+  "teams": [
+   "SJS"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484421.png"
  },
  "8484428": {
   "name": "Charles Alexis Legault",
@@ -6533,6 +6558,14 @@
    "DET"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8485545.png"
+ },
+ "8485554": {
+  "name": "Dillon Boucher",
+  "position": "L",
+  "teams": [
+   "CHI"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8485554.png"
  },
  "8485702": {
   "name": "Maxim Shabanov",

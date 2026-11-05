@@ -13,6 +13,7 @@ VGK,8475913,Mark Stone,8478483,Mitch Marner,8484803,Trevor Connelly,3
 BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,8482097,Jack Quinn,3
 FLA,8477495,Seth Jones,8477933,Sam Reinhart,8479314,Matthew Tkachuk,3
 FLA,8477495,Seth Jones,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,3
+FLA,8477409,Carter Verhaeghe,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,3
 EDM,8476454,Ryan Nugent-Hopkins,8477934,Leon Draisaitl,8478402,Connor McDavid,3
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,8480012,Elias Pettersson,2
 COL,8475754,Brock Nelson,8477476,Artturi Lehkonen,8478038,Devon Toews,2
@@ -38,7 +39,6 @@ TOR,8477939,William Nylander,8479318,Auston Matthews,8486067,Gavin McKenna,2
 TBL,8476453,Nikita Kucherov,8477404,Jake Guentzel,8479542,Brandon Hagel,2
 ANA,8475798,Mikael Granlund,8481605,Jackson LaCombe,8484153,Leo Carlsson,2
 FLA,8477933,Sam Reinhart,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,2
-FLA,8477409,Carter Verhaeghe,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,2
 MTL,8481540,Cole Caufield,8483457,Lane Hutson,8483515,Juraj Slafkovský,2
 SJS,8475200,Dmitry Orlov,8484801,Macklin Celebrini,8486103,Ivar Stenberg,2
 SJS,8484227,Will Smith,8484801,Macklin Celebrini,8486103,Ivar Stenberg,2
@@ -244,3 +244,8 @@ VAN,8481032,Paul Cotter,8482079,Marco Rossi,8483499,Liam Ohgren,1
 ANA,8481605,Jackson LaCombe,8483445,Cutter Gauthier,8484762,Beckett Sennecke,1
 ANA,8475798,Mikael Granlund,8483445,Cutter Gauthier,8484762,Beckett Sennecke,1
 VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,8480012,Elias Pettersson,1
+LAK,8477960,Adrian Kempe,8478550,Artemi Panarin,8482124,Quinton Byfield,1
+SJS,8475200,Dmitry Orlov,8484801,Macklin Celebrini,8485402,Michael Misa,1
+LAK,8477960,Adrian Kempe,8478550,Artemi Panarin,8482155,Alex Laferriere,1
+SJS,8475200,Dmitry Orlov,8485402,Michael Misa,8486103,Ivar Stenberg,1
+LAK,8476979,Erik Gustafsson,8478550,Artemi Panarin,8482124,Quinton Byfield,1

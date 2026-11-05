@@ -60,3 +60,4 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020243,DAL,2,03:18,EV,5v5,5,5,Esa Lindell; Roope Hintz; Jason Robertson; Thomas Harley; Arttu Hyry,Tyler Myers,api
 2026020243,DAL,2,14:50,EV,5v5,5,5,Tyler Myers; Mikko Rantanen; Thomas Harley; Joel Kiviranta; Wyatt Johnston,Jamie Benn,api
 2026020243,WSH,2,16:58,EV,5v5,5,5,Boone Jenner; Matt Roy; Jakob Chychrun; Justin Sourdif; Ryan Leonard,Martin Fehérváry,api
+2026020249,LAK,2,11:10,EV,5v5,5,5,Erik Haula; Joel Armia; Erik Gustafsson; Brandt Clarke; Kenny Connors,Brian Dumoulin,api
