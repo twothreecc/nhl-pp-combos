@@ -1,14 +1,14 @@
 team,p1_id,p1,p2_id,p2,p3_id,p3,goals
+NSH,8474564,Steven Stamkos,8474600,Roman Josi,8475158,Ryan O'Reilly,4
+ANA,8481605,Jackson LaCombe,8483445,Cutter Gauthier,8484153,Leo Carlsson,4
+ANA,8483445,Cutter Gauthier,8484153,Leo Carlsson,8484762,Beckett Sennecke,4
+UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,8483431,Logan Cooley,4
 EDM,8477934,Leon Draisaitl,8478402,Connor McDavid,8480803,Evan Bouchard,4
 COL,8475172,Nazem Kadri,8477492,Nathan MacKinnon,8480069,Cale Makar,3
 CAR,8477940,Nikolaj Ehlers,8478427,Sebastian Aho,8480830,Andrei Svechnikov,3
 UTA,8479343,Clayton Keller,8479410,Mikhail Sergachev,8482699,Dylan Guenther,3
-NSH,8474564,Steven Stamkos,8474600,Roman Josi,8475158,Ryan O'Reilly,3
-ANA,8481605,Jackson LaCombe,8483445,Cutter Gauthier,8484153,Leo Carlsson,3
-ANA,8483445,Cutter Gauthier,8484153,Leo Carlsson,8484762,Beckett Sennecke,3
 TOR,8477939,William Nylander,8479318,Auston Matthews,8480893,Kirill Marchenko,3
 NJD,8479407,Jesper Bratt,8480002,Nico Hischier,8481559,Jack Hughes,3
-UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,8483431,Logan Cooley,3
 VGK,8475913,Mark Stone,8478483,Mitch Marner,8484803,Trevor Connelly,3
 BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,8482097,Jack Quinn,3
 FLA,8477495,Seth Jones,8477933,Sam Reinhart,8479314,Matthew Tkachuk,3
@@ -17,11 +17,13 @@ FLA,8477409,Carter Verhaeghe,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,3
 EDM,8476454,Ryan Nugent-Hopkins,8477934,Leon Draisaitl,8478402,Connor McDavid,3
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,8480012,Elias Pettersson,2
 COL,8475754,Brock Nelson,8477476,Artturi Lehkonen,8478038,Devon Toews,2
+NYR,8476459,Mika Zibanejad,8479323,Adam Fox,8481604,Pavel Dorofeyev,2
 EDM,8477934,Leon Draisaitl,8478402,Connor McDavid,8481617,Vasily Podkolzin,2
 WPG,8478398,Kyle Connor,8480014,Gabriel Vilardi,8482149,Cole Perfetti,2
 VGK,8476881,Tomas Hertl,8478403,Jack Eichel,8478483,Mitch Marner,2
 TOR,8475166,John Tavares,8478178,Darren Raddysh,8480893,Kirill Marchenko,2
 CAR,8476906,Shayne Gostisbehere,8478427,Sebastian Aho,8482809,Jackson Blake,2
+UTA,8477951,Nick Schmaltz,8482699,Dylan Guenther,8483431,Logan Cooley,2
 SEA,8474586,Jordan Eberle,8476905,Chandler Stephenson,8482259,Bobby McMann,2
 MIN,8478493,Joel Eriksson Ek,8478864,Kirill Kaprizov,8485702,Maxim Shabanov,2
 CGY,8480797,Joel Farabee,8482679,Matt Coronato,8484768,Zayne Parekh,2
@@ -58,6 +60,7 @@ CGY,8480797,Joel Farabee,8482679,Matt Coronato,8484860,Matvei Gridin,2
 NSH,8474600,Roman Josi,8475158,Ryan O'Reilly,8476887,Filip Forsberg,2
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,8483476,Jonathan Lekkerimäki,2
 WSH,8478440,Dylan Strome,8479345,Jakob Chychrun,8479385,Jordan Kyrou,2
+EDM,8476454,Ryan Nugent-Hopkins,8477953,Kasperi Kapanen,8478402,Connor McDavid,2
 CBJ,8475745,Charlie Coyle,8478460,Zach Werenski,8482660,Kent Johnson,2
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,8479410,Mikhail Sergachev,2
 VGK,8477447,Shea Theodore,8478109,Victor Olofsson,8478403,Jack Eichel,1
@@ -65,7 +68,6 @@ PIT,8471215,Evgeni Malkin,8478438,Tommy Novak,8482148,Hendrix Lapierre,1
 PIT,8474578,Erik Karlsson,8476483,Rickard Rakell,8482475,Egor Chinakhov,1
 COL,8475172,Nazem Kadri,8475754,Brock Nelson,8475768,Jaden Schwartz,1
 TOR,8476853,Morgan Rielly,8478458,Jack Roslovic,8484158,Easton Cowan,1
-NYR,8476459,Mika Zibanejad,8479323,Adam Fox,8481604,Pavel Dorofeyev,1
 CBJ,8475745,Charlie Coyle,8478460,Zach Werenski,8482720,Matthew Knies,1
 CBJ,8477497,Sean Monahan,8477501,Valeri Nichushkin,8481716,Dmitri Voronkov,1
 MIN,8476399,Blake Coleman,8481553,Bobby Brink,8483525,Danila Yurov,1
@@ -81,7 +83,6 @@ CAR,8478427,Sebastian Aho,8480830,Andrei Svechnikov,8482809,Jackson Blake,1
 PIT,8471215,Evgeni Malkin,8471724,Kris Letang,8482148,Hendrix Lapierre,1
 PIT,8474578,Erik Karlsson,8478438,Tommy Novak,8485414,Ben Kindel,1
 UTA,8479410,Mikhail Sergachev,8482699,Dylan Guenther,8483431,Logan Cooley,1
-UTA,8477951,Nick Schmaltz,8482699,Dylan Guenther,8483431,Logan Cooley,1
 NSH,8477021,Alexander Kerfoot,8481535,Nils Hoglander,8482072,Jack Ahcan,1
 MIN,8477451,Ryan Hartman,8480800,Quinn Hughes,8481553,Bobby Brink,1
 SJS,8475726,Tyler Toffoli,8484801,Macklin Celebrini,8486103,Ivar Stenberg,1
@@ -203,7 +204,6 @@ FLA,8477409,Carter Verhaeghe,8477495,Seth Jones,8479314,Matthew Tkachuk,1
 MIN,8478493,Joel Eriksson Ek,8478864,Kirill Kaprizov,8480800,Quinn Hughes,1
 MIN,8478864,Kirill Kaprizov,8480800,Quinn Hughes,8481557,Matt Boldy,1
 VGK,8477447,Shea Theodore,8477964,Ivan Barbashev,8483890,Braeden Bowman,1
-EDM,8476454,Ryan Nugent-Hopkins,8477953,Kasperi Kapanen,8478402,Connor McDavid,1
 COL,8475768,Jaden Schwartz,8476455,Gabriel Landeskog,8478038,Devon Toews,1
 TOR,8478178,Darren Raddysh,8479318,Auston Matthews,8486067,Gavin McKenna,1
 TOR,8478458,Jack Roslovic,8479318,Auston Matthews,8486067,Gavin McKenna,1
@@ -249,3 +249,9 @@ SJS,8475200,Dmitry Orlov,8484801,Macklin Celebrini,8485402,Michael Misa,1
 LAK,8477960,Adrian Kempe,8478550,Artemi Panarin,8482155,Alex Laferriere,1
 SJS,8475200,Dmitry Orlov,8485402,Michael Misa,8486103,Ivar Stenberg,1
 LAK,8476979,Erik Gustafsson,8478550,Artemi Panarin,8482124,Quinton Byfield,1
+UTA,8477951,Nick Schmaltz,8479410,Mikhail Sergachev,8483431,Logan Cooley,1
+MTL,8480018,Nick Suzuki,8481523,Kirby Dach,8483457,Lane Hutson,1
+TBL,8475167,Victor Hedman,8478519,Anthony Cirelli,8479542,Brandon Hagel,1
+STL,8480023,Robert Thomas,8481598,Philip Broberg,8482745,Mason McTavish,1
+WPG,8477938,Haydn Fleury,8480113,Alex Iafallo,8482110,Dawson Mercer,1
+EDM,8476454,Ryan Nugent-Hopkins,8478402,Connor McDavid,8480803,Evan Bouchard,1

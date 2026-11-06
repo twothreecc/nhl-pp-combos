@@ -6646,5 +6646,13 @@
    "NSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8486189.png"
+ },
+ "8486540": {
+  "name": "Brett Epp",
+  "position": "G",
+  "teams": [
+   "EDM"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8486540.png"
  }
 }
