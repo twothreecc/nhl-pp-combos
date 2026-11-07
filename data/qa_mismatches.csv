@@ -65,3 +65,4 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020251,MTL,3,14:54,EV,5v5,5,5,Josh Anderson; Jake Evans; Kirby Dach; Kaiden Guhle; Adam Engstrom,Noah Dobson,api
 2026020255,CAR,1,03:20,EV,5v5,5,5,Jordan Martinook; Sean Walker; Eric Robinson; K'Andre Miller; Jesperi Kotkaniemi,Jalen Chatfield,api
 2026020260,EDM,2,02:34,SH,4v5,4,4,Connor Murphy; Leon Draisaitl; Connor McDavid; Ryan Shea,Mattias Ekholm,api
+2026020262,BUF,1,06:50,EV,5v5,5,5,Josh Norris; Jack Quinn; Josh Doan; Owen Power; Zach Metsa,Conor Timmins,api

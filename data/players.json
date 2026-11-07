@@ -2551,6 +2551,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png"
  },
+ "8478904": {
+  "name": "Steven Lorentz",
+  "position": "C",
+  "teams": [
+   "CBJ"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478904.png"
+ },
  "8478911": {
   "name": "Matt Roy",
   "position": "D",
@@ -2998,6 +3006,14 @@
    "NSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479980.png"
+ },
+ "8479982": {
+  "name": "Conor Timmins",
+  "position": "D",
+  "teams": [
+   "BUF"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479982.png"
  },
  "8479983": {
   "name": "Mario Ferraro",
@@ -6542,6 +6558,14 @@
    "DAL"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8485468.png"
+ },
+ "8485469": {
+  "name": "Jack Williams",
+  "position": "C",
+  "teams": [
+   "CBJ"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8485469.png"
  },
  "8485512": {
   "name": "Tim Washe",
