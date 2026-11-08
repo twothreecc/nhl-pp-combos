@@ -66,3 +66,6 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020255,CAR,1,03:20,EV,5v5,5,5,Jordan Martinook; Sean Walker; Eric Robinson; K'Andre Miller; Jesperi Kotkaniemi,Jalen Chatfield,api
 2026020260,EDM,2,02:34,SH,4v5,4,4,Connor Murphy; Leon Draisaitl; Connor McDavid; Ryan Shea,Mattias Ekholm,api
 2026020262,BUF,1,06:50,EV,5v5,5,5,Josh Norris; Jack Quinn; Josh Doan; Owen Power; Zach Metsa,Conor Timmins,api
+2026020266,NSH,2,09:02,EV,5v5,5,5,Ross Colton; Jack Drury; Jayden Struble; Adam Edstrom; Daemon Hunt,Roman Josi,api
+2026020272,SJS,2,02:47,EV,5v5,5,5,Dmitry Orlov; Tyler Toffoli; Macklin Celebrini; Sam Dickinson; Ivar Stenberg,Eric Pohlkamp,api
+2026020273,MIN,1,00:55,EV,5v5,5,5,Zach Bogosian; Blake Coleman; Olli Maatta; Joel Eriksson Ek; Bobby Brink,Quinn Hughes,api

@@ -1303,6 +1303,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477015.png"
  },
+ "8477018": {
+  "name": "Ben Hutton",
+  "position": "D",
+  "teams": [
+   "NYI"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477018.png"
+ },
  "8477021": {
   "name": "Alexander Kerfoot",
   "position": "C",
@@ -3953,6 +3961,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481524.png"
  },
+ "8481525": {
+  "name": "Matthew Robertson",
+  "position": "D",
+  "teams": [
+   "NYR"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481525.png"
+ },
  "8481527": {
   "name": "Kaedan Korczak",
   "position": "D",
@@ -4507,6 +4523,14 @@
    "BUF"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482097.png"
+ },
+ "8482100": {
+  "name": "Alexander Nikishin",
+  "position": "D",
+  "teams": [
+   "CAR"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482100.png"
  },
  "8482105": {
   "name": "Jake Sanderson",
