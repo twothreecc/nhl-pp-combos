@@ -1007,6 +1007,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476822.png"
  },
+ "8476826": {
+  "name": "Yanni Gourde",
+  "position": "C",
+  "teams": [
+   "TBL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png"
+ },
  "8476853": {
   "name": "Morgan Rielly",
   "position": "D",
@@ -2894,6 +2902,14 @@
    "WSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png"
+ },
+ "8479591": {
+  "name": "Michael Eyssimont",
+  "position": "C",
+  "teams": [
+   "BOS"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479591.png"
  },
  "8479619": {
   "name": "Michael Carcone",
@@ -6206,6 +6222,14 @@
    "ANA"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484262.png"
+ },
+ "8484287": {
+  "name": "Cole McWard",
+  "position": "D",
+  "teams": [
+   "TOR"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8484287.png"
  },
  "8484304": {
   "name": "Uvis Balinskis",
