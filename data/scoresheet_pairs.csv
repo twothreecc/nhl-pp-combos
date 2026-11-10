@@ -24,6 +24,7 @@ MIN,8478864,Kirill Kaprizov,8485702,Maxim Shabanov,6
 MIN,8478864,Kirill Kaprizov,8480800,Quinn Hughes,6
 SJS,8484801,Macklin Celebrini,8486103,Ivar Stenberg,6
 TOR,8477939,William Nylander,8479318,Auston Matthews,6
+VAN,8478444,Brock Boeser,8480012,Elias Pettersson,6
 VGK,8475913,Mark Stone,8478483,Mitch Marner,6
 ANA,8475798,Mikael Granlund,8483445,Cutter Gauthier,5
 ANA,8475798,Mikael Granlund,8481605,Jackson LaCombe,5
@@ -49,7 +50,7 @@ TBL,8476453,Nikita Kucherov,8477404,Jake Guentzel,5
 TOR,8477939,William Nylander,8480893,Kirill Marchenko,5
 UTA,8479343,Clayton Keller,8482699,Dylan Guenther,5
 UTA,8479410,Mikhail Sergachev,8482699,Dylan Guenther,5
-VAN,8478444,Brock Boeser,8480012,Elias Pettersson,5
+VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,5
 VGK,8476881,Tomas Hertl,8478403,Jack Eichel,5
 ANA,8475798,Mikael Granlund,8484762,Beckett Sennecke,4
 ANA,8481605,Jackson LaCombe,8484762,Beckett Sennecke,4
@@ -86,7 +87,6 @@ UTA,8479410,Mikhail Sergachev,8483431,Logan Cooley,4
 UTA,8477951,Nick Schmaltz,8479410,Mikhail Sergachev,4
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,4
 VAN,8479425,Filip Hronek,8480012,Elias Pettersson,4
-VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,4
 VGK,8475913,Mark Stone,8478403,Jack Eichel,4
 WPG,8478398,Kyle Connor,8482149,Cole Perfetti,4
 WPG,8480014,Gabriel Vilardi,8482149,Cole Perfetti,4
@@ -130,6 +130,7 @@ TOR,8477939,William Nylander,8486067,Gavin McKenna,3
 TOR,8478178,Darren Raddysh,8479318,Auston Matthews,3
 UTA,8477951,Nick Schmaltz,8482699,Dylan Guenther,3
 VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,3
+VAN,8480012,Elias Pettersson,8483476,Jonathan Lekkerimäki,3
 VAN,8479425,Filip Hronek,8483476,Jonathan Lekkerimäki,3
 VGK,8476881,Tomas Hertl,8478483,Mitch Marner,3
 VGK,8478403,Jack Eichel,8478483,Mitch Marner,3
@@ -201,6 +202,7 @@ NYR,8482157,Will Cuylle,8484210,Gabe Perreault,2
 NYR,8476468,J.T. Miller,8482109,Alexis Lafrenière,2
 OTT,8482116,Tim Stützle,8483676,Stephen Halliday,2
 OTT,8480188,Fabian Zetterlund,8483676,Stephen Halliday,2
+PHI,8478439,Travis Konecny,8484387,Matvei Michkov,2
 PHI,8484142,Denver Barkey,8485406,Porter Martone,2
 PHI,8484142,Denver Barkey,8484387,Matvei Michkov,2
 PHI,8481533,Trevor Zegras,8482142,Jamie Drysdale,2
@@ -240,7 +242,6 @@ TOR,8475166,John Tavares,8478178,Darren Raddysh,2
 TOR,8475166,John Tavares,8480893,Kirill Marchenko,2
 TOR,8477939,William Nylander,8478178,Darren Raddysh,2
 UTA,8478507,John Marino,8480849,Barrett Hayton,2
-VAN,8480012,Elias Pettersson,8483476,Jonathan Lekkerimäki,2
 VGK,8478109,Victor Olofsson,8478403,Jack Eichel,2
 VGK,8477964,Ivan Barbashev,8483890,Braeden Bowman,2
 WPG,8478398,Kyle Connor,8480014,Gabriel Vilardi,2
@@ -405,6 +406,9 @@ NSH,8474600,Roman Josi,8482145,Mavrik Bourque,1
 NYI,8477950,Tony DeAngelo,8482476,Emil Heineman,1
 NYI,8477950,Tony DeAngelo,8485388,Victor Eklund,1
 NYI,8482476,Emil Heineman,8485388,Victor Eklund,1
+NYI,8475170,Brayden Schenn,8485366,Matthew Schaefer,1
+NYI,8475170,Brayden Schenn,8485388,Victor Eklund,1
+NYI,8485366,Matthew Schaefer,8485388,Victor Eklund,1
 NYR,8480434,Sean Durzi,8482157,Will Cuylle,1
 NYR,8480434,Sean Durzi,8484210,Gabe Perreault,1
 NYR,8477416,Oliver Bjorkstrand,8482157,Will Cuylle,1
@@ -436,7 +440,6 @@ OTT,8480208,Drake Batherson,8482116,Tim Stützle,1
 OTT,8480188,Fabian Zetterlund,8481577,Philip Tomasino,1
 OTT,8481577,Philip Tomasino,8483676,Stephen Halliday,1
 PHI,8478439,Travis Konecny,8481533,Trevor Zegras,1
-PHI,8478439,Travis Konecny,8484387,Matvei Michkov,1
 PHI,8483460,David Jiricek,8484142,Denver Barkey,1
 PHI,8483460,David Jiricek,8485406,Porter Martone,1
 PHI,8478047,Michael Bunting,8484387,Matvei Michkov,1
@@ -447,6 +450,8 @@ PHI,8477948,Travis Sanheim,8485406,Porter Martone,1
 PHI,8477989,Christian Dvorak,8480015,Owen Tippett,1
 PHI,8477989,Christian Dvorak,8484148,Oliver Bonk,1
 PHI,8480015,Owen Tippett,8484148,Oliver Bonk,1
+PHI,8477989,Christian Dvorak,8478439,Travis Konecny,1
+PHI,8477989,Christian Dvorak,8484387,Matvei Michkov,1
 PIT,8471215,Evgeni Malkin,8478438,Tommy Novak,1
 PIT,8478438,Tommy Novak,8482148,Hendrix Lapierre,1
 PIT,8474578,Erik Karlsson,8482475,Egor Chinakhov,1

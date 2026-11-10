@@ -109,6 +109,7 @@ TOR,8478178,Darren Raddysh,8480893,Kirill Marchenko,1,1,2
 TOR,8480893,Kirill Marchenko,8479318,Auston Matthews,1,1,2
 UTA,8479410,Mikhail Sergachev,8483431,Logan Cooley,1,1,2
 UTA,8483431,Logan Cooley,8479343,Clayton Keller,1,1,2
+VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,1,1,2
 VAN,8479425,Filip Hronek,8478444,Brock Boeser,1,1,2
 VAN,8483476,Jonathan Lekkerimäki,8480012,Elias Pettersson,1,1,2
 VGK,8478403,Jack Eichel,8478109,Victor Olofsson,1,1,2
@@ -255,6 +256,7 @@ NSH,8476887,Filip Forsberg,8474564,Steven Stamkos,1,0,1
 NSH,8482072,Jack Ahcan,8481535,Nils Hoglander,1,0,1
 NSH,8482145,Mavrik Bourque,8474564,Steven Stamkos,1,0,1
 NSH,8484241,Matthew Wood,8474564,Steven Stamkos,1,0,1
+NYI,8475170,Brayden Schenn,8485388,Victor Eklund,1,0,1
 NYI,8477500,Bo Horvat,8475170,Brayden Schenn,1,0,1
 NYI,8477950,Tony DeAngelo,8485388,Victor Eklund,1,0,1
 NYI,8481601,Simon Holmstrom,8477500,Bo Horvat,1,0,1
@@ -281,6 +283,7 @@ PHI,8477989,Christian Dvorak,8480015,Owen Tippett,1,0,1
 PHI,8478047,Michael Bunting,8484387,Matvei Michkov,1,0,1
 PHI,8482142,Jamie Drysdale,8484387,Matvei Michkov,1,0,1
 PHI,8483460,David Jiricek,8485406,Porter Martone,1,0,1
+PHI,8484387,Matvei Michkov,8478439,Travis Konecny,1,0,1
 PHI,8484387,Matvei Michkov,8481533,Trevor Zegras,1,0,1
 PHI,8485406,Porter Martone,8484142,Denver Barkey,1,0,1
 PIT,8471675,Sidney Crosby,8474578,Erik Karlsson,1,0,1
@@ -458,6 +461,7 @@ NYI,8475170,Brayden Schenn,8477500,Bo Horvat,0,1,1
 NYI,8477500,Bo Horvat,8481601,Simon Holmstrom,0,1,1
 NYI,8481711,Matias Maccelli,8475170,Brayden Schenn,0,1,1
 NYI,8482476,Emil Heineman,8485388,Victor Eklund,0,1,1
+NYI,8485366,Matthew Schaefer,8485388,Victor Eklund,0,1,1
 NYR,8476459,Mika Zibanejad,8482109,Alexis Lafrenière,0,1,1
 NYR,8477416,Oliver Bjorkstrand,8481789,Tye Kartye,0,1,1
 NYR,8479323,Adam Fox,8476459,Mika Zibanejad,0,1,1
@@ -475,6 +479,7 @@ OTT,8481596,Shane Pinto,8480188,Fabian Zetterlund,0,1,1
 OTT,8481596,Shane Pinto,8484759,Carter Yakemchuk,0,1,1
 OTT,8483676,Stephen Halliday,8482116,Tim Stützle,0,1,1
 OTT,8484759,Carter Yakemchuk,8480208,Drake Batherson,0,1,1
+PHI,8477989,Christian Dvorak,8478439,Travis Konecny,0,1,1
 PHI,8478439,Travis Konecny,8484387,Matvei Michkov,0,1,1
 PHI,8481533,Trevor Zegras,8484142,Denver Barkey,0,1,1
 PHI,8481533,Trevor Zegras,8485406,Porter Martone,0,1,1
@@ -528,9 +533,9 @@ UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,0,1,1
 UTA,8478474,Lawson Crouse,8482699,Dylan Guenther,0,1,1
 UTA,8478507,John Marino,8480849,Barrett Hayton,0,1,1
 VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,0,1,1
-VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,0,1,1
 VAN,8478498,Jake DeBrusk,8481024,Linus Karlsson,0,1,1
 VAN,8480012,Elias Pettersson,8481032,Paul Cotter,0,1,1
+VAN,8480012,Elias Pettersson,8483476,Jonathan Lekkerimäki,0,1,1
 VAN,8481032,Paul Cotter,8483499,Liam Ohgren,0,1,1
 VAN,8483476,Jonathan Lekkerimäki,8478444,Brock Boeser,0,1,1
 VAN,8483476,Jonathan Lekkerimäki,8479425,Filip Hronek,0,1,1

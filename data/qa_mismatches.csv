@@ -69,3 +69,4 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020266,NSH,2,09:02,EV,5v5,5,5,Ross Colton; Jack Drury; Jayden Struble; Adam Edstrom; Daemon Hunt,Roman Josi,api
 2026020272,SJS,2,02:47,EV,5v5,5,5,Dmitry Orlov; Tyler Toffoli; Macklin Celebrini; Sam Dickinson; Ivar Stenberg,Eric Pohlkamp,api
 2026020273,MIN,1,00:55,EV,5v5,5,5,Zach Bogosian; Blake Coleman; Olli Maatta; Joel Eriksson Ek; Bobby Brink,Quinn Hughes,api
+2026020284,PHI,1,02:03,EV,5v5,5,5,Travis Sanheim; Christian Dvorak; Michael Bunting; Noel Acciari; Jamie Drysdale,Nick Seeler,api
