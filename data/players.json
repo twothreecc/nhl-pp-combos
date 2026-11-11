@@ -4925,6 +4925,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482516.png"
  },
+ "8482525": {
+  "name": "Ryan Tverberg",
+  "position": "C",
+  "teams": [
+   "TOR"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8482525.png"
+ },
  "8482641": {
   "name": "Matt Kiersted",
   "position": "D",
@@ -5124,6 +5132,14 @@
    "ANA"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482731.png"
+ },
+ "8482733": {
+  "name": "Logan Mailloux",
+  "position": "D",
+  "teams": [
+   "STL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482733.png"
  },
  "8482737": {
   "name": "Zachary Bolduc",
@@ -5436,6 +5452,14 @@
    "CBJ"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png"
+ },
+ "8483433": {
+  "name": "Jack Devine",
+  "position": "R",
+  "teams": [
+   "FLA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8483433.png"
  },
  "8483435": {
   "name": "Jorian Donovan",
@@ -6534,6 +6558,14 @@
    "WSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484999.png"
+ },
+ "8485142": {
+  "name": "Jackson Parsons",
+  "position": "G",
+  "teams": [
+   "OTT"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8485142.png"
  },
  "8485366": {
   "name": "Matthew Schaefer",

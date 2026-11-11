@@ -70,3 +70,6 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020272,SJS,2,02:47,EV,5v5,5,5,Dmitry Orlov; Tyler Toffoli; Macklin Celebrini; Sam Dickinson; Ivar Stenberg,Eric Pohlkamp,api
 2026020273,MIN,1,00:55,EV,5v5,5,5,Zach Bogosian; Blake Coleman; Olli Maatta; Joel Eriksson Ek; Bobby Brink,Quinn Hughes,api
 2026020284,PHI,1,02:03,EV,5v5,5,5,Travis Sanheim; Christian Dvorak; Michael Bunting; Noel Acciari; Jamie Drysdale,Nick Seeler,api
+2026020288,WSH,4,01:14,EV,4v4,4,4,Alex Ovechkin; Alex Tuch; Jakob Chychrun; Cole Hutson,Dylan Strome,api
+2026020289,FLA,2,02:00,PP,5v4,5,5,Aaron Ekblad; Sam Bennett; Matthew Tkachuk; Eetu Luostarinen; Anton Lundell,Seth Jones,api
+2026020290,STL,3,15:58,EV,5v5,5,5,Cam Fowler; Brandon Carlo; Dylan Holloway; Mason McTavish; Jimmy Snuggerud,Robert Thomas,api
