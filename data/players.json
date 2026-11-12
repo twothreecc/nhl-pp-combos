@@ -2271,6 +2271,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png"
  },
+ "8478446": {
+  "name": "Glenn Gawdin",
+  "position": "C",
+  "teams": [
+   "NYR"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8478446.png"
+ },
  "8478449": {
   "name": "Roope Hintz",
   "position": "C",
@@ -2542,6 +2550,14 @@
    "UTA"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
+ },
+ "8478873": {
+  "name": "Troy Terry",
+  "position": "R",
+  "teams": [
+   "ANA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
  },
  "8478874": {
   "name": "Adam Gaudette",
@@ -6390,6 +6406,14 @@
    "CGY"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484768.png"
+ },
+ "8484770": {
+  "name": "Sam O'Reilly",
+  "position": "R",
+  "teams": [
+   "TBL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8484770.png"
  },
  "8484783": {
   "name": "Artyom Levshunov",
