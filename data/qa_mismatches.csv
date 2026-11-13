@@ -75,3 +75,4 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020290,STL,3,15:58,EV,5v5,5,5,Cam Fowler; Brandon Carlo; Dylan Holloway; Mason McTavish; Jimmy Snuggerud,Robert Thomas,api
 2026020293,TBL,3,01:25,EV,5v5,5,5,Victor Hedman; Nikita Kucherov; Brandon Hagel; J.J. Moser; Sam O'Reilly,John Carlson,api
 2026020295,PHI,3,11:42,EV,5v5,5,5,Travis Sanheim; Noah Cates; Jamie Drysdale; Matvei Michkov; Porter Martone,Rasmus Ristolainen,api
+2026020300,TOR,2,06:59,EV,5v5,5,5,Teddy Blueger; Dakota Mermis; Zack MacEwen; Cole McWard; Gavin McKenna,Troy Stecher,api

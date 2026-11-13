@@ -1767,6 +1767,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477940.png"
  },
+ "8477942": {
+  "name": "Kevin Fiala",
+  "position": "L",
+  "teams": [
+   "LAK"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477942.png"
+ },
  "8477946": {
   "name": "Dylan Larkin",
   "position": "C",
@@ -2646,6 +2654,14 @@
    "WSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
+ },
+ "8479312": {
+  "name": "Alex Lyon",
+  "position": "G",
+  "teams": [
+   "BUF"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479312.png"
  },
  "8479314": {
   "name": "Matthew Tkachuk",
@@ -4250,6 +4266,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481607.png"
  },
+ "8481609": {
+  "name": "Vladislav Kolyachonok",
+  "position": "D",
+  "teams": [
+   "NJD"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8481609.png"
+ },
  "8481611": {
   "name": "Pyotr Kochetkov",
   "position": "G",
@@ -4321,6 +4345,14 @@
    "CGY"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481692.png"
+ },
+ "8481708": {
+  "name": "Zac Jones",
+  "position": "D",
+  "teams": [
+   "UTA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8481708.png"
  },
  "8481711": {
   "name": "Matias Maccelli",
@@ -4401,6 +4433,14 @@
    "BUF"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481806.png"
+ },
+ "8481827": {
+  "name": "Ben McCartney",
+  "position": "L",
+  "teams": [
+   "UTA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8481827.png"
  },
  "8481848": {
   "name": "Jacob Gaucher",
@@ -4628,6 +4668,14 @@
    "STL"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482121.png"
+ },
+ "8482123": {
+  "name": "Drew Commesso",
+  "position": "G",
+  "teams": [
+   "CHI"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482123.png"
  },
  "8482124": {
   "name": "Quinton Byfield",
@@ -6109,6 +6157,14 @@
    "MTL"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484170.png"
+ },
+ "8484177": {
+  "name": "Lenni Hameenaho",
+  "position": "R",
+  "teams": [
+   "NJD"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8484177.png"
  },
  "8484180": {
   "name": "Samuel Honzek",

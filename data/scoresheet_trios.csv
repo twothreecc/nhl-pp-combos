@@ -5,8 +5,10 @@ ANA,8481605,Jackson LaCombe,8483445,Cutter Gauthier,8484153,Leo Carlsson,4
 ANA,8483445,Cutter Gauthier,8484153,Leo Carlsson,8484762,Beckett Sennecke,4
 NJD,8479407,Jesper Bratt,8480002,Nico Hischier,8481559,Jack Hughes,4
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,8483431,Logan Cooley,4
+BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,8482097,Jack Quinn,4
 FLA,8477495,Seth Jones,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,4
 FLA,8477409,Carter Verhaeghe,8479314,Matthew Tkachuk,8480801,Brady Tkachuk,4
+MIN,8478864,Kirill Kaprizov,8480800,Quinn Hughes,8481557,Matt Boldy,4
 COL,8475172,Nazem Kadri,8477492,Nathan MacKinnon,8480069,Cale Makar,3
 CAR,8477940,Nikolaj Ehlers,8478427,Sebastian Aho,8480830,Andrei Svechnikov,3
 UTA,8479343,Clayton Keller,8479410,Mikhail Sergachev,8482699,Dylan Guenther,3
@@ -15,11 +17,9 @@ TOR,8477939,William Nylander,8479318,Auston Matthews,8480893,Kirill Marchenko,3
 BOS,8477956,David Pastrnak,8478401,Pavel Zacha,8479987,Morgan Geekie,3
 TBL,8474590,John Carlson,8476453,Nikita Kucherov,8477404,Jake Guentzel,3
 VGK,8475913,Mark Stone,8478483,Mitch Marner,8484803,Trevor Connelly,3
-BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,8482097,Jack Quinn,3
 FLA,8477495,Seth Jones,8477933,Sam Reinhart,8479314,Matthew Tkachuk,3
 COL,8477492,Nathan MacKinnon,8480039,Martin Necas,8480069,Cale Makar,3
 EDM,8476454,Ryan Nugent-Hopkins,8477934,Leon Draisaitl,8478402,Connor McDavid,3
-MIN,8478864,Kirill Kaprizov,8480800,Quinn Hughes,8481557,Matt Boldy,3
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,8480012,Elias Pettersson,2
 COL,8475754,Brock Nelson,8477476,Artturi Lehkonen,8478038,Devon Toews,2
 NYR,8476459,Mika Zibanejad,8479323,Adam Fox,8481604,Pavel Dorofeyev,2
@@ -288,3 +288,12 @@ EDM,8475786,Zach Hyman,8478402,Connor McDavid,8480803,Evan Bouchard,1
 PHI,8477989,Christian Dvorak,8480015,Owen Tippett,8482159,Tyson Foerster,1
 VGK,8478109,Victor Olofsson,8478403,Jack Eichel,8478483,Mitch Marner,1
 PIT,8474578,Erik Karlsson,8476483,Rickard Rakell,8485414,Ben Kindel,1
+COL,8475172,Nazem Kadri,8477476,Artturi Lehkonen,8486171,T.J. Hughes,1
+COL,8475754,Brock Nelson,8476455,Gabriel Landeskog,8478038,Devon Toews,1
+NJD,8478414,Timo Meier,8478542,Evan Rodrigues,8481721,Arseny Gritsyuk,1
+CBJ,8477497,Sean Monahan,8482660,Kent Johnson,8482720,Matthew Knies,1
+CHI,8483493,Frank Nazar,8484144,Connor Bedard,8484390,Roman Kantserov,1
+WPG,8476460,Mark Scheifele,8478398,Kyle Connor,8480014,Gabriel Vilardi,1
+NYI,8475170,Brayden Schenn,8481711,Matias Maccelli,8485366,Matthew Schaefer,1
+LAK,8477942,Kevin Fiala,8478550,Artemi Panarin,8482124,Quinton Byfield,1
+CAR,8477940,Nikolaj Ehlers,8478427,Sebastian Aho,8482809,Jackson Blake,1
