@@ -76,3 +76,9 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020293,TBL,3,01:25,EV,5v5,5,5,Victor Hedman; Nikita Kucherov; Brandon Hagel; J.J. Moser; Sam O'Reilly,John Carlson,api
 2026020295,PHI,3,11:42,EV,5v5,5,5,Travis Sanheim; Noah Cates; Jamie Drysdale; Matvei Michkov; Porter Martone,Rasmus Ristolainen,api
 2026020300,TOR,2,06:59,EV,5v5,5,5,Teddy Blueger; Dakota Mermis; Zack MacEwen; Cole McWard; Gavin McKenna,Troy Stecher,api
+2026020315,MTL,2,10:25,EV,5v5,5,5,Nick Suzuki; Arber Xhekaj; Juraj Slafkovský; Adam Engstrom; Florian Xhekaj,Cole Caufield,api
+2026020318,NJD,2,10:33,EV,5v5,5,5,Brenden Dillon; Evan Rodrigues; Jesper Boqvist; Lenni Hameenaho; Anton Silaev,Luke Hughes,api
+2026020318,NJD,3,00:56,SH,4v5,4,4,Brenden Dillon; Connor Brown; Nico Hischier; Luke Hughes,Dougie Hamilton,api
+2026020318,NJD,3,03:18,EV,5v5,5,5,Dougie Hamilton; Stefan Noesen; Connor Brown; Jonas Siegenthaler; Evan Rodrigues,Lenni Hameenaho; Jesper Boqvist,api
+2026020323,UTA,1,02:15,EV,5v5,5,5,Andrew Peeke; Kailer Yamamoto; Barrett Hayton; Zac Jones; Daniil But,Clayton Keller,api
+2026020325,LAK,3,06:21,EV,5v5,5,5,Drew Doughty; Brian Dumoulin; Joel Armia; Alex Turcotte; Alex Laferriere,Joel Edmundson,api

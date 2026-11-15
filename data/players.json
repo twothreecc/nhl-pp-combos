@@ -1359,6 +1359,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png"
  },
+ "8477335": {
+  "name": "Kyle Burroughs",
+  "position": "D",
+  "teams": [
+   "DAL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8477335.png"
+ },
  "8477346": {
   "name": "MacKenzie Weegar",
   "position": "D",
@@ -2278,6 +2286,14 @@
    "VAN"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png"
+ },
+ "8478445": {
+  "name": "Mathew Barzal",
+  "position": "C",
+  "teams": [
+   "NYI"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478445.png"
  },
  "8478446": {
   "name": "Glenn Gawdin",
@@ -4670,6 +4686,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482121.png"
  },
+ "8482122": {
+  "name": "Brock Faber",
+  "position": "D",
+  "teams": [
+   "MIN"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482122.png"
+ },
  "8482123": {
   "name": "Drew Commesso",
   "position": "G",
@@ -5406,6 +5430,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
  },
+ "8482942": {
+  "name": "Alex Gagne",
+  "position": "D",
+  "teams": [
+   "COL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/COL/8482942.png"
+ },
  "8482949": {
   "name": "Arsenii Sergeev",
   "position": "G",
@@ -5541,6 +5573,14 @@
    "UTA"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483436.png"
+ },
+ "8483442": {
+  "name": "Jagger Firkus",
+  "position": "R",
+  "teams": [
+   "SEA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483442.png"
  },
  "8483445": {
   "name": "Cutter Gauthier",
@@ -6623,6 +6663,14 @@
    "MTL"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484984.png"
+ },
+ "8484987": {
+  "name": "Anton Silaev",
+  "position": "D",
+  "teams": [
+   "NJD"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8484987.png"
  },
  "8484994": {
   "name": "Igor Chernyshov",
