@@ -82,3 +82,5 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020318,NJD,3,03:18,EV,5v5,5,5,Dougie Hamilton; Stefan Noesen; Connor Brown; Jonas Siegenthaler; Evan Rodrigues,Lenni Hameenaho; Jesper Boqvist,api
 2026020323,UTA,1,02:15,EV,5v5,5,5,Andrew Peeke; Kailer Yamamoto; Barrett Hayton; Zac Jones; Daniil But,Clayton Keller,api
 2026020325,LAK,3,06:21,EV,5v5,5,5,Drew Doughty; Brian Dumoulin; Joel Armia; Alex Turcotte; Alex Laferriere,Joel Edmundson,api
+2026020326,PHI,2,12:13,EV,5v5,5,5,Christian Dvorak; Simon Benoit; Cam York; Tyson Foerster; Cole Knuble,Owen Tippett,api
+2026020329,VAN,1,09:49,EV,5v5,5,5,Jamie Oleksiak; Cameron Crotty; Linus Karlsson; Marco Rossi; Liam Ohgren,Tom Willander,api
