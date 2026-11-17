@@ -4,9 +4,9 @@ FLA,5,8477409;8477495;8477933;8479314;8480801,Carter Verhaeghe; Seth Jones; Sam 
 UTA,5,8477951;8479343;8479410;8482699;8483431,Nick Schmaltz; Clayton Keller; Mikhail Sergachev; Dylan Guenther; Logan Cooley,16,59.1,16.23
 MIN,5,8478493;8478864;8480800;8481557;8485702,Joel Eriksson Ek; Kirill Kaprizov; Quinn Hughes; Matt Boldy; Maxim Shabanov,13,69.3,11.26
 CAR,5,8476906;8477940;8478427;8480830;8482809,Shayne Gostisbehere; Nikolaj Ehlers; Sebastian Aho; Andrei Svechnikov; Jackson Blake,12,59.2,12.17
+VAN,5,8478444;8478498;8479425;8480012;8483476,Brock Boeser; Jake DeBrusk; Filip Hronek; Elias Pettersson; Jonathan Lekkerimäki,11,48.4,13.62
 NSH,5,8474564;8474600;8475158;8476539;8476887,Steven Stamkos; Roman Josi; Ryan O'Reilly; Jonathan Marchessault; Filip Forsberg,11,37.8,17.48
 CGY,5,8480028;8480797;8482679;8484768;8484860,Morgan Frost; Joel Farabee; Matt Coronato; Zayne Parekh; Matvei Gridin,10,47.0,12.78
-VAN,5,8478444;8478498;8479425;8480012;8483476,Brock Boeser; Jake DeBrusk; Filip Hronek; Elias Pettersson; Jonathan Lekkerimäki,9,43.9,12.29
 TOR,5,8477939;8478178;8479318;8480893;8486067,William Nylander; Darren Raddysh; Auston Matthews; Kirill Marchenko; Gavin McKenna,8,22.2,21.59
 BUF,5,8479420;8480839;8482097;8483500;8484145,Tage Thompson; Rasmus Dahlin; Jack Quinn; Noah Ostlund; Zach Benson,7,48.1,8.73
 VGK,5,8475913;8476881;8478403;8478483;8484803,Mark Stone; Tomas Hertl; Jack Eichel; Mitch Marner; Trevor Connelly,7,36.2,11.59
@@ -40,10 +40,10 @@ NJD,5,8479407;8480002;8481559;8482146;8482684,Jesper Bratt; Nico Hischier; Jack 
 TBL,5,8474590;8476453;8477404;8478010;8479542,John Carlson; Nikita Kucherov; Jake Guentzel; Brayden Point; Brandon Hagel,2,31.6,3.8
 NYI,5,8475151;8475170;8477500;8481601;8485366,Kyle Palmieri; Brayden Schenn; Bo Horvat; Simon Holmstrom; Matthew Schaefer,2,25.0,4.81
 CHI,5,8474141;8476882;8477479;8484144;8484390,Patrick Kane; Teuvo Teravainen; Tyler Bertuzzi; Connor Bedard; Roman Kantserov,2,23.8,5.04
+MTL,5,8480018;8481540;8482737;8483457;8483515,Nick Suzuki; Cole Caufield; Zachary Bolduc; Lane Hutson; Juraj Slafkovský,2,23.6,5.09
 SJS,5,8475200;8478975;8484227;8484801;8486103,Dmitry Orlov; Mason Marchment; Will Smith; Macklin Celebrini; Ivar Stenberg,2,20.7,5.81
 PIT,5,8471675;8474578;8476483;8478438;8485414,Sidney Crosby; Erik Karlsson; Rickard Rakell; Tommy Novak; Ben Kindel,2,20.5,5.85
 DET,5,8478042;8479337;8481542;8482078;8484471,Viktor Arvidsson; Alex DeBrincat; Moritz Seider; Lucas Raymond; Emmitt Finnie,2,20.2,5.93
-MTL,5,8480018;8481540;8482737;8483457;8483515,Nick Suzuki; Cole Caufield; Zachary Bolduc; Lane Hutson; Juraj Slafkovský,2,20.2,5.94
 WSH,5,8471214;8476880;8478440;8479345;8479385,Alex Ovechkin; Tom Wilson; Dylan Strome; Jakob Chychrun; Jordan Kyrou,2,19.8,6.07
 SEA,5,8474586;8476905;8478407;8482259;8482665,Jordan Eberle; Chandler Stephenson; Vince Dunn; Bobby McMann; Matty Beniers,2,18.5,6.48
 OTT,5,8480208;8481528;8482105;8482116;8483676,Drake Batherson; Dylan Cozens; Jake Sanderson; Tim Stützle; Stephen Halliday,2,17.0,7.04
@@ -63,10 +63,10 @@ DET,5,8475753;8477429;8477456;8479992;8484794,Justin Faulk; Andrew Copp; J.T. Co
 CHI,5,8474141;8483493;8483506;8484144;8484390,Patrick Kane; Frank Nazar; Sam Rinzel; Connor Bedard; Roman Kantserov,2,6.3,19.15
 ANA,5,8475798;8481538;8481605;8484153;8484762,Mikael Granlund; Judd Caulfield; Jackson LaCombe; Leo Carlsson; Beckett Sennecke,2,6.2,19.46
 PHI,5,8477989;8478439;8480015;8482159;8484148,Christian Dvorak; Travis Konecny; Owen Tippett; Tyson Foerster; Oliver Bonk,2,6.2,19.51
+NYR,5,8476459;8476468;8479323;8482109;8484210,Mika Zibanejad; J.T. Miller; Adam Fox; Alexis Lafrenière; Gabe Perreault,2,6.1,19.73
 TBL,5,8474590;8476453;8477404;8480426;8484770,John Carlson; Nikita Kucherov; Jake Guentzel; Charle-Edouard D'Astous; Sam O'Reilly,2,5.0,23.76
 MIN,5,8474716;8476399;8477451;8481553;8483525,Jared Spurgeon; Blake Coleman; Ryan Hartman; Bobby Brink; Danila Yurov,2,4.8,25.17
 NYI,5,8475170;8477500;8481711;8485366;8485388,Brayden Schenn; Bo Horvat; Matias Maccelli; Matthew Schaefer; Victor Eklund,2,4.8,24.83
-NYR,5,8476459;8476468;8479323;8482109;8484210,Mika Zibanejad; J.T. Miller; Adam Fox; Alexis Lafrenière; Gabe Perreault,2,4.7,25.62
 NJD,5,8476462;8478414;8478542;8481721;8482146,Dougie Hamilton; Timo Meier; Evan Rodrigues; Arseny Gritsyuk; Luke Evangelista,2,4.4,27.59
 EDM,5,8475786;8477934;8477953;8478402;8480803,Zach Hyman; Leon Draisaitl; Kasperi Kapanen; Connor McDavid; Evan Bouchard,2,4.3,28.02
 UTA,5,8475314;8476389;8478507;8479977;8480849,Anders Lee; Vincent Trocheck; John Marino; Kailer Yamamoto; Barrett Hayton,2,4.2,28.46
@@ -108,6 +108,7 @@ CBJ,5,8477497;8477501;8478856;8481716;8483485,Sean Monahan; Valeri Nichushkin; C
 CHI,5,8474141;8477479;8484144;8484390;8485391,Patrick Kane; Tyler Bertuzzi; Connor Bedard; Roman Kantserov; Anton Frondell,1,5.2,11.65
 SEA,5,8477986;8481554;8482665;8482713;8484800,Brandon Montour; Kaapo Kakko; Matty Beniers; Mackie Samoskevich; Berkly Catton,1,5.2,11.61
 OTT,5,8473512;8480188;8481596;8482092;8484759,Claude Giroux; Fabian Zetterlund; Shane Pinto; Ridly Greig; Carter Yakemchuk,1,5.1,11.73
+UTA,5,8476389;8479343;8479410;8479977;8483431,Vincent Trocheck; Clayton Keller; Mikhail Sergachev; Kailer Yamamoto; Logan Cooley,1,5.1,11.84
 CAR,5,8476873;8479976;8480829;8482093;8482702,Mark Jankowski; Juuso Välimäki; Jesperi Kotkaniemi; Seth Jarvis; Logan Stankoven,1,4.9,12.2
 SJS,5,8475726;8476885;8478874;8480748;8485402,Tyler Toffoli; Jacob Trouba; Adam Gaudette; Kiefer Sherwood; Michael Misa,1,4.9,12.33
 BUF,5,8475722;8480064;8480802;8482659;8482671,Jason Zucker; Josh Norris; Ryan McLeod; Josh Doan; Owen Power,1,4.8,12.41
@@ -221,8 +222,8 @@ NJD,5,8476462;8477511;8478414;8478542;8481721,Dougie Hamilton; Anthony Mantha; T
 MTL,5,8475184;8480074;8480865;8481618;8482775,Chris Kreider; Alexandre Texier; Noah Dobson; Alex Newhook; Oliver Kapanen,0,10.3,0.0
 FLA,5,8474189;8477932;8477935;8480185;8482113,Lars Eller; Aaron Ekblad; Sam Bennett; Eetu Luostarinen; Anton Lundell,0,9.7,0.0
 COL,5,8476455;8477492;8480039;8480069;8486171,Gabriel Landeskog; Nathan MacKinnon; Martin Necas; Cale Makar; T.J. Hughes,0,8.6,0.0
+VAN,5,8480078;8481024;8481032;8482079;8484798,Filip Chytil; Linus Karlsson; Paul Cotter; Marco Rossi; Zeev Buium,0,8.6,0.0
 PHI,5,8478439;8481533;8482142;8482159;8484387,Travis Konecny; Trevor Zegras; Jamie Drysdale; Tyson Foerster; Matvei Michkov,0,8.4,0.0
-VAN,5,8480078;8481024;8481032;8482079;8484798,Filip Chytil; Linus Karlsson; Paul Cotter; Marco Rossi; Zeev Buium,0,8.2,0.0
 STL,5,8480023;8482077;8482089;8483516;8484790,Robert Thomas; Dylan Holloway; Jake Neighbours; Jimmy Snuggerud; Adam Jiricek,0,8.1,0.0
 TBL,5,8478519;8480426;8480995;8482201;8483447,Anthony Cirelli; Charle-Edouard D'Astous; Pontus Holmberg; Gage Goncalves; Conor Geekie,0,7.5,0.0
 VAN,5,8481024;8483476;8483499;8484240;8484798,Linus Karlsson; Jonathan Lekkerimäki; Liam Ohgren; Tom Willander; Zeev Buium,0,7.1,0.0
@@ -264,6 +265,7 @@ DAL,5,8475794;8478420;8480027;8481581;8484829,Tyler Seguin; Mikko Rantanen; Jaso
 LAK,5,8476979;8478550;8482124;8482155;8482160,Erik Gustafsson; Artemi Panarin; Quinton Byfield; Alex Laferriere; Martin Chromiak,0,4.3,0.0
 CGY,5,8476458;8481068;8483495;8484234;8484958,Ryan Strome; Yegor Sharangovich; Simon Nemec; Aydar Suniev; Maxim Tsyplakov,0,4.2,0.0
 TBL,5,8474590;8476453;8477404;8478010;8478519,John Carlson; Nikita Kucherov; Jake Guentzel; Brayden Point; Anthony Cirelli,0,4.2,0.0
+MTL,5,8480074;8480865;8481523;8481618;8482775,Alexandre Texier; Noah Dobson; Kirby Dach; Alex Newhook; Oliver Kapanen,0,4.1,0.0
 SJS,5,8475726;8478975;8484152;8484994;8485402,Tyler Toffoli; Mason Marchment; Luca Cagnoni; Igor Chernyshov; Michael Misa,0,4.1,0.0
 SEA,5,8481554;8482665;8482858;8483524;8484800,Kaapo Kakko; Matty Beniers; Ryker Evans; Shane Wright; Berkly Catton,0,4.0,0.0
 WPG,5,8476460;8478398;8480014;8482149;8483510,Mark Scheifele; Kyle Connor; Gabriel Vilardi; Cole Perfetti; Elias Salomonsson,0,4.0,0.0
@@ -280,7 +282,6 @@ OTT,4,8473512;8480208;8481528;8482116,Claude Giroux; Drake Batherson; Dylan Coze
 UTA,5,8475314;8476389;8477346;8479619;8480849,Anders Lee; Vincent Trocheck; MacKenzie Weegar; Michael Carcone; Barrett Hayton,0,3.4,0.0
 VGK,5,8476448;8477447;8478397;8483890;8484803,William Karlsson; Shea Theodore; Rasmus Andersson; Braeden Bowman; Trevor Connelly,0,3.4,0.0
 ANA,5,8475798;8481538;8481605;8483445;8484153,Mikael Granlund; Judd Caulfield; Jackson LaCombe; Cutter Gauthier; Leo Carlsson,0,3.3,0.0
-MTL,5,8480074;8480865;8481523;8481618;8482775,Alexandre Texier; Noah Dobson; Kirby Dach; Alex Newhook; Oliver Kapanen,0,3.3,0.0
 CHI,5,8477479;8483493;8484144;8484390;8485391,Tyler Bertuzzi; Frank Nazar; Connor Bedard; Roman Kantserov; Anton Frondell,0,3.2,0.0
 DAL,5,8473994;8474102;8475794;8476902;8484829,Jamie Benn; David Perron; Tyler Seguin; Esa Lindell; Justin Hryckowian,0,3.2,0.0
 DAL,5,8473994;8475794;8478420;8481581;8484829,Jamie Benn; Tyler Seguin; Mikko Rantanen; Thomas Harley; Justin Hryckowian,0,3.2,0.0
@@ -382,6 +383,7 @@ FLA,5,8477409;8477495;8477933;8477935;8479314,Carter Verhaeghe; Seth Jones; Sam 
 FLA,5,8477409;8477932;8477935;8480185;8482113,Carter Verhaeghe; Aaron Ekblad; Sam Bennett; Eetu Luostarinen; Anton Lundell,0,1.6,0.0
 LAK,5,8470621;8474563;8475287;8482160;8482730,Corey Perry; Drew Doughty; Erik Haula; Martin Chromiak; Brandt Clarke,0,1.6,0.0
 MIN,5,8476399;8478864;8480800;8481553;8483525,Blake Coleman; Kirill Kaprizov; Quinn Hughes; Bobby Brink; Danila Yurov,0,1.6,0.0
+NYR,5,8476459;8479323;8480009;8482109;8484210,Mika Zibanejad; Adam Fox; Eeli Tolvanen; Alexis Lafrenière; Gabe Perreault,0,1.6,0.0
 OTT,5,8473512;8480208;8481528;8482116;8484759,Claude Giroux; Drake Batherson; Dylan Cozens; Tim Stützle; Carter Yakemchuk,0,1.6,0.0
 OTT,5,8473512;8480208;8482116;8483676;8484759,Claude Giroux; Drake Batherson; Tim Stützle; Stephen Halliday; Carter Yakemchuk,0,1.6,0.0
 PIT,5,8471724;8475810;8478438;8482758;8483808,Kris Letang; Bryan Rust; Tommy Novak; Ville Koivunen; Andrei Kuzmenko,0,1.6,0.0
@@ -498,4 +500,5 @@ OTT,5,8473512;8478469;8480188;8481606;8482092,Claude Giroux; Thomas Chabot; Fabi
 OTT,5,8478469;8480188;8481596;8483676;8484759,Thomas Chabot; Fabian Zetterlund; Shane Pinto; Stephen Halliday; Carter Yakemchuk,0,1.0,0.0
 OTT,5,8478469;8480208;8481528;8482116;8482667,Thomas Chabot; Drake Batherson; Dylan Cozens; Tim Stützle; William Eklund,0,1.0,0.0
 PHI,5,8477989;8478439;8481546;8482159;8484148,Christian Dvorak; Travis Konecny; Cam York; Tyson Foerster; Oliver Bonk,0,1.0,0.0
+UTA,5,8475314;8477346;8478474;8479619;8480849,Anders Lee; MacKenzie Weegar; Lawson Crouse; Michael Carcone; Barrett Hayton,0,1.0,0.0
 WSH,4,8471214;8477949;8478440;8484873,Alex Ovechkin; Alex Tuch; Dylan Strome; Cole Hutson,0,1.0,0.0

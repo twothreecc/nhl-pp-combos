@@ -135,6 +135,7 @@ TOR,8478178,Darren Raddysh,8480893,Kirill Marchenko,1,1,2
 TOR,8480893,Kirill Marchenko,8479318,Auston Matthews,1,1,2
 UTA,8479410,Mikhail Sergachev,8483431,Logan Cooley,1,1,2
 UTA,8483431,Logan Cooley,8479343,Clayton Keller,1,1,2
+VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,1,1,2
 VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,1,1,2
 VAN,8479425,Filip Hronek,8478444,Brock Boeser,1,1,2
 WPG,8480014,Gabriel Vilardi,8476460,Mark Scheifele,1,1,2
@@ -168,6 +169,7 @@ TOR,8477939,William Nylander,8480893,Kirill Marchenko,0,2,2
 TOR,8480893,Kirill Marchenko,8477939,William Nylander,0,2,2
 UTA,8479343,Clayton Keller,8483431,Logan Cooley,0,2,2
 UTA,8479410,Mikhail Sergachev,8477951,Nick Schmaltz,0,2,2
+VAN,8483476,Jonathan Lekkerimäki,8478444,Brock Boeser,0,2,2
 VGK,8478483,Mitch Marner,8478109,Victor Olofsson,0,2,2
 WPG,8480145,Neal Pionk,8478398,Kyle Connor,0,2,2
 ANA,8473986,Alex Killorn,8483482,Tristan Luneau,1,0,1
@@ -365,8 +367,10 @@ UTA,8479977,Kailer Yamamoto,8476389,Vincent Trocheck,1,0,1
 UTA,8479977,Kailer Yamamoto,8479410,Mikhail Sergachev,1,0,1
 UTA,8480849,Barrett Hayton,8478507,John Marino,1,0,1
 UTA,8482699,Dylan Guenther,8479410,Mikhail Sergachev,1,0,1
+UTA,8483431,Logan Cooley,8476389,Vincent Trocheck,1,0,1
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,1,0,1
 VAN,8478444,Brock Boeser,8481024,Linus Karlsson,1,0,1
+VAN,8478498,Jake DeBrusk,8478444,Brock Boeser,1,0,1
 VAN,8478498,Jake DeBrusk,8483476,Jonathan Lekkerimäki,1,0,1
 VAN,8479425,Filip Hronek,8481032,Paul Cotter,1,0,1
 VAN,8480012,Elias Pettersson,8478444,Brock Boeser,1,0,1
@@ -584,13 +588,13 @@ UTA,8475314,Anders Lee,8478507,John Marino,0,1,1
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,0,1,1
 UTA,8478474,Lawson Crouse,8482699,Dylan Guenther,0,1,1
 UTA,8478507,John Marino,8480849,Barrett Hayton,0,1,1
+UTA,8479343,Clayton Keller,8476389,Vincent Trocheck,0,1,1
 UTA,8479410,Mikhail Sergachev,8480849,Barrett Hayton,0,1,1
-VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,0,1,1
 VAN,8478498,Jake DeBrusk,8481024,Linus Karlsson,0,1,1
 VAN,8480012,Elias Pettersson,8481032,Paul Cotter,0,1,1
 VAN,8480012,Elias Pettersson,8483476,Jonathan Lekkerimäki,0,1,1
 VAN,8481032,Paul Cotter,8483499,Liam Ohgren,0,1,1
-VAN,8483476,Jonathan Lekkerimäki,8478444,Brock Boeser,0,1,1
+VAN,8483476,Jonathan Lekkerimäki,8478498,Jake DeBrusk,0,1,1
 VAN,8483476,Jonathan Lekkerimäki,8479425,Filip Hronek,0,1,1
 VGK,8475913,Mark Stone,8478403,Jack Eichel,0,1,1
 VGK,8476448,William Karlsson,8483890,Braeden Bowman,0,1,1

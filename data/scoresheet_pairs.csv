@@ -8,14 +8,15 @@ ANA,8481605,Jackson LaCombe,8484153,Leo Carlsson,8
 ANA,8484153,Leo Carlsson,8484762,Beckett Sennecke,8
 MIN,8478864,Kirill Kaprizov,8480800,Quinn Hughes,8
 NSH,8474564,Steven Stamkos,8474600,Roman Josi,8
+UTA,8479343,Clayton Keller,8483431,Logan Cooley,8
 UTA,8479343,Clayton Keller,8479410,Mikhail Sergachev,8
+VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,8
 VGK,8475913,Mark Stone,8478483,Mitch Marner,8
 ANA,8481605,Jackson LaCombe,8483445,Cutter Gauthier,7
 ANA,8475798,Mikael Granlund,8484153,Leo Carlsson,7
 FLA,8477495,Seth Jones,8477933,Sam Reinhart,7
 FLA,8477933,Sam Reinhart,8479314,Matthew Tkachuk,7
 NSH,8474600,Roman Josi,8475158,Ryan O'Reilly,7
-UTA,8479343,Clayton Keller,8483431,Logan Cooley,7
 UTA,8477951,Nick Schmaltz,8483431,Logan Cooley,7
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,7
 VAN,8478444,Brock Boeser,8480012,Elias Pettersson,7
@@ -33,7 +34,6 @@ NSH,8474564,Steven Stamkos,8475158,Ryan O'Reilly,6
 SJS,8484801,Macklin Celebrini,8486103,Ivar Stenberg,6
 TBL,8476453,Nikita Kucherov,8477404,Jake Guentzel,6
 TOR,8477939,William Nylander,8479318,Auston Matthews,6
-VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,6
 VGK,8478403,Jack Eichel,8478483,Mitch Marner,6
 VGK,8475913,Mark Stone,8478403,Jack Eichel,6
 ANA,8475798,Mikael Granlund,8483445,Cutter Gauthier,5
@@ -64,6 +64,7 @@ STL,8480023,Robert Thomas,8481598,Philip Broberg,5
 TOR,8477939,William Nylander,8480893,Kirill Marchenko,5
 UTA,8479343,Clayton Keller,8482699,Dylan Guenther,5
 UTA,8479410,Mikhail Sergachev,8482699,Dylan Guenther,5
+VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,5
 VGK,8476881,Tomas Hertl,8478403,Jack Eichel,5
 WPG,8478398,Kyle Connor,8482149,Cole Perfetti,5
 WPG,8480014,Gabriel Vilardi,8482149,Cole Perfetti,5
@@ -152,7 +153,7 @@ TBL,8478010,Brayden Point,8480426,Charle-Edouard D'Astous,3
 TOR,8477939,William Nylander,8486067,Gavin McKenna,3
 TOR,8478178,Darren Raddysh,8479318,Auston Matthews,3
 UTA,8477951,Nick Schmaltz,8482699,Dylan Guenther,3
-VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,3
+VAN,8478498,Jake DeBrusk,8483476,Jonathan Lekkerimäki,3
 VAN,8479425,Filip Hronek,8483476,Jonathan Lekkerimäki,3
 VGK,8478109,Victor Olofsson,8478403,Jack Eichel,3
 VGK,8475913,Mark Stone,8476881,Tomas Hertl,3
@@ -579,13 +580,14 @@ UTA,8478507,John Marino,8479977,Kailer Yamamoto,1
 UTA,8476389,Vincent Trocheck,8479977,Kailer Yamamoto,1
 UTA,8479343,Clayton Keller,8479977,Kailer Yamamoto,1
 UTA,8479410,Mikhail Sergachev,8480849,Barrett Hayton,1
+UTA,8476389,Vincent Trocheck,8479343,Clayton Keller,1
+UTA,8476389,Vincent Trocheck,8483431,Logan Cooley,1
 VAN,8478444,Brock Boeser,8482079,Marco Rossi,1
 VAN,8480012,Elias Pettersson,8482079,Marco Rossi,1
 VAN,8479425,Filip Hronek,8481032,Paul Cotter,1
 VAN,8480012,Elias Pettersson,8481032,Paul Cotter,1
 VAN,8478444,Brock Boeser,8481024,Linus Karlsson,1
 VAN,8478498,Jake DeBrusk,8481024,Linus Karlsson,1
-VAN,8478498,Jake DeBrusk,8483476,Jonathan Lekkerimäki,1
 VAN,8481032,Paul Cotter,8482079,Marco Rossi,1
 VAN,8481032,Paul Cotter,8483499,Liam Ohgren,1
 VAN,8482079,Marco Rossi,8483499,Liam Ohgren,1
