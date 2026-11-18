@@ -4170,6 +4170,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png"
  },
+ "8481567": {
+  "name": "Henry Thrun",
+  "position": "D",
+  "teams": [
+   "WPG"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481567.png"
+ },
  "8481568": {
   "name": "Alex Vlasic",
   "position": "D",
@@ -5118,6 +5126,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482673.png"
  },
+ "8482674": {
+  "name": "Tyler Boucher",
+  "position": "R",
+  "teams": [
+   "OTT"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482674.png"
+ },
  "8482679": {
   "name": "Matt Coronato",
   "position": "R",
@@ -5870,6 +5886,14 @@
    "MIN"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483525.png"
+ },
+ "8483526": {
+  "name": "Danil Zhilkin",
+  "position": "C",
+  "teams": [
+   "WPG"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483526.png"
  },
  "8483532": {
   "name": "Clay Stevenson",
