@@ -3753,6 +3753,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480878.png"
  },
+ "8480879": {
+  "name": "Jacob Bernard-Docker",
+  "position": "D",
+  "teams": [
+   "DET"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480879.png"
+ },
  "8480891": {
   "name": "Michael Kesselring",
   "position": "D",
@@ -4733,6 +4741,14 @@
    "CBJ"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482126.png"
+ },
+ "8482132": {
+  "name": "Brett Berard",
+  "position": "L",
+  "teams": [
+   "MTL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482132.png"
  },
  "8482137": {
   "name": "Yaroslav Askarov",

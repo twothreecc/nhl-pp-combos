@@ -105,6 +105,7 @@ ANA,8475798,Mikael Granlund,8484153,Leo Carlsson,1,1,2
 ANA,8483445,Cutter Gauthier,8475798,Mikael Granlund,1,1,2
 ANA,8483445,Cutter Gauthier,8484762,Beckett Sennecke,1,1,2
 ANA,8484153,Leo Carlsson,8475798,Mikael Granlund,1,1,2
+BOS,8477956,David Pastrnak,8478401,Pavel Zacha,1,1,2
 BOS,8478401,Pavel Zacha,8477496,Elias Lindholm,1,1,2
 BOS,8479987,Morgan Geekie,8477956,David Pastrnak,1,1,2
 CAR,8478427,Sebastian Aho,8482809,Jackson Blake,1,1,2
@@ -135,7 +136,9 @@ TBL,8477404,Jake Guentzel,8474590,John Carlson,1,1,2
 TOR,8475166,John Tavares,8480893,Kirill Marchenko,1,1,2
 TOR,8478178,Darren Raddysh,8480893,Kirill Marchenko,1,1,2
 TOR,8480893,Kirill Marchenko,8479318,Auston Matthews,1,1,2
+UTA,8479343,Clayton Keller,8476389,Vincent Trocheck,1,1,2
 UTA,8479410,Mikhail Sergachev,8483431,Logan Cooley,1,1,2
+UTA,8483431,Logan Cooley,8476389,Vincent Trocheck,1,1,2
 UTA,8483431,Logan Cooley,8479343,Clayton Keller,1,1,2
 VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,1,1,2
 VAN,8478444,Brock Boeser,8483476,Jonathan Lekkerimäki,1,1,2
@@ -275,6 +278,7 @@ MTL,8480018,Nick Suzuki,8481523,Kirby Dach,1,0,1
 MTL,8480018,Nick Suzuki,8482737,Zachary Bolduc,1,0,1
 MTL,8480865,Noah Dobson,8481540,Cole Caufield,1,0,1
 MTL,8481618,Alex Newhook,8482737,Zachary Bolduc,1,0,1
+MTL,8483457,Lane Hutson,8480018,Nick Suzuki,1,0,1
 MTL,8483457,Lane Hutson,8481540,Cole Caufield,1,0,1
 MTL,8483457,Lane Hutson,8482737,Zachary Bolduc,1,0,1
 MTL,8483515,Juraj Slafkovský,8483457,Lane Hutson,1,0,1
@@ -376,7 +380,6 @@ UTA,8479977,Kailer Yamamoto,8476389,Vincent Trocheck,1,0,1
 UTA,8479977,Kailer Yamamoto,8479410,Mikhail Sergachev,1,0,1
 UTA,8480849,Barrett Hayton,8478507,John Marino,1,0,1
 UTA,8482699,Dylan Guenther,8479410,Mikhail Sergachev,1,0,1
-UTA,8483431,Logan Cooley,8476389,Vincent Trocheck,1,0,1
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,1,0,1
 VAN,8478444,Brock Boeser,8481024,Linus Karlsson,1,0,1
 VAN,8478498,Jake DeBrusk,8478444,Brock Boeser,1,0,1
@@ -411,10 +414,10 @@ ANA,8481754,Nikita Nesterenko,8481538,Judd Caulfield,0,1,1
 ANA,8483482,Tristan Luneau,8485400,Roger McQueen,0,1,1
 ANA,8485400,Roger McQueen,8483482,Tristan Luneau,0,1,1
 BOS,8476854,Hampus Lindholm,8477956,David Pastrnak,0,1,1
-BOS,8477956,David Pastrnak,8478401,Pavel Zacha,0,1,1
 BOS,8477956,David Pastrnak,8483017,Frederic Brunet,0,1,1
 BOS,8478401,Pavel Zacha,8477956,David Pastrnak,0,1,1
 BOS,8479987,Morgan Geekie,8477496,Elias Lindholm,0,1,1
+BOS,8479987,Morgan Geekie,8478401,Pavel Zacha,0,1,1
 BOS,8479987,Morgan Geekie,8483489,Fraser Minten,0,1,1
 BOS,8479999,Casey Mittelstadt,8483489,Fraser Minten,0,1,1
 BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,0,1,1
@@ -502,6 +505,7 @@ MTL,8480074,Alexandre Texier,8482737,Zachary Bolduc,0,1,1
 MTL,8481540,Cole Caufield,8482737,Zachary Bolduc,0,1,1
 MTL,8481540,Cole Caufield,8483457,Lane Hutson,0,1,1
 MTL,8483457,Lane Hutson,8481523,Kirby Dach,0,1,1
+MTL,8483515,Juraj Slafkovský,8480018,Nick Suzuki,0,1,1
 MTL,8483515,Juraj Slafkovský,8482737,Zachary Bolduc,0,1,1
 NJD,8479407,Jesper Bratt,8482146,Luke Evangelista,0,1,1
 NJD,8480002,Nico Hischier,8481559,Jack Hughes,0,1,1
@@ -599,7 +603,6 @@ UTA,8475314,Anders Lee,8478507,John Marino,0,1,1
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,0,1,1
 UTA,8478474,Lawson Crouse,8482699,Dylan Guenther,0,1,1
 UTA,8478507,John Marino,8480849,Barrett Hayton,0,1,1
-UTA,8479343,Clayton Keller,8476389,Vincent Trocheck,0,1,1
 UTA,8479410,Mikhail Sergachev,8480849,Barrett Hayton,0,1,1
 VAN,8478498,Jake DeBrusk,8481024,Linus Karlsson,0,1,1
 VAN,8480012,Elias Pettersson,8481032,Paul Cotter,0,1,1
