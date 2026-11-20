@@ -795,9 +795,10 @@
   "name": "Mike Reilly",
   "position": "D",
   "teams": [
-   "CAR"
+   "CAR",
+   "COL"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476422.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476422.png"
  },
  "8476429": {
   "name": "Scott Mayfield",
@@ -3600,6 +3601,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480803.png"
  },
+ "8480806": {
+  "name": "Isac Lundestr\u00f6m",
+  "position": "C",
+  "teams": [
+   "CBJ"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8480806.png"
+ },
  "8480807": {
   "name": "Mattias Samuelsson",
   "position": "D",
@@ -4129,6 +4138,14 @@
    "PHI"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481546.png"
+ },
+ "8481550": {
+  "name": "Adam Beckman",
+  "position": "L",
+  "teams": [
+   "COL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/COL/8481550.png"
  },
  "8481551": {
   "name": "Colten Ellis",
@@ -6655,6 +6672,14 @@
    "DAL"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8484829.png"
+ },
+ "8484859": {
+  "name": "Stian Solberg",
+  "position": "D",
+  "teams": [
+   "ANA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484859.png"
  },
  "8484860": {
   "name": "Matvei Gridin",

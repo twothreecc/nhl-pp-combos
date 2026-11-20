@@ -89,3 +89,7 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020337,PHI,3,05:23,EV,5v5,5,5,Rasmus Ristolainen; Christian Dvorak; Owen Tippett; Cam York; Cole Knuble,Matvei Michkov; Nick Seeler,api
 2026020339,ANA,2,01:02,EV,5v5,5,5,Mikael Granlund; Troy Terry; Jackson LaCombe; Cutter Gauthier; Tristan Luneau,Judd Caulfield,api
 2026020339,STL,3,06:19,EV,5v5,5,5,Pavel Buchnevich; Brandon Carlo; Jonatan Berggren; Philip Broberg; Aleksanteri Kaskimaki,Logan Mailloux,api
+2026020351,BUF,1,15:55,EV,4v4,4,4,Mattias Samuelsson; Rasmus Dahlin; Peyton Krebs; Zach Benson,Owen Power,api
+2026020351,WSH,3,09:44,EV,5v5,5,5,Boone Jenner; Jordan Kyrou; Timothy Liljegren; Martin Fehérváry; Aliaksei Protas,Alex Ovechkin,api
+2026020352,MTL,4,00:38,EV,3v3,3,3,Nick Suzuki; Cole Caufield; Lane Hutson,Phillip Danault,api
+2026020353,CBJ,1,15:24,EV,5v5,5,5,Zach Werenski; Kent Johnson; Matthew Knies; Luca Del Bel Belluz; Denton Mateychuk,Damon Severson,api
