@@ -4011,6 +4011,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
  },
+ "8481517": {
+  "name": "Brett Leason",
+  "position": "R",
+  "teams": [
+   "SJS"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8481517.png"
+ },
  "8481519": {
   "name": "Spencer Knight",
   "position": "G",
@@ -6512,6 +6520,14 @@
    "MTL"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484403.png"
+ },
+ "8484406": {
+  "name": "Ty Mueller",
+  "position": "C",
+  "teams": [
+   "VAN"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484406.png"
  },
  "8484409": {
   "name": "Hoyt Stanley",
