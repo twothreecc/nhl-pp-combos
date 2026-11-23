@@ -1688,6 +1688,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477541.png"
  },
+ "8477573": {
+  "name": "Nathan Walker",
+  "position": "L",
+  "teams": [
+   "STL"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477573.png"
+ },
  "8477810": {
   "name": "Joel Hanley",
   "position": "D",
@@ -6164,9 +6172,10 @@
   "name": "Max Sasson",
   "position": "C",
   "teams": [
-   "VAN"
+   "VAN",
+   "NYR"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484136.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8484136.png"
  },
  "8484142": {
   "name": "Denver Barkey",
