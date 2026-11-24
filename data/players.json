@@ -1796,9 +1796,10 @@
   "name": "Dylan Larkin",
   "position": "C",
   "teams": [
-   "DET"
+   "DET",
+   "MTL"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8477946.png"
  },
  "8477948": {
   "name": "Travis Sanheim",
@@ -2887,6 +2888,14 @@
    "WSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
+ },
+ "8479406": {
+  "name": "Filip Gustavsson",
+  "position": "G",
+  "teams": [
+   "MIN"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8479406.png"
  },
  "8479407": {
   "name": "Jesper Bratt",
@@ -4991,6 +5000,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482447.png"
  },
+ "8482451": {
+  "name": "Mikael Pyyhtia",
+  "position": "L",
+  "teams": [
+   "CBJ"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482451.png"
+ },
  "8482459": {
   "name": "Tyrel Bauer",
   "position": "D",
@@ -5203,9 +5220,10 @@
   "name": "Aatu R\u00e4ty",
   "position": "C",
   "teams": [
-   "VAN"
+   "VAN",
+   "TOR"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482691.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8482691.png"
  },
  "8482699": {
   "name": "Dylan Guenther",
@@ -6689,6 +6707,14 @@
    "SJS"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484806.png"
+ },
+ "8484821": {
+  "name": "Sam Morton",
+  "position": "C",
+  "teams": [
+   "CGY"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484821.png"
  },
  "8484829": {
   "name": "Justin Hryckowian",

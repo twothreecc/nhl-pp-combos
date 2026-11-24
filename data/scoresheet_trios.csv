@@ -89,6 +89,7 @@ COL,8475172,Nazem Kadri,8477476,Artturi Lehkonen,8486171,T.J. Hughes,2
 CAR,8477940,Nikolaj Ehlers,8478427,Sebastian Aho,8482809,Jackson Blake,2
 CAR,8476906,Shayne Gostisbehere,8477940,Nikolaj Ehlers,8480830,Andrei Svechnikov,2
 UTA,8476389,Vincent Trocheck,8479343,Clayton Keller,8483431,Logan Cooley,2
+MIN,8478493,Joel Eriksson Ek,8478864,Kirill Kaprizov,8481557,Matt Boldy,2
 OTT,8480208,Drake Batherson,8482116,Tim Stützle,8483676,Stephen Halliday,2
 CHI,8474141,Patrick Kane,8483493,Frank Nazar,8483506,Sam Rinzel,2
 CHI,8474141,Patrick Kane,8477479,Tyler Bertuzzi,8484390,Roman Kantserov,2
@@ -319,7 +320,6 @@ NYI,8477500,Bo Horvat,8481711,Matias Maccelli,8485366,Matthew Schaefer,1
 VGK,8476881,Tomas Hertl,8478109,Victor Olofsson,8478483,Mitch Marner,1
 NYI,8477407,Anthony Duclair,8477950,Tony DeAngelo,8478445,Mathew Barzal,1
 CHI,8474141,Patrick Kane,8477479,Tyler Bertuzzi,8483506,Sam Rinzel,1
-MIN,8478493,Joel Eriksson Ek,8478864,Kirill Kaprizov,8481557,Matt Boldy,1
 CGY,8476458,Ryan Strome,8483495,Simon Nemec,8483609,Adam Klapka,1
 MTL,8480018,Nick Suzuki,8483457,Lane Hutson,8483515,Juraj Slafkovský,1
 PHI,8478439,Travis Konecny,8480015,Owen Tippett,8482159,Tyson Foerster,1
@@ -348,3 +348,6 @@ SEA,8481554,Kaapo Kakko,8482858,Ryker Evans,8484241,Matthew Wood,1
 NYR,8476459,Mika Zibanejad,8476468,J.T. Miller,8479323,Adam Fox,1
 BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,8484145,Zach Benson,1
 CHI,8477479,Tyler Bertuzzi,8483493,Frank Nazar,8484390,Roman Kantserov,1
+LAK,8478550,Artemi Panarin,8482124,Quinton Byfield,8482155,Alex Laferriere,1
+CGY,8480797,Joel Farabee,8482679,Matt Coronato,8483495,Simon Nemec,1
+SJS,8475726,Tyler Toffoli,8478975,Mason Marchment,8484801,Macklin Celebrini,1

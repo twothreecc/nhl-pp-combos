@@ -98,3 +98,4 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020365,MTL,3,05:26,EV,5v5,5,5,Brett Berard; Oliver Kapanen; Arber Xhekaj; Owen Beck; David Reinbacher,Jake Evans,api
 2026020368,STL,2,03:55,EV,5v5,5,5,Cam Fowler; Pavel Buchnevich; Jonatan Berggren; Justin Barron; Aleksanteri Kaskimaki,Brandon Carlo,api
 2026020369,WPG,1,18:33,EV,5v5,5,5,Josh Morrissey; Neal Pionk; Morgan Barron; Brayden Yager; Viggo Björck,Dylan Samberg,api
+2026020382,WPG,1,05:11,EV,5v5,5,5,Mark Scheifele; Kyle Connor; Gabriel Vilardi; Dylan Samberg; Neal Pionk,Josh Morrissey,api
