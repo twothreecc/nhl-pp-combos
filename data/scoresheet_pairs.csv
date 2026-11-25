@@ -30,6 +30,7 @@ TOR,8477939,William Nylander,8479318,Auston Matthews,7
 UTA,8477951,Nick Schmaltz,8483431,Logan Cooley,7
 UTA,8477951,Nick Schmaltz,8479343,Clayton Keller,7
 VAN,8478444,Brock Boeser,8480012,Elias Pettersson,7
+VGK,8478403,Jack Eichel,8478483,Mitch Marner,7
 ANA,8483445,Cutter Gauthier,8484762,Beckett Sennecke,6
 BOS,8477956,David Pastrnak,8478401,Pavel Zacha,6
 BUF,8479420,Tage Thompson,8480839,Rasmus Dahlin,6
@@ -47,7 +48,6 @@ TBL,8474590,John Carlson,8477404,Jake Guentzel,6
 VAN,8478444,Brock Boeser,8479425,Filip Hronek,6
 VAN,8478444,Brock Boeser,8478498,Jake DeBrusk,6
 VGK,8476881,Tomas Hertl,8478403,Jack Eichel,6
-VGK,8478403,Jack Eichel,8478483,Mitch Marner,6
 WPG,8480014,Gabriel Vilardi,8482149,Cole Perfetti,6
 WPG,8476460,Mark Scheifele,8482149,Cole Perfetti,6
 ANA,8475798,Mikael Granlund,8483445,Cutter Gauthier,5
@@ -80,6 +80,7 @@ TOR,8477939,William Nylander,8480893,Kirill Marchenko,5
 TOR,8478178,Darren Raddysh,8479318,Auston Matthews,5
 UTA,8479343,Clayton Keller,8482699,Dylan Guenther,5
 UTA,8479410,Mikhail Sergachev,8482699,Dylan Guenther,5
+VGK,8478109,Victor Olofsson,8478403,Jack Eichel,5
 WPG,8478398,Kyle Connor,8482149,Cole Perfetti,5
 WPG,8476460,Mark Scheifele,8480014,Gabriel Vilardi,5
 ANA,8475798,Mikael Granlund,8484762,Beckett Sennecke,4
@@ -117,7 +118,6 @@ UTA,8479410,Mikhail Sergachev,8483431,Logan Cooley,4
 UTA,8477951,Nick Schmaltz,8479410,Mikhail Sergachev,4
 VAN,8479425,Filip Hronek,8480012,Elias Pettersson,4
 VAN,8480012,Elias Pettersson,8483476,Jonathan Lekkerimäki,4
-VGK,8478109,Victor Olofsson,8478403,Jack Eichel,4
 VGK,8476881,Tomas Hertl,8478483,Mitch Marner,4
 VGK,8475913,Mark Stone,8476881,Tomas Hertl,4
 WPG,8476460,Mark Scheifele,8478398,Kyle Connor,4
@@ -185,6 +185,7 @@ VAN,8478498,Jake DeBrusk,8483476,Jonathan Lekkerimäki,3
 VAN,8479425,Filip Hronek,8483476,Jonathan Lekkerimäki,3
 VGK,8475913,Mark Stone,8484803,Trevor Connelly,3
 VGK,8478483,Mitch Marner,8484803,Trevor Connelly,3
+VGK,8478109,Victor Olofsson,8478483,Mitch Marner,3
 WPG,8478398,Kyle Connor,8480014,Gabriel Vilardi,3
 WSH,8479385,Jordan Kyrou,8484873,Cole Hutson,3
 WSH,8484186,Ryan Leonard,8484873,Cole Hutson,3
@@ -309,7 +310,6 @@ UTA,8476389,Vincent Trocheck,8483431,Logan Cooley,2
 VAN,8478444,Brock Boeser,8482079,Marco Rossi,2
 VGK,8475913,Mark Stone,8478109,Victor Olofsson,2
 VGK,8477964,Ivan Barbashev,8483890,Braeden Bowman,2
-VGK,8478109,Victor Olofsson,8478483,Mitch Marner,2
 WPG,8477504,Josh Morrissey,8478398,Kyle Connor,2
 WPG,8477504,Josh Morrissey,8482149,Cole Perfetti,2
 WPG,8476460,Mark Scheifele,8480145,Neal Pionk,2

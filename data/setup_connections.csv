@@ -120,6 +120,7 @@ VGK,8475913,Mark Stone,8478109,Victor Olofsson,2,0,2
 VGK,8477964,Ivan Barbashev,8483890,Braeden Bowman,2,0,2
 VGK,8478403,Jack Eichel,8475913,Mark Stone,2,0,2
 VGK,8478483,Mitch Marner,8476881,Tomas Hertl,2,0,2
+VGK,8478483,Mitch Marner,8478403,Jack Eichel,2,0,2
 WPG,8480014,Gabriel Vilardi,8478398,Kyle Connor,2,0,2
 WSH,8478440,Dylan Strome,8479385,Jordan Kyrou,2,0,2
 ANA,8475798,Mikael Granlund,8484153,Leo Carlsson,1,1,2
@@ -421,7 +422,6 @@ VGK,8475913,Mark Stone,8484803,Trevor Connelly,1,0,1
 VGK,8476881,Tomas Hertl,8475913,Mark Stone,1,0,1
 VGK,8476881,Tomas Hertl,8478109,Victor Olofsson,1,0,1
 VGK,8477964,Ivan Barbashev,8476881,Tomas Hertl,1,0,1
-VGK,8478483,Mitch Marner,8478403,Jack Eichel,1,0,1
 VGK,8484803,Trevor Connelly,8475913,Mark Stone,1,0,1
 WPG,8477504,Josh Morrissey,8478398,Kyle Connor,1,0,1
 WPG,8477938,Haydn Fleury,8480113,Alex Iafallo,1,0,1
@@ -659,6 +659,7 @@ VGK,8475913,Mark Stone,8478403,Jack Eichel,0,1,1
 VGK,8476448,William Karlsson,8483890,Braeden Bowman,0,1,1
 VGK,8477447,Shea Theodore,8478109,Victor Olofsson,0,1,1
 VGK,8477447,Shea Theodore,8483890,Braeden Bowman,0,1,1
+VGK,8478109,Victor Olofsson,8478403,Jack Eichel,0,1,1
 VGK,8478483,Mitch Marner,8484803,Trevor Connelly,0,1,1
 VGK,8484803,Trevor Connelly,8478483,Mitch Marner,0,1,1
 WPG,8477504,Josh Morrissey,8482149,Cole Perfetti,0,1,1
