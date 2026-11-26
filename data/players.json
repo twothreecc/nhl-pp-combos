@@ -1004,9 +1004,10 @@
   "name": "Luke Glendening",
   "position": "C",
   "teams": [
-   "NYR"
+   "NYR",
+   "CHI"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476822.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476822.png"
  },
  "8476826": {
   "name": "Yanni Gourde",
@@ -3976,9 +3977,10 @@
   "name": "Cole Reinhardt",
   "position": "L",
   "teams": [
-   "FLA"
+   "FLA",
+   "VAN"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481133.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481133.png"
  },
  "8481161": {
   "name": "Jake Christiansen",
@@ -4056,9 +4058,10 @@
   "name": "Kirby Dach",
   "position": "C",
   "teams": [
-   "MTL"
+   "MTL",
+   "DET"
   ],
-  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481523.png"
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481523.png"
  },
  "8481524": {
   "name": "Bowen Byram",
