@@ -102,3 +102,8 @@ game_id,team,period,time,state,strength,expected,found,on_ice,scoresheet_not_on_
 2026020389,OTT,2,01:53,EV,5v5,5,5,Thomas Chabot; Drake Batherson; Philip Tomasino; Shane Pinto; Jordan Spence,Jake Sanderson; Artem Zub,api
 2026020391,CGY,3,17:41,EN,5v6,5,5,Ryan Strome; Jake Middleton; Zach Whitecloud; Yegor Sharangovich; Adam Klapka,Matt Coronato,api
 2026020397,COL,1,09:43,EV,5v5,5,5,Brent Burns; Mike Reilly; Parker Kelly; Logan O'Connor; Adam Beckman,Sam Malinski,api
+2026020401,NJD,3,07:35,EV,5v5,5,5,Connor Brown; Brett Pesce; Timo Meier; Jack Hughes; Luke Hughes,Arseny Gritsyuk; Dougie Hamilton,api
+2026020404,OTT,1,03:37,EV,5v5,5,5,Claude Giroux; Michael Amadio; Ridly Greig; Jake Sanderson; Artem Zub,Thomas Chabot,api
+2026020404,OTT,3,07:55,EV,5v5,5,5,Claude Giroux; Michael Amadio; Ridly Greig; Jake Sanderson; Artem Zub,Tyler Kleven,api
+2026020405,VAN,3,02:22,EV,5v5,5,5,Jamie Oleksiak; Jake DeBrusk; Filip Hronek; Marco Rossi; Jonathan Lekkerimäki,Luke Schenn,api
+2026020409,LAK,2,01:18,EV,5v5,5,5,Drew Doughty; Mats Zuccarello; Kevin Fiala; Mikey Anderson; Quinton Byfield,Brian Dumoulin,api

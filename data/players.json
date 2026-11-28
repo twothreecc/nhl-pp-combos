@@ -1705,6 +1705,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477810.png"
  },
+ "8477839": {
+  "name": "Conor Sheary",
+  "position": "L",
+  "teams": [
+   "BUF"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8477839.png"
+ },
  "8477845": {
   "name": "Trevor van Riemsdyk",
   "position": "D",
@@ -2937,6 +2945,14 @@
    "TOR"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479442.png"
+ },
+ "8479496": {
+  "name": "David Rittich",
+  "position": "G",
+  "teams": [
+   "NJD"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479496.png"
  },
  "8479520": {
   "name": "Brandon Duhaime",
@@ -4907,6 +4923,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png"
  },
+ "8482172": {
+  "name": "Landon Slaggert",
+  "position": "L",
+  "teams": [
+   "CHI"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482172.png"
+ },
  "8482175": {
   "name": "JJ Peterka",
   "position": "R",
@@ -6181,6 +6205,14 @@
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png"
  },
+ "8483833": {
+  "name": "Atley Calvert",
+  "position": "C",
+  "teams": [
+   "PIT"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483833.png"
+ },
  "8483890": {
   "name": "Braeden Bowman",
   "position": "R",
@@ -6822,6 +6854,14 @@
    "WSH"
   ],
   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484999.png"
+ },
+ "8485010": {
+  "name": "Gregor Biber",
+  "position": "D",
+  "teams": [
+   "UTA"
+  ],
+  "headshot": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8485010.png"
  },
  "8485142": {
   "name": "Jackson Parsons",
